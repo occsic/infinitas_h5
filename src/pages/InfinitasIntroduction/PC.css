@@ -1,0 +1,5 @@
+.header{
+    height: 500px;
+    flex-grow: 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #1d202b 100%);
+}

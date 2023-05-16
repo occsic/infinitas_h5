@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import './index.css'
+
 import InfinitasIntroductionMobile from "./Mobile";
 import InfinitasIntroductionPC from "./PC";
 import BigNumber from "bignumber.js";

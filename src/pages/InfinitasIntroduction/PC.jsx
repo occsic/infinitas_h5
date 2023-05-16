@@ -1,9 +1,9 @@
 import React from "react";
-import './index.css'
+import './PC.css'
 
 export default function InfinitasIntroductionPC(){
     return (
-        <div>
+        <div className='flex-column'>
 
         </div>
     )
