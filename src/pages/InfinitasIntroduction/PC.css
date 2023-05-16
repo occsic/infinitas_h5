@@ -1,5 +1,75 @@
-.header{
-    height: 500px;
-    flex-grow: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #1d202b 100%);
+.top-body {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.pheader {
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.13);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.pheader-contact{
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: linear-gradient(106deg, #edb748 6%, #f5956c 22%, #f360c1 38%, #a95ffc 63%, #488df5 81%, #0ed2c3 102%, #0bc878 161%);
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+.pfontA {
+    color: #fff;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.65;
+    width: fit-content;
+    text-align: center;
+}
+
+.pfontB {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.65;
+    font-family: PingFangSC, serif;
+    width: fit-content;
+}
+.pfontC{
+    font-size: 190px;
+    font-weight: bold;
+    color: #fff;
+}
+.pfontD{
+    font-size: 69px;
+    font-weight: bold;
+    color: #fff;
+}
+.pfontE{
+    font-size: 18px;
+    font-weight: 600;
+    color:rgba(255,255,255,0.7);
+    margin-right: 60px;
+    cursor: pointer;
+}
+.pfontE:hover{
+    color: #4BF6BC;
+}
+.ptwo{
+    height: 1007px;
+   background-image: url("image/pc_bg3.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
