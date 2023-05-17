@@ -369,17 +369,18 @@ export default function InfinitasIntroductionMobile(){
                 color: 'rgba(255,255,255,0.72)',
                 textAlign: 'center',
                 marginTop: '35px'
+                ,marginLeft:'20px',marginRight:'20px'
             }}>INFINITAS is a blockchain ecosystem that integrates lightning network and has infinite scalability on the
                 Bitcoin public chain
             </div>
-            <div className='plink'>
+            <div className='plink' style={{marginTop:'0',marginLeft:'20px',marginRight:'20px'}}>
                 <img src={group1} width={55} height={11} />
                 <img src={group2} width={55} height={11}/>
                 <img src={group3} width={55} height={11} onClick={()=>window.open('https://twitter.com/iftas_eco')}/>
                 <img src={group4} width={55} height={11}/>
                 <img src={group5} width={55} height={11} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
             </div>
-            <div className='pfontBottom' style={{marginTop:'30px'}}>© 2023 Infinitas Foundation. All rights reserved.</div>
+            <div className='pfontBottom' style={{marginTop:'0'}}>© 2023 Infinitas Foundation. All rights reserved.</div>
 
             <Drawer title="Infinitas" placement="top" onClose={onClose} open={open} className='mdrawer'>
                 <Menu onClick={onClick} selectedKeys={[current]} mode="inline" items={items} />
