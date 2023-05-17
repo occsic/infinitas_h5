@@ -103,3 +103,36 @@
     left: 7px;
     z-index: 0;
 }
+.pfour{
+    height: 1013px;
+    background-image: url("image/pc_bg5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ptextA{
+    background-image: url("image/pc_bg6.svg");
+    height: 262px;
+    width: 479px;
+}
+.ptextB{
+    background-image: url("image/pc_bg7.svg");
+    height: 302px;
+    width: 479px;
+    background-repeat:  no-repeat;
+}
+.ptextC{
+    background-image: url("image/pc_bg8.svg");
+    height: 262px;
+    width: 479px;
+    background-repeat:  no-repeat;
+}
+.ptextD{
+    background-image: url("image/pc_bg9.svg");
+    height: 352px;
+    width: 479px;
+    background-repeat:  no-repeat;
+}
+.pfive{
+    background-color: #1d1f2b;
+}

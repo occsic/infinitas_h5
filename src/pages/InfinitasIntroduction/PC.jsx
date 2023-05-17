@@ -7,6 +7,10 @@ import logo from './image/logo.svg'
 import more from  './image/learn_more.svg'
 import floor from './image/floor.svg'
 import infinitas from './image/infinitas.svg'
+import icon1 from './image/pc_icon1.svg'
+import icon2 from './image/pc_icon2.svg'
+import icon3 from './image/pc_icon3.svg'
+import icon4 from './image/pc_icon4.svg'
 export default function InfinitasIntroductionPC(){
     return (
         <div className='flex-column'>
@@ -122,6 +126,53 @@ export default function InfinitasIntroductionPC(){
                         <div className='pline' />
                     </div>
                 </div>
+            </div>
+            {/*第四部分*/}
+            <div className='pfour flex-column fl-ai-center' style={{justifyContent:'space-around'}}>
+                <div className='pfontD' style={{fontSize:'130px',marginTop:'150px'}}>Why is RGB</div>
+                <div className='pfontD' style={{fontSize:'50px'}}>a historical step in blockchain evolution?</div>
+                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:'space-around'}}>
+                    <div  className='ptextA'>
+                        <div style={{marginLeft:'106px',marginTop:'104px',color:'#fff',fontSize:'18px',lineHeight:'1.65'}}>
+                            · Security: Bitcoin blockchain is used as its security commitment layer, and the security of BTC is the security of RGB
+                        </div>
+                    </div>
+                    <img src={icon1}/>
+                </div>
+            </div>
+            {/*//第五部分*/}
+            <div className='pfive'>
+                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:'space-around'}}>
+                    <img src={icon2}/>
+                    <div  className='ptextB'>
+                        <div style={{marginLeft:'86px',marginTop:'84px',color:'#fff',fontSize:'18px',lineHeight:'1.65'}}>
+                            · Scalability with unlimited performance:
+                             The blockchain-based capacity expansion story is over;
+                            RGB can make more efficient use of blockchain because the vast majority of data is kept down the chain, thanks to the "client-side validation" mode and batch processing capabilities
+                        </div>
+                    </div>
+                </div>
+                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:'space-around'}}>
+                    <div  className='ptextC'>
+                        <div style={{marginLeft:'86px',marginTop:'84px',color:'#fff',fontSize:'18px',lineHeight:'1.65'}}>
+                            · Not only that, RGB is compatible with lightning networks, and RGB inherits the infinite performance scalability of lightning networks;
+                            RGB supports and is compatible with any future scalability scheme for Bitcoin
+                        </div>
+                    </div>
+                    <img src={icon3}/>
+                </div>
+                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:'space-around'}}>
+                    <img src={icon4}/>
+                    <div  className='ptextD'>
+                        <div style={{marginLeft:'86px',marginTop:'84px',color:'#fff',fontSize:'18px',lineHeight:'1.65'}}>
+                            · Better privacy:
+                             Blockchain observers cannot see transaction data other than their own, and on Ethereum, as long as they know the user's address, they can trace all the transaction history of that user;
+                             Users are always responsible for choosing when and what data or status can be disclosed about their privacy.
+                             Standing on the shoulders of giants: Shaping ecology based on the global Bitcoin consensus
+                        </div>
+                    </div>
+                </div>
+                <div style={{height:'71px'}}/>
             </div>
         </div>
     )
