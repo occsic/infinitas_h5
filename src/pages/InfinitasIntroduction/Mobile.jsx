@@ -4,7 +4,7 @@ import { Carousel } from 'antd';
 import bg1 from './image/pc_bg1.svg'
 import bg2 from './image/pc_bg2.svg'
 import bg11 from './image/pc_bg11.png'
-import logo from './image/logo.svg'
+import logo from './image/logo.png'
 import more from  './image/learn_more.svg'
 import floor from './image/floor.svg'
 import infinitas from './image/infinitas.svg'
