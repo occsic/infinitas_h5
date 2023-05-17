@@ -3,6 +3,10 @@ import './PC.css'
 import { Carousel } from 'antd';
 import bg1 from './image/pc_bg1.svg'
 import bg2 from './image/pc_bg2.svg'
+import bg11 from './image/pc_bg11.png'
+import bg12 from './image/pc_bg12.png'
+import bg13 from './image/pc_bg13.png'
+import bg14 from './image/pc_bg14.png'
 import logo from './image/logo.svg'
 import more from  './image/learn_more.svg'
 import floor from './image/floor.svg'
@@ -11,14 +15,21 @@ import icon1 from './image/pc_icon1.svg'
 import icon2 from './image/pc_icon2.svg'
 import icon3 from './image/pc_icon3.svg'
 import icon4 from './image/pc_icon4.svg'
+import {Popover} from "antd";
 export default function InfinitasIntroductionPC(){
     return (
-        <div className='flex-column'>
+        <div className='flex-column' style={{backgroundColor:'#1d1f2b'}}>
             {/*第一部分*/}
             <div className='pheader'>
                 <img src={logo} width={194}/>
                 <div className='flex-row fl-ai-center'>
-                    <div className='pfontE'>RGB</div>
+                    <Popover placement="bottom" color={'#242634'} content={<div>
+                        <div className='ppop-font' onClick={()=>window.open('https://rgb.info/')}>RGB Protocol</div>
+                        <div className='ppop-font' onClick={()=>window.open('https://docs.rgb.info/')}>How it works</div>
+                        <div className='ppop-font' onClick={()=>window.open('https://rgb.info/resources/')}>Resources</div>
+                    </div>}>
+                        <div className='pfontE'>RGB</div>
+                    </Popover>
                     <div className='pfontE'>Ecosystem</div>
                     <div className='pfontE'>Network</div>
                     <div className='pfontE'>Developers</div>
@@ -130,20 +141,22 @@ export default function InfinitasIntroductionPC(){
             {/*第四部分*/}
             <div className='pfour flex-column fl-ai-center' style={{justifyContent:'space-around'}}>
                 <div className='pfontD' style={{fontSize:'130px',marginTop:'150px'}}>Why is RGB</div>
-                <div className='pfontD' style={{fontSize:'50px'}}>a historical step in blockchain evolution?</div>
-                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:'space-around'}}>
-                    <div  className='ptextA'>
+                <div className='pfontD' style={{fontSize:'50px',textAlign:'center'}}>a historical step in blockchain evolution?</div>
+                <div className='flex-center' style={{width:'100%'}}>
+                    <div className='ptextA' >
                         <div style={{marginLeft:'106px',marginTop:'104px',color:'#fff',fontSize:'18px',lineHeight:'1.65'}}>
                             · Security: Bitcoin blockchain is used as its security commitment layer, and the security of BTC is the security of RGB
                         </div>
                     </div>
+                    <div style={{flex:0.2}}/>
                     <img src={icon1}/>
                 </div>
             </div>
             {/*//第五部分*/}
             <div className='pfive'>
-                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:'space-around'}}>
+                <div className='flex-center' style={{width:'100%'}}>
                     <img src={icon2}/>
+                    <div style={{flex:0.3}}/>
                     <div  className='ptextB'>
                         <div style={{marginLeft:'86px',marginTop:'84px',color:'#fff',fontSize:'18px',lineHeight:'1.65'}}>
                             · Scalability with unlimited performance:
@@ -152,17 +165,19 @@ export default function InfinitasIntroductionPC(){
                         </div>
                     </div>
                 </div>
-                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:'space-around'}}>
+                <div className='flex-center' style={{width:'100%'}}>
                     <div  className='ptextC'>
                         <div style={{marginLeft:'86px',marginTop:'84px',color:'#fff',fontSize:'18px',lineHeight:'1.65'}}>
                             · Not only that, RGB is compatible with lightning networks, and RGB inherits the infinite performance scalability of lightning networks;
                             RGB supports and is compatible with any future scalability scheme for Bitcoin
                         </div>
                     </div>
+                    <div style={{flex:0.3}}/>
                     <img src={icon3}/>
                 </div>
-                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:'space-around'}}>
+                <div className='flex-center' style={{width:'100%'}}>
                     <img src={icon4}/>
+                    <div style={{flex:0.3}}/>
                     <div  className='ptextD'>
                         <div style={{marginLeft:'86px',marginTop:'84px',color:'#fff',fontSize:'18px',lineHeight:'1.65'}}>
                             · Better privacy:
@@ -174,6 +189,113 @@ export default function InfinitasIntroductionPC(){
                 </div>
                 <div style={{height:'71px'}}/>
             </div>
+            {/*第六部分*/}
+            <div className='psix flex-column fl-ai-center'>
+                <div className='pfontD' style={{fontSize:'54px',marginTop:'223px'}}>Team & Individual contributors</div>
+                <div className='flex-center' style={{width:'100%',marginTop:'125px'}}>
+                    {/*Founder Kevin Bayer (CEO)*/}
+                    <div className='pteam flex-column'>
+                        <div className='pteam-top'>
+                            <div className='flex-row fl-ai-center'>
+                                <div className='pbutton'><div className='pbutton-circle' /></div>
+                                <div className='pfontB' style={{marginLeft:'10px'}}>Master of Economics</div>
+                            </div>
+                            <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
+                                <div className='pbutton'><div className='pbutton-circle' /></div>
+                                <div className='pfontB' style={{marginLeft:'10px'}}>Showhand invested in blockchain project at the end of 2016</div>
+                            </div>
+                        </div>
+                        <div className='pteam-bottom flex-row fl-ai-center'>
+                            <img src={bg11} width={60} height={60} style={{borderRadius:'50px',marginLeft:'21px'}}/>
+                            <div className='pfontC' style={{fontSize:'24px',marginLeft:'20px'}}>Founder Kevin Bayer (CEO)</div>
+                        </div>
+                        <div className='pteam-position'>
+                            Master of Economics(Austrian school and Hayektheory and master of Theology (minoring in neochristian Theologyfrom the University of Vienna, Austria and then worked atthe UNHCR in Vienna.
+                            2015-2016.Berkshire Hathaway served as the investment specialist of the
+                            war lnvestment Department of North Wales Germany, quantifying and bonding the Eurasian market structure.
+                            Showhand invested in blockchain project at the end of 2016; In early July 2017 ico invested in BNB, holding 1% of the circulation and excellent investment targets such as ETH BNB SNT EOS FILadhere to the road of long-term value investment, make friends with time,haveunique views on the strateqic development of the industryand have richresource back- ground in the field of traditional investment.
+                        </div>
+                    </div>
+                    <div style={{flex:'0.05'}} />
+                    {/*Co-founder Dragon Smith (CTO)*/}
+                    <div className='pteam flex-column pteam-12'>
+                        <div className='pteam-top'>
+                            <div className='flex-row fl-ai-center'>
+                                <div className='pbutton'><div className='pbutton-circle' /></div>
+                                <div className='pfontB' style={{marginLeft:'10px'}}>The frst batch of blockchain developers</div>
+                            </div>
+                            <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
+                                <div className='pbutton'><div className='pbutton-circle' /></div>
+                                <div className='pfontB' style={{marginLeft:'10px'}}>The first person to design the architecture of server free interac- tive system.</div>
+                            </div>
+                        </div>
+                        <div className='pteam-bottom flex-row fl-ai-center'>
+                            <img src={bg12} width={60} height={60} style={{borderRadius:'50px',marginLeft:'21px'}}/>
+                            <div className='pfontC' style={{fontSize:'24px',marginLeft:'20px'}}>Co-founder Dragon Smith (CTO)</div>
+                        </div>
+                        <div className='pteam-position'>
+                            Dragon Smith is the frst batch of blockchain developers and the first person to design the architecture of server free interac- tive system. It is a technology geek with
+                            rich innovation expe- rience. Wu Weilong was the core developer of Silicon Valley Meixin integration company and provided algorithms for Samsung; Laterhe devoted himself to
+                            blockchain & Dand developed more than 10 smart contracts in the felds of traceability,anti-counterfeiting and supply chain fnance. His practical experience involves manyunderlyingtechnologies
+                            such as blockchain virtual machine P2P storage and consen- sus algorithm. Inventor of SPOR+POS sustainable consensus mechanism.
+                        </div>
+                    </div>
+                </div>
+                <div className='flex-center' style={{width:'100%',marginTop:'74px'}}>
+                    {/*Co-founder YuAn Tseng (COO）*/}
+                    <div className='pteam flex-column pteam-13'>
+                        <div className='pteam-top'>
+                            <div className='flex-row fl-ai-center'>
+                                <div className='pbutton'><div className='pbutton-circle' /></div>
+                                <div className='pfontB' style={{marginLeft:'10px'}}>Inventor of SPOR+POS sustainable consensus mechanism
+                                </div>
+                            </div>
+                            <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
+                                <div className='pbutton'><div className='pbutton-circle' /></div>
+                                <div className='pfontB' style={{marginLeft:'10px'}}>2018-2020 MBA from Taiwan University of science and technology
+                                </div>
+                            </div>
+                        </div>
+                        <div className='pteam-bottom flex-row fl-ai-center'>
+                            <img src={bg13} width={60} height={60} style={{borderRadius:'50px',marginLeft:'21px'}}/>
+                            <div className='pfontC' style={{fontSize:'24px',marginLeft:'20px'}}>Co-founder YuAn Tseng (COO）</div>
+                        </div>
+                        <div className='pteam-position'>
+                            2010-2014 studied diplomatic English in the English Department of National Changhua Normal University. 2018-2020 MBA from Taiwan
+                            University of science and technology. From March 2020 to March 2021She studied at hochshur hel- brown University of science and
+                            technologyand wrote a paper - Case Analysis of new business model ofvirtual currency. She used to be a German iris digital strategist
+                            and the operation director of Taipei monad.She has many years of digital marketing experience.
+                        </div>
+                    </div>
+                    <div style={{flex:'0.05'}} />
+                    {/*Co-founder Anna Alumbaiva (CMO）*/}
+                    <div className='pteam flex-column pteam-14'>
+                        <div className='pteam-top'>
+                            <div className='flex-row fl-ai-center'>
+                                <div className='pbutton'><div className='pbutton-circle' /></div>
+                                <div className='pfontB' style={{marginLeft:'10px'}}>Anna Alumbaiva has over 7 years of experience in the blockchain industry
+                                </div>
+                            </div>
+                            <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
+                                <div className='pbutton'><div className='pbutton-circle' /></div>
+                                <div className='pfontB' style={{marginLeft:'10px'}}>he has mainly participated in the marketing management of Gamefi……</div>
+                            </div>
+                        </div>
+                        <div className='pteam-bottom flex-row fl-ai-center'>
+                            <img src={bg14} width={60} height={60} style={{borderRadius:'50px',marginLeft:'21px'}}/>
+                            <div className='pfontC' style={{fontSize:'24px',marginLeft:'20px'}}>Co-founder Anna Alumbaiva (CMO)</div>
+                        </div>
+                        <div className='pteam-position'>
+                            Anna Alumbaiva has over 7 years of experience in the blockchain industry, this dynamic and dedicated Web 3.0 explorer has become
+                            an expertise in marketing and branding. He has gained valuable experience working for various industry-leading companies and Web3
+                            projects. In the past few years, he has mainly participated in the marketing management of Gamefi, Defi projects and crypto currency exchanges.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='pfontC' style={{fontSize:'44px',textAlign:'center',marginTop:'177px'}}>Managed by Infinitas Foundation</div>
+            <div className='pfontBottom'>© 2023 Infinitas Foundation. All rights reserved.</div>
         </div>
     )
 }

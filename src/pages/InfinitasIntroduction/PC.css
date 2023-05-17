@@ -136,3 +136,102 @@
 .pfive{
     background-color: #1d1f2b;
 }
+.psix{
+    background-image: url("image/pc_bg10.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+.pteam{
+    flex: 0.4;
+    max-width: 590px;
+    background-image: url("image/pc_bg11.png");
+    height: 560px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: relative;
+}
+.pteam-12{
+    background-image: url("image/pc_bg12.png");
+}
+.pteam-13{
+    background-image: url("image/pc_bg13.png");
+}
+.pteam-14{
+    background-image: url("image/pc_bg14.png");
+}
+.pteam-top{
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 40px;
+}
+.pteam-bottom{
+    flex: 1;
+    -webkit-backdrop-filter: blur(33px);
+    backdrop-filter: blur(33px);
+    background-image: linear-gradient(to right, rgba(181, 22, 255, 0.26) -1%, rgba(2, 233, 248, 0.49) 100%);
+    border-radius: 0 0 16px 16px;
+}
+.pbutton{
+    width: 29px;
+    height: 29px;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0.31) 100%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pbutton-circle{
+    width: 11px;
+    height: 11px;
+    opacity: 0.67;
+    background-color: #57ffeb;
+    border-radius: 50px;
+}
+.pteam-position{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.76);
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.65;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+
+}
+.pteam:hover .pteam-position{
+    height: 560px;
+    padding: 20px;
+}
+.pfontBottom{
+    font-size: 18px;
+    color: #93989a;
+    margin-top: 179px;
+    margin-bottom:80px ;
+    text-align: center;
+}
+.ppop{
+    background-color: #242634;
+}
+.ppop-font{
+    font-size: 20px;
+    font-weight: 500;
+    color:#ffffff;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
