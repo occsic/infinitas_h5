@@ -82,7 +82,7 @@ export default function InfinitasIntroductionMobile(){
               </div>
                 <div className='mfontA' style={{fontSize:'30px',marginTop:'50px'}}>What’s new at <span className='pfontF'>Infinitas</span></div>
                 <img src={infinitas} width={140} style={{marginTop:'25px'}}/>
-                    <div className='flex-column' style={{position:"relative",paddingLeft:'60px',width:'100%',marginTop:'40px'}}>
+                    <div className='flex-column' style={{position:"relative",paddingLeft:'60px',marginTop:'40px'}}>
                         <div className='flex-row fl-ai-center'>
                             <div className='pcircle' />
                             <div className='mfontB' style={{marginLeft:'10px'}}>2022.12 Infinitas Established</div>
@@ -101,7 +101,7 @@ export default function InfinitasIntroductionMobile(){
                         </div>
                         <div className='pline' style={{left:'67px'}}/>
                     </div>
-                <div className='flex-column' style={{position:"relative",paddingLeft:'60px',marginTop:'60px',width:'100%'}}>
+                <div className='flex-column' style={{position:"relative",marginTop:'60px'}}>
                     <div className='flex-row fl-ai-center'>
                         <div className='pcircle' />
                         <div className='mfontB' style={{marginLeft:'10px'}}>2023.12 Infinitas chain test</div>
@@ -114,7 +114,7 @@ export default function InfinitasIntroductionMobile(){
                         <div className='pcircle' />
                         <div className='mfontB' style={{marginLeft:'10px'}}>2024.06 Infinitas chain running</div>
                     </div>
-                    <div className='pline' style={{left:'67px'}}/>
+                    <div className='pline' style={{left:'7px'}}/>
                 </div>
             </div>
 
