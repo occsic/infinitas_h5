@@ -157,7 +157,7 @@ export default function InfinitasIntroductionMobile(){
                         </div>
                         <div className='pline' style={{left:'67px'}}/>
                     </div>
-                <div className='flex-column' style={{position:"relative",marginTop:'60px'}}>
+                <div className='flex-column' style={{position:"relative",marginTop:'60px',paddingLeft:'60px'}}>
                     <div className='flex-row fl-ai-center'>
                         <div className='pcircle' />
                         <div className='mfontB' style={{marginLeft:'10px'}}>2023.12 Infinitas chain test</div>
@@ -168,9 +168,9 @@ export default function InfinitasIntroductionMobile(){
                     </div>
                     <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
                         <div className='pcircle' />
-                        <div className='mfontB' style={{marginLeft:'10px'}}>2024.06 Infinitas chain running</div>
+                        <div className='mfontB' style={{marginLeft:'10px'}}>2024.06 Infinitas chain running<span style={{visibility:'hidden'}}>RGB R4GB RGB RGB RGB RGB</span></div>
                     </div>
-                    <div className='pline' style={{left:'7px'}}/>
+                    <div className='pline' style={{left:'67px'}}/>
                 </div>
             </div>
 
