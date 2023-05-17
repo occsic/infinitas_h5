@@ -288,6 +288,7 @@ export default function InfinitasIntroductionPC() {
                             </div>
                         </div>
                         <div className='pteam-position'>
+                            <div style={{height:'20px'}}/>
                             Master of Economics(Austrian school and Hayektheory and master of Theology (minoring in
                             neochristian Theologyfrom the University of Vienna, Austria and then worked atthe UNHCR in
                             Vienna.
@@ -299,6 +300,7 @@ export default function InfinitasIntroductionPC() {
                             EOS FILadhere to the road of long-term value investment, make friends with time,haveunique
                             views on the strateqic development of the industryand have richresource back- ground in the
                             field of traditional investment.
+                            <div style={{height:'20px'}}/>
                         </div>
                     </div>
                     <div style={{flex: '0.05'}}/>
@@ -329,6 +331,7 @@ export default function InfinitasIntroductionPC() {
                             </div>
                         </div>
                         <div className='pteam-position'>
+                            <div style={{height:'20px'}}/>
                             Dragon Smith is the frst batch of blockchain developers and the first person to design the
                             architecture of server free interac- tive system. It is a technology geek with
                             rich innovation expe- rience. Wu Weilong was the core developer of Silicon Valley Meixin
@@ -338,6 +341,7 @@ export default function InfinitasIntroductionPC() {
                             manyunderlyingtechnologies
                             such as blockchain virtual machine P2P storage and consen- sus algorithm. Inventor of
                             SPOR+POS sustainable consensus mechanism.
+                            <div style={{height:'20px'}}/>
                         </div>
                     </div>
                 </div>
@@ -369,6 +373,7 @@ export default function InfinitasIntroductionPC() {
                             </div>
                         </div>
                         <div className='pteam-position'>
+                            <div style={{height:'20px'}}/>
                             2010-2014 studied diplomatic English in the English Department of National Changhua Normal
                             University. 2018-2020 MBA from Taiwan
                             University of science and technology. From March 2020 to March 2021She studied at hochshur
@@ -377,6 +382,7 @@ export default function InfinitasIntroductionPC() {
                             used to be a German iris digital strategist
                             and the operation director of Taipei monad.She has many years of digital marketing
                             experience.
+                            <div style={{height:'20px'}}/>
                         </div>
                     </div>
                     <div style={{flex: '0.05'}}/>
@@ -407,12 +413,14 @@ export default function InfinitasIntroductionPC() {
                             </div>
                         </div>
                         <div className='pteam-position'>
+                            <div style={{height:'20px'}}/>
                             Anna Alumbaiva has over 7 years of experience in the blockchain industry, this dynamic and
                             dedicated Web 3.0 explorer has become
                             an expertise in marketing and branding. He has gained valuable experience working for
                             various industry-leading companies and Web3
                             projects. In the past few years, he has mainly participated in the marketing management of
                             Gamefi, Defi projects and crypto currency exchanges.
+                            <div style={{height:'20px'}}/>
                         </div>
                     </div>
                 </div>
@@ -430,9 +438,9 @@ export default function InfinitasIntroductionPC() {
                 Bitcoin public chain
             </div>
             <div className='plink'>
-                <img src={group1}/>
+                <img src={group1} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
                 <img src={group2}/>
-                <img src={group3}/>
+                <img src={group3} onClick={()=>window.open('https://twitter.com/iftas_eco')}/>
                 <img src={group4}/>
                 <img src={group5}/>
             </div>
