@@ -16,11 +16,11 @@ import {
     MenuOutlined,
     RightOutlined
 } from '@ant-design/icons';
-import group1 from "./image/group1.svg";
-import group2 from "./image/group2.svg";
-import group3 from "./image/group3.svg";
-import group4 from "./image/group4.svg";
-import group5 from "./image/group5.svg";
+import group1 from "./image/group1.png";
+import group2 from "./image/group2.png";
+import group3 from "./image/group3.png";
+import group4 from "./image/group4.png";
+import group5 from "./image/group5.png";
 import { Drawer,Menu } from 'antd';
 export default function InfinitasIntroductionMobile(){
     const [open, setOpen] = useState(false);
@@ -373,11 +373,11 @@ export default function InfinitasIntroductionMobile(){
                 Bitcoin public chain
             </div>
             <div className='plink'>
-                <img src={group1} width={55} height={11} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
+                <img src={group1} width={55} height={11} />
                 <img src={group2} width={55} height={11}/>
                 <img src={group3} width={55} height={11} onClick={()=>window.open('https://twitter.com/iftas_eco')}/>
                 <img src={group4} width={55} height={11}/>
-                <img src={group5} width={55} height={11}/>
+                <img src={group5} width={55} height={11} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
             </div>
             <div className='pfontBottom' style={{marginTop:'30px'}}>© 2023 Infinitas Foundation. All rights reserved.</div>
 

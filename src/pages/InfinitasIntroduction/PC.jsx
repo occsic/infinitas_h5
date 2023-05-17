@@ -16,11 +16,11 @@ import icon2 from './image/pc_icon2.svg'
 import icon3 from './image/pc_icon3.svg'
 import icon4 from './image/pc_icon4.svg'
 import {Popover} from "antd";
-import group1 from './image/group1.svg'
-import group2 from './image/group2.svg'
-import group3 from './image/group3.svg'
-import group4 from './image/group4.svg'
-import group5 from './image/group5.svg'
+import group1 from './image/group1.png'
+import group2 from './image/group2.png'
+import group3 from './image/group3.png'
+import group4 from './image/group4.png'
+import group5 from './image/group5.png'
 import {
     RightOutlined
 } from '@ant-design/icons';
@@ -440,11 +440,11 @@ export default function InfinitasIntroductionPC() {
                 Bitcoin public chain
             </div>
             <div className='plink'>
-                <img src={group1} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
+                <img src={group1} />
                 <img src={group2}/>
                 <img src={group3} onClick={()=>window.open('https://twitter.com/iftas_eco')}/>
                 <img src={group4}/>
-                <img src={group5}/>
+                <img src={group5} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
             </div>
             <div className='pfontBottom'>© 2023 Infinitas Foundation. All rights reserved.</div>
         </div>
