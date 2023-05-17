@@ -21,7 +21,9 @@ import group2 from './image/group2.svg'
 import group3 from './image/group3.svg'
 import group4 from './image/group4.svg'
 import group5 from './image/group5.svg'
-
+import {
+    RightOutlined
+} from '@ant-design/icons';
 export default function InfinitasIntroductionPC() {
     return (
         <div className='flex-column' style={{backgroundColor: '#1d1f2b'}}>
