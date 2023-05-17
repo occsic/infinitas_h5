@@ -1,12 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import './Mobile.css'
 import { Carousel } from 'antd';
 import bg1 from './image/pc_bg1.svg'
 import bg2 from './image/pc_bg2.svg'
 import bg11 from './image/pc_bg11.png'
-import bg12 from './image/pc_bg12.png'
-import bg13 from './image/pc_bg13.png'
-import bg14 from './image/pc_bg14.png'
 import logo from './image/logo.svg'
 import more from  './image/learn_more.svg'
 import floor from './image/floor.svg'
@@ -15,7 +12,6 @@ import icon1 from './image/pc_icon1.svg'
 import icon2 from './image/pc_icon2.svg'
 import icon3 from './image/pc_icon3.svg'
 import icon4 from './image/pc_icon4.svg'
-import {Popover} from "antd";
 import {
     MenuOutlined,
     RightOutlined
@@ -25,15 +21,75 @@ import group2 from "./image/group2.svg";
 import group3 from "./image/group3.svg";
 import group4 from "./image/group4.svg";
 import group5 from "./image/group5.svg";
+import { Drawer,Menu } from 'antd';
 export default function InfinitasIntroductionMobile(){
+    const [open, setOpen] = useState(false);
+    const [current, setCurrent] = useState('mail');
+    const onClick = (e) => {
+        switch (e.key){
+            case 'rgbprotocol':
+                window.open('https://rgb.info/')
+                break
+            case 'work':
+                window.open('https://docs.rgb.info/')
+                break
+            case 'resources':
+                window.open('https://rgb.info/resources/')
+                break
+        }
+        setCurrent(e.key);
+    };
+    const showDrawer = () => {
+        setOpen(true);
+    };
+    const onClose = () => {
+        setOpen(false);
+    };
+
+    const items=[
+        {
+            label: 'RGB',
+            key: 'rgb',
+            children:[
+                {
+                    label:'RGB Protocol',
+                    key:'rgbprotocol'
+                },
+                {
+                    label:'How it works',
+                    key:'work'
+                },
+                {
+                    label:'Resources',
+                    key:'resources'
+                },
+            ]
+        },
+        {
+            label: 'Ecosystem',
+            key: 'ecosystem',
+        },
+        {
+            label: 'Network',
+            key: 'network',
+        },
+        {
+            label: 'Developers',
+            key: 'developers',
+        },
+        {
+            label: 'Community',
+            key: 'community',
+        },
+    ]
     return (
         <div className='flex-column' style={{backgroundColor:'#1d1f2b'}}>
             {/*第一部分*/}
             <div className='mheader'>
                 <img src={logo} width={194} style={{marginLeft:'15px'}}/>
-                <MenuOutlined  style={{color:'#ffffff',fontSize:'24px',marginRight:'15px'}}/>
+                <MenuOutlined onClick={showDrawer}  style={{color:'#ffffff',fontSize:'24px',marginRight:'15px',cursor:'pointer'}}/>
             </div>
-            <Carousel autoplay={false} dots={false}>
+            <Carousel autoplay={true} dots={false}>
                 <div>
                     <div style={{position:'relative'}}>
                         <img src={bg1} width={'100%'} height={459} style={{objectFit:'cover'}} />
@@ -50,8 +106,8 @@ export default function InfinitasIntroductionMobile(){
                     <div style={{position:'relative'}}>
                         <img src={bg2} width={'100%'} height={459} style={{objectFit:'cover'}}/>
                         <div className='top-body flex-column fl-jc-center'>
-                            <div className='pfontC'>Beyond</div>
-                            <div className='pfontD'>Go a step further into the metaverse</div>
+                            <div className='mfontA' style={{fontSize:'48px'}}>Beyond</div>
+                            <div className='mfontA' style={{fontSize:'24px'}}>Go a step further into the metaverse</div>
                         </div>
                     </div>
                 </div>
@@ -317,13 +373,17 @@ export default function InfinitasIntroductionMobile(){
                 Bitcoin public chain
             </div>
             <div className='plink'>
-                <img src={group1} width={55} height={11}/>
+                <img src={group1} width={55} height={11} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
                 <img src={group2} width={55} height={11}/>
-                <img src={group3} width={55} height={11}/>
+                <img src={group3} width={55} height={11} onClick={()=>window.open('https://twitter.com/iftas_eco')}/>
                 <img src={group4} width={55} height={11}/>
                 <img src={group5} width={55} height={11}/>
             </div>
             <div className='pfontBottom' style={{marginTop:'30px'}}>© 2023 Infinitas Foundation. All rights reserved.</div>
+
+            <Drawer title="Infinitas" placement="top" onClose={onClose} open={open} className='mdrawer'>
+                <Menu onClick={onClick} selectedKeys={[current]} mode="inline" items={items} />
+            </Drawer>
         </div>
     )
 }
