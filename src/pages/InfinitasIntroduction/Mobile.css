@@ -37,3 +37,107 @@
     z-index: 1;
     flex-shrink: 0;
 }
+.mrgb{
+    background-image: url("image/pc_bg5.png");
+    background-repeat: no-repeat;
+    height: 404px;
+}
+.mrgb-bg{
+    width: 120px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 1.65;
+    background-repeat: no-repeat;
+}
+.mrgb-bgA{
+    background-image: url("image/mobile_bg1.svg");
+}
+.mrgb-bgB{
+    background-image: url("image/mobile_bg2.svg");
+}
+.mrgb-bgC{
+    background-image: url("image/mobile_bg3.svg");
+}
+.mrgb-bgD{
+    background-image: url("image/mobile_bg4.svg");
+}
+.msix{
+    background-image: url("image/pc_bg10.svg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.steam{
+    background-image: url("image/pc_bg11.png");
+    height: 301px;
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.steam-12{
+    background-image: url("image/pc_bg12.png");
+}
+.steam-13{
+    background-image: url("image/pc_bg13.png");
+}
+.steam-14{
+    background-image: url("image/pc_bg14.png");
+}
+.steam-top{
+    height: 219px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left:35px;
+    padding-right: 15px;
+}
+.steam-bottom{
+    flex: 1;
+    -webkit-backdrop-filter: blur(33px);
+    backdrop-filter: blur(33px);
+    background-image: linear-gradient(to right, rgba(181, 22, 255, 0.26) -1%, rgba(2, 233, 248, 0.49) 100%);
+    border-radius: 0 0 16px 16px;
+}
+.mbutton{
+    width: 15px;
+    height: 15px;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    background-image: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 0.31) 100%);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+.mbutton-circle{
+    width: 6px;
+    height: 6px;
+    opacity: 0.67;
+    background-color: #57ffeb;
+    border-radius: 50px;
+}
+.steam-position{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.76);
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 1.65;
+    text-align: center;
+    border-radius: 16px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s ease-in;
+
+}
+.steam:hover .steam-position{
+    height: 301px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: auto;
+}

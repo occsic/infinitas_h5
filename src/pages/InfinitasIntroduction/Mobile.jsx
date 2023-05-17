@@ -17,8 +17,14 @@ import icon3 from './image/pc_icon3.svg'
 import icon4 from './image/pc_icon4.svg'
 import {Popover} from "antd";
 import {
-    MenuOutlined
+    MenuOutlined,
+    RightOutlined
 } from '@ant-design/icons';
+import group1 from "./image/group1.svg";
+import group2 from "./image/group2.svg";
+import group3 from "./image/group3.svg";
+import group4 from "./image/group4.svg";
+import group5 from "./image/group5.svg";
 export default function InfinitasIntroductionMobile(){
     return (
         <div className='flex-column' style={{backgroundColor:'#1d1f2b'}}>
@@ -112,6 +118,212 @@ export default function InfinitasIntroductionMobile(){
                 </div>
             </div>
 
+            {/*第三部分*/}
+            <div className='mrgb flex-column fl-jc-center fl-ai-center'>
+                <div className='mfontA'>Why is RGB</div>
+                <div className='mfontA' style={{marginTop:'13px',fontSize:'14px'}}>a historical step in blockchain evolution?</div>
+                <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:"space-around",marginTop:'63px'}}>
+                    <div className='mrgb-bg mrgb-bgA'>
+                       <div style={{marginTop:'29px',marginLeft:'25px',marginRight:'-50px'}}>
+                           · Security: Bitcoin blockchain is used as its security commitment layer, and the security of BTC is the security of RGB
+                       </div>
+                    </div>
+                        <img src={icon1} width={40} height={40} />
+
+                </div>
+            </div>
+
+            <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:"space-around",marginTop:'63px'}}>
+                <img src={icon2} width={40} height={40} />
+                <div className='mrgb-bg mrgb-bgB' style={{marginRight:'20px'}}>
+                    <div style={{marginTop:'29px',marginLeft:'25px',marginRight:'-50px'}}>
+                        · Scalability with unlimited performance:
+                         The blockchain-based capacity expansion story is over;
+                         RGB can make more efficient use of blockchain because the vast majority of data is kept down the chain, thanks to the "client-side validation" mode and batch processing capabilities
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:"space-around",marginTop:'63px'}}>
+
+                <div className='mrgb-bg mrgb-bgC'>
+                    <div style={{marginTop:'29px',marginLeft:'25px',marginRight:'-50px'}}>
+                        · Not only that, RGB is compatible with lightning networks, and RGB inherits the infinite performance scalability of lightning networks;
+                        RGB supports and is compatible with any future scalability scheme for Bitcoin
+                    </div>
+                </div>
+                <img src={icon3} width={40} height={40} />
+            </div>
+
+            <div className='flex-row fl-ai-center' style={{width:'100%',justifyContent:"space-around",marginTop:'63px'}}>
+                <img src={icon4} width={40} height={40} />
+                <div className='mrgb-bg mrgb-bgD' style={{marginRight:'20px'}}>
+                    <div style={{marginTop:'29px',marginLeft:'25px',marginRight:'-50px'}}>
+                        · Scalability with unlimited performance:
+                        The blockchain-based capacity expansion story is over;
+                        RGB can make more efficient use of blockchain because the vast majority of data is kept down the chain, thanks to the "client-side validation" mode and batch processing capabilities
+                    </div>
+                </div>
+            </div>
+            <div style={{height:'46px'}}/>
+
+            <div className='msix flex-column fl-ai-center'>
+                <div className='mfontA' style={{fontSize:'24px',marginTop:'58px',marginBottom:'50px'}}>Team & Individual contributors</div>
+                {/*1111*/}
+                <div className='steam flex-column'>
+                    <div className='steam-top'>
+                        <div className='flex-row fl-ai-center'>
+                            <div className='mbutton'>
+                                <div className='mbutton-circle'/>
+                            </div>
+                            <div className='mfontB' style={{marginLeft: '10px'}}>Master of Economics</div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop: '30px'}}>
+                            <div className='mbutton'>
+                                <div className='mbutton-circle'/>
+                            </div>
+                            <div className='mfontB' style={{marginLeft: '10px'}}>Showhand invested in blockchain
+                                project at the end of 2016
+                            </div>
+                        </div>
+                        <div className='mfontA' style={{fontSize:'16px',marginTop:'20px'}}>Learn more <RightOutlined style={{fontSize:'12px'}} /></div>
+                    </div>
+                    <div className='steam-bottom flex-row fl-ai-center'>
+                        <img src={bg11} width={32} height={32} style={{borderRadius: '50px', marginLeft: '21px'}}/>
+                        <div className='mfontA' style={{fontSize: '16px', marginLeft: '10px'}}>Founder Kevin Bayer
+                            (CEO)
+                        </div>
+                    </div>
+                    <div className='steam-position'>
+                        <div style={{height:'10px'}}/>
+                        Master of Economics(Austrian school and Hayektheory and master of Theology (minoring in
+                        neochristian Theologyfrom the University of Vienna, Austria and then worked atthe UNHCR in
+                        Vienna.
+                        2015-2016.Berkshire Hathaway served as the investment specialist of the
+                        war lnvestment Department of North Wales Germany, quantifying and bonding the Eurasian
+                        market structure.
+                        Showhand invested in blockchain project at the end of 2016; In early July 2017 ico invested
+                        in BNB, holding 1% of the circulation and excellent investment targets such as ETH BNB SNT
+                        EOS FILadhere to the road of long-term value investment, make friends with time,haveunique
+                        views on the strateqic development of the industryand have richresource back- ground in the
+                        field of traditional investment.
+                        <div style={{height:'10px'}}/>
+                    </div>
+                </div>
+                {/*2222*/}
+                <div className='steam steam-12 flex-column'>
+                    <div className='steam-top'>
+                        <div className='flex-row fl-ai-center'>
+                            <div className='mbutton'>
+                                <div className='mbutton-circle'/>
+                            </div>
+                            <div className='mfontB' style={{marginLeft: '10px'}}>1.The frst batch of blockchain developers</div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop: '30px'}}>
+                            <div className='mbutton'>
+                                <div className='mbutton-circle'/>
+                            </div>
+                            <div className='mfontB' style={{marginLeft: '10px'}}>The first person to design the architecture of server free interac- tive system.
+                            </div>
+                        </div>
+                        <div className='mfontA' style={{fontSize:'16px',marginTop:'20px'}}>Learn more <RightOutlined style={{fontSize:'12px'}} /></div>
+                    </div>
+                    <div className='steam-bottom flex-row fl-ai-center'>
+                        <img src={bg11} width={32} height={32} style={{borderRadius: '50px', marginLeft: '21px'}}/>
+                        <div className='mfontA' style={{fontSize: '16px', marginLeft: '10px'}}>Co-founder Dragon Smith (CTO)
+                        </div>
+                    </div>
+                    <div className='steam-position'>
+                        <div style={{height:'10px'}}/>
+                        Dragon Smith is the frst batch of blockchain developers and the first person to design the architecture
+                        of server free interac- tive system. It is a technology geek with rich innovation expe- rience. Wu Weilong
+                        was the core developer of Silicon Valley Meixin integration company and provided algorithms for Samsung; Laterhe
+                        devoted himself to blockchain & Dand developed more than 10 smart contracts in the felds of traceability,anti-counterfeiting and supply chain fnance. His practical experience involves manyunderlyingtechnologies such as blockchain virtual machine P2P storage and consen- sus algorithm. Inventor of SPOR+POS sustainable consensus mechanism.
+                        <div style={{height:'10px'}}/>
+                    </div>
+                </div>
+                {/*3333*/}
+                <div className='steam steam-13 flex-column'>
+                    <div className='steam-top'>
+                        <div className='flex-row fl-ai-center'>
+                            <div className='mbutton'>
+                                <div className='mbutton-circle'/>
+                            </div>
+                            <div className='mfontB' style={{marginLeft: '10px'}}>Inventor of SPOR+POS sustainable consensus mechanism</div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop: '30px'}}>
+                            <div className='mbutton'>
+                                <div className='mbutton-circle'/>
+                            </div>
+                            <div className='mfontB' style={{marginLeft: '10px'}}>2018-2020 MBA from Taiwan University of science and technology</div>
+                        </div>
+                        <div className='mfontA' style={{fontSize:'16px',marginTop:'20px'}}>Learn more <RightOutlined style={{fontSize:'12px'}} /></div>
+                    </div>
+                    <div className='steam-bottom flex-row fl-ai-center'>
+                        <img src={bg11} width={32} height={32} style={{borderRadius: '50px', marginLeft: '21px'}}/>
+                        <div className='mfontA' style={{fontSize: '16px', marginLeft: '10px'}}>Co-founder YuAn Tseng (COO</div>
+                    </div>
+                    <div className='steam-position'>
+                        <div style={{height:'10px'}}/>
+                        2010-2014 studied diplomatic English in the English Department of National Changhua Normal University. 2018-2020 MBA from
+                        Taiwan University of science and technology. From March 2020 to March 2021She studied at hochshur hel- brown University of
+                        science and technologyand wrote a paper - Case Analysis of new business model ofvirtual currency. She used to be a German
+                        iris digital strategist and the operation director of Taipei monad.She has many years of digital marketing experience.
+                        <div style={{height:'10px'}}/>
+                    </div>
+                </div>
+                {/*4444*/}
+                <div className='steam steam-14 flex-column'>
+                    <div className='steam-top'>
+                        <div className='flex-row fl-ai-center'>
+                            <div className='mbutton'>
+                                <div className='mbutton-circle'/>
+                            </div>
+                            <div className='mfontB' style={{marginLeft: '10px'}}>Anna Alumbaiva has over 7 years of experience in the blockchain industry
+                            </div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop: '30px'}}>
+                            <div className='mbutton'>
+                                <div className='mbutton-circle'/>
+                            </div>
+                            <div className='mfontB' style={{marginLeft: '10px'}}>he has mainly participated in the marketing management of Gamefi……
+                            </div>
+                        </div>
+                        <div className='mfontA' style={{fontSize:'16px',marginTop:'20px'}}>Learn more <RightOutlined style={{fontSize:'12px'}} /></div>
+                    </div>
+                    <div className='steam-bottom flex-row fl-ai-center'>
+                        <img src={bg11} width={32} height={32} style={{borderRadius: '50px', marginLeft: '21px'}}/>
+                        <div className='mfontA' style={{fontSize: '16px', marginLeft: '10px'}}>Co-founder Anna Alumbaiva (CMO）</div>
+                    </div>
+                    <div className='steam-position'>
+                        <div style={{height:'10px'}}/>
+                        Anna Alumbaiva has over 7 years of experience in the blockchain industry, this dynamic and dedicated Web 3.0
+                        explorer has become an expertise in marketing and branding. He has gained valuable experience working for various
+                        industry-leading companies and Web3 projects. In the past few years, he has mainly participated in the marketing
+                        management of Gamefi, Defi projects and crypto currency exchanges.
+                        <div style={{height:'10px'}}/>
+                    </div>
+                </div>
+            </div>
+
+            <div className='mfontA' style={{fontSize:'18px',textAlign:'center',marginTop:'50px'}}>Managed by Infinitas Foundation</div>
+
+            <div style={{
+                fontSize: '12px',
+                color: 'rgba(255,255,255,0.72)',
+                textAlign: 'center',
+                marginTop: '35px'
+            }}>INFINITAS is a blockchain ecosystem that integrates lightning network and has infinite scalability on the
+                Bitcoin public chain
+            </div>
+            <div className='plink'>
+                <img src={group1} width={55} height={11}/>
+                <img src={group2} width={55} height={11}/>
+                <img src={group3} width={55} height={11}/>
+                <img src={group4} width={55} height={11}/>
+                <img src={group5} width={55} height={11}/>
+            </div>
+            <div className='pfontBottom' style={{marginTop:'30px'}}>© 2023 Infinitas Foundation. All rights reserved.</div>
         </div>
     )
 }
