@@ -6,12 +6,13 @@ import bg2 from './image/pc_bg2.svg'
 import logo from './image/logo.svg'
 import more from  './image/learn_more.svg'
 import floor from './image/floor.svg'
+import infinitas from './image/infinitas.svg'
 export default function InfinitasIntroductionPC(){
     return (
         <div className='flex-column'>
             {/*第一部分*/}
             <div className='pheader'>
-                    <img src={logo} width={194}/>
+                <img src={logo} width={194}/>
                 <div className='flex-row fl-ai-center'>
                     <div className='pfontE'>RGB</div>
                     <div className='pfontE'>Ecosystem</div>
@@ -81,6 +82,46 @@ export default function InfinitasIntroductionPC(){
             {/*第三部分*/}
             <div className='pthree flex-column fl-ai-center' >
                 <div className='pfontD' style={{marginTop:'20px'}}>What’s new at  <span className='pfontF' style={{fontSize:'120px'}}>Infinitas</span></div>
+                <div className='flex-row' style={{marginTop:'100px'}}>
+                    <div className='flex-column' style={{position:"relative"}}>
+                        <div className='flex-row fl-ai-center'>
+                            <div className='pcircle' />
+                            <div className='pfontB' style={{fontSize:'24px',marginLeft:'15px'}}>2022.12 Infinitas Established</div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop:'80px'}}>
+                            <div className='pcircle' />
+                            <div className='pfontB' style={{fontSize:'24px',marginLeft:'15px'}}>2023.03 Join the RGB protocol group</div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop:'80px'}}>
+                            <div className='pcircle' />
+                            <div className='pfontB' style={{fontSize:'24px',marginLeft:'15px'}}>2023.05 Get seed round investment</div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop:'80px'}}>
+                            <div className='pcircle' />
+                            <div className='pfontB' style={{fontSize:'24px',marginLeft:'15px'}}>2023.06 Start the research and development of Infinitas chain</div>
+                        </div>
+                        <div className='pline' />
+                    </div>
+                    <img src={infinitas} />
+                </div>
+                <div className='flex-row' style={{marginTop:'100px'}}>
+                    <img src={infinitas} style={{marginRight:'100px'}}/>
+                    <div className='flex-column' style={{position:"relative",height:'fit-content'}}>
+                        <div className='flex-row fl-ai-center'>
+                            <div className='pcircle' />
+                            <div className='pfontB' style={{fontSize:'24px',marginLeft:'15px'}}>2023.12 Infinitas chain test</div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop:'80px'}}>
+                            <div className='pcircle' />
+                            <div className='pfontB' style={{fontSize:'24px',marginLeft:'15px'}}>2024.03 Infinitas chain RGB wallet online</div>
+                        </div>
+                        <div className='flex-row fl-ai-center' style={{marginTop:'80px'}}>
+                            <div className='pcircle' />
+                            <div className='pfontB' style={{fontSize:'24px',marginLeft:'15px'}}>2024.06 Infinitas chain running</div>
+                        </div>
+                        <div className='pline' />
+                    </div>
+                </div>
             </div>
         </div>
     )
