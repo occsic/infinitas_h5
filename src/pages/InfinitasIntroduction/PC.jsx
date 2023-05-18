@@ -7,7 +7,7 @@ import bg11 from './image/pc_bg11.png'
 import bg12 from './image/pc_bg12.png'
 import bg13 from './image/pc_bg13.png'
 import bg14 from './image/pc_bg14.png'
-import logo from './image/logo.png'
+import logo from './image/logo.svg'
 import more from './image/learn_more.svg'
 import floor from './image/floor.svg'
 import infinitas from './image/infinitas.svg'
@@ -48,7 +48,7 @@ export default function InfinitasIntroductionPC() {
                     <div className='pheader-contact flex-center'>Contact Us</div>
                 </div>
             </div>
-            <Carousel autoplay={false} dots={false}>
+            <Carousel autoplay={true} dots={false}>
                 <div>
                     <div style={{position: 'relative'}}>
                         <img src={bg1} width={'100%'} height={900} style={{objectFit: 'cover'}}/>

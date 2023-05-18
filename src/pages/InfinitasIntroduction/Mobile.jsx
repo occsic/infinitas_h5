@@ -4,7 +4,7 @@ import { Carousel } from 'antd';
 import bg1 from './image/pc_bg1.svg'
 import bg2 from './image/pc_bg2.svg'
 import bg11 from './image/pc_bg11.png'
-import logo from './image/logo.png'
+import logo from './image/logo.svg'
 import more from  './image/learn_more.svg'
 import floor from './image/floor.svg'
 import infinitas from './image/infinitas.svg'
@@ -380,7 +380,7 @@ export default function InfinitasIntroductionMobile(){
                 <img src={group4} width={55} height={11}/>
                 <img src={group5} width={55} height={11} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
             </div>
-            <div className='pfontBottom' style={{marginTop:'0'}}>© 2023 Infinitas Foundation. All rights reserved.</div>
+            <div className='pfontBottom' style={{marginTop:'0',fontSize:'12px'}}>© 2023 Infinitas Foundation. All rights reserved.</div>
 
             <Drawer title="Infinitas" placement="top" onClose={onClose} open={open} className='mdrawer'>
                 <Menu onClick={onClick} selectedKeys={[current]} mode="inline" items={items} />
