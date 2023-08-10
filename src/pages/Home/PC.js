@@ -6,6 +6,9 @@ export default function InfinitasHomePC(){
     return (
         <div className='home-pc'>
             <PCHeader />
+            <div className='hp-one common-width'>
+
+            </div>
         </div>
     )
 }
