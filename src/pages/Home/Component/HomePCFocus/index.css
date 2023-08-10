@@ -1,0 +1,16 @@
+.hpf{
+    background-color: rgba(33, 191, 115, 0.1);
+    height: 307px;
+    border-radius: 15px 0 20px 0;
+    border: 1px solid rgba(33, 191, 115, 0.3);
+}
+.hpf-fontA{
+    font-size: 76px;
+    font-weight: bold;
+    color: #21bf73;
+}
+.hpf-fontB{
+    font-size: 26px;
+    font-weight: 500;
+    color: #ffffff;
+}

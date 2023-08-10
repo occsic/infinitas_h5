@@ -1,7 +1,7 @@
 import React from "react";
 import './index.css'
 
-export default function HomeStandFor(props){
+export default function HomePCStandFor(props){
     const {title,describe,width,textWidth}=props
     return (
         <div className='bg-color-white stand-block' style={{width:`${width}px`}}>

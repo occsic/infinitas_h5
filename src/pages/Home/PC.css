@@ -1,9 +1,10 @@
-.home-pc{
+.home-pc {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.hpo-fontA{
+
+.hpo-fontA {
     color: #f9f9f9;
     font-size: 40px;
     width: 950px;
@@ -13,7 +14,8 @@
     word-spacing: 10px;
     letter-spacing: 5px;
 }
-.hpo-fontB{
+
+.hpo-fontB {
     font-size: 18px;
     width: 612px;
     margin-top: 50px;
@@ -22,13 +24,14 @@
     letter-spacing: 2px;
 }
 
-.hpo-start-border{
+.hpo-start-border {
     margin-top: 100px;
     padding: 7px;
     border: solid 1px rgb(255, 255, 255);
     width: fit-content;
 }
-.hpo-start{
+
+.hpo-start {
     width: 100px;
     height: 40px;
     background-color: #ffffff;
@@ -39,16 +42,17 @@
     cursor: pointer;
 }
 
-.height-900{
+.height-900 {
     height: 900px;
 }
 
-.hp-fontC{
+.hp-fontC {
     font-size: 40px;
     font-weight: 800;
     color: #424242;
 }
-.hp-fontD{
+
+.hp-fontD {
     font-size: 24px;
     font-weight: 600;
     color: #424242;
@@ -58,9 +62,35 @@
     word-spacing: 3px;
 }
 
-.stand-fontA{
+.stand-fontA {
     font-size: 40px;
     font-weight: 800;
     color: #424242;
 }
+
+
+.ant-carousel .slick-dots li.slick-active {
+    width: 6px;
+    height: 50px;
+    background-color: #ff3150;
+}
+
+.ant-carousel .slick-dots li {
+    width: 6px;
+    height: 50px;
+    background-color: rgba(15, 25, 35, 0.08);
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    width: 6px;
+    height: 50px;
+    background-color: #ff3150;
+}
+
+.ant-carousel .slick-dots li button {
+    width: 6px;
+    height: 50px;
+    background-color: rgba(15, 25, 35, 0.08);
+}
+
 
