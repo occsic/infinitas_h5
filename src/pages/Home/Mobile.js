@@ -9,8 +9,22 @@ export default function InfinitasHomeMobile() {
 
     const standContent = [
         { img: about, title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
-        { img: about, title: "POW", sub: "xxxx" },
-        { img: about, title: "POW", sub: "xxxx" },
+        { img: about, title: "ADAPTER TECHNOLOGY", sub: "Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status." },
+        {
+            img: about,
+            title: "PRIVACY PRESERVING+++",
+            sub: "A higher level of privacy protection for Infinitas assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.",
+        },
+        {
+            img: about,
+            title: "ENRICHED GLOBAL STATE",
+            sub: "Extended Global State, which is critical for building complex applications (such as synthetic assets, algorithmic stablecoins, etc.) on RGB. Make the RGB contract have a global state that can be accessed by virtual machines and clients (such as wallets, etc.).",
+        },
+        {
+            img: about,
+            title: "OPTIMIZING THE LIGHTNING NETWORK",
+            sub: "Through improvements to the Lightning Network (such as light block technology, node automatic expansion technology, and offline autonomy), higher transaction throughput is achieved while maintaining low-latency transaction confirmation time.",
+        },
     ]
     const solutionsContent = [
         {
@@ -28,6 +42,20 @@ export default function InfinitasHomeMobile() {
             title: "FATLINE PROTOCOL",
             sub: "Fatline Protocol is a lightweight communication + storage protocol between RGB clients. It is compatible with the Nostr protocol to achieve efficient communication between nodes. The communication speed can reach more than 10 times that of Storm+Bifrost.",
         },
+    ]
+
+    const overallContent = [
+        { title: "APPLICATION LAYER", subList1: ["DeFi", "NFT Marketplace", "Decentralized Identity"], subList2: ["Gaming", "Infrastructure", "Others"] },
+        {
+            title: "PRODUCT LAYER",
+            subList1: ["Contract Development Test Suites DApps Development Tools", "DApps Integrated Development Environment Other Extension Tools"],
+            subList2: ["Ecosystem Entrance: Wallet", "Data Tools: Data Explorer"],
+        },
+
+        { title: "SCHEMAS LAYER", subList1: ["Synthetic Assets Schemas", "GameFi Schemas", "Other Schemas"], subList2: ["DEX Schemas", "Staking Schemas", "Lending Schemas"] },
+        { title: "NETWORK LAYER", subList1: ["Infinitas Testnet", "Infinitas Mainnet"] },
+        { title: "PROTOCOL LAYER", subList1: ["Lightning Network Node", "RGB Node", "Communication/Storage Node"] },
+        { title: "DATA LAYER", subList1: ["LNP/BP Association", "Open Source Toolchain", "Fundamental Document Repository"] },
     ]
 
     return (
@@ -113,6 +141,36 @@ export default function InfinitasHomeMobile() {
                         </div>
                     </div>
                     <img className="solutionsItem-img" src={solutionsContent[showIndex].img} />
+                </div>
+            </div>
+
+            <div id="overall" className="content-overall">
+                <div className="content-overall-title">OVERALL</div>
+                <div className="content-overall-title">ARCHITECTURE</div>
+                <div className="content-overall-main">
+                    {overallContent.map((allItem, index) => (
+                        <div key={index} className="overallList flex-row">
+                            <div className={`overallList-title flex-column fl-jc-center ${index>=3?'w120':''}`}>{allItem.title}</div>
+                            <div>
+                                <div className="overallList-subList1">
+                                    {allItem.subList1.map((subitem, ind) => (
+                                        <div className="overallsub-item" key={ind}>
+                                            {subitem}
+                                        </div>
+                                    ))}
+                                </div>
+                                {allItem.subList2 ? (
+                                    <div className="overallList-subList1 mt-10">
+                                        {allItem.subList2.map((subitem, ind) => (
+                                            <div className="overallsub-item" key={ind}>
+                                                {subitem}
+                                            </div>
+                                        ))}
+                                    </div>
+                                ) : null}
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
