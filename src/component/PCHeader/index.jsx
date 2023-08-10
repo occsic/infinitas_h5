@@ -21,7 +21,7 @@ export default function PCHeader(){
                 <img src={logo} width={180} height={35}/>
             </div>
             <div className='flex-row fl-ai-center fl-jc-between' style={{flex:0.58}}>
-                <Popover overlayInnerStyle={{padding:'0'}} placement="bottomLeft"  content={content} trigger={'click'}>
+                <Popover overlayInnerStyle={{padding:'0'}} placement="bottomLeft" color={'rgba(0, 0, 0, 0.2)'}  content={content}>
                     <div className='pch-tag'>HOME</div>
                 </Popover>
 

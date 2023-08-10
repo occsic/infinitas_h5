@@ -6,5 +6,39 @@
 }
 .hp-one{
     height: 918px;
+}
+.hpo-fontA{
+    color: #f9f9f9;
+    font-size: 40px;
+    width: 950px;
+    font-family: ArialBlack;
+    margin-top: 174px;
+    line-height: 1.75;
+    font-weight: bold;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+.hpo-fontB{
+    font-family: MuktaMahee;
+    font-size: 18px;
+    width: 612px;
+    margin-top: 50px;
+    color: #f9f9f9;
+}
 
+.hpo-start-border{
+    margin-top: 100px;
+    padding: 7px;
+    border: solid 1px rgb(255, 255, 255);
+    width: fit-content;
+}
+.hpo-start{
+    width: 100px;
+    height: 40px;
+    background-color: #ffffff;
+    font-family: MuktaMahee;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f1923;
+    cursor: pointer;
 }
