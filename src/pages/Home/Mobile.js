@@ -2,12 +2,32 @@ import React from "react"
 import "./Mobile.css"
 import MHeader from "../../componentM/Header"
 import about from "../../static/about.png"
+import { useState } from "react"
 
 export default function InfinitasHomeMobile() {
+    const [showIndex, setShowIndex] = useState(0)
+
     const standContent = [
         { img: about, title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
-        { img: about, title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
-        { img: about, title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
+        { img: about, title: "POW", sub: "xxxx" },
+        { img: about, title: "POW", sub: "xxxx" },
+    ]
+    const solutionsContent = [
+        {
+            img: about,
+            title: "SLR (SECURITY-LIGHTING-RGB) PROTOCOL",
+            sub: "RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.",
+        },
+        {
+            img: about,
+            title: "RZK (RECURSIVE ZERO KNOWLEDGE)",
+            sub: "RZK=Z0(...Zn-2(Zn-2,Zn-1)Zn . The verifier does not need to verify the block from scratch, but only needs to download the current block for simple verification. The latest block will include the proof from the founding block to the current block.",
+        },
+        {
+            img: about,
+            title: "FATLINE PROTOCOL",
+            sub: "Fatline Protocol is a lightweight communication + storage protocol between RGB clients. It is compatible with the Nostr protocol to achieve efficient communication between nodes. The communication speed can reach more than 10 times that of Storm+Bifrost.",
+        },
     ]
 
     return (
@@ -69,6 +89,30 @@ export default function InfinitasHomeMobile() {
                     <div className="focus-main">4 YEARS+</div>
                     <div className="focus-sub">RGB RESEARCH</div>
                     <div className="focus-sub">EXPERIENCE</div>
+                </div>
+            </div>
+
+            <div id="solutions" className="content content-solutions">
+                <div className="content-solutions-title">SOLUTIONS</div>
+
+                <div className="solutionsItem">
+                    <div className="solutionsItem-title">{solutionsContent[showIndex].title}</div>
+                    <div className="solutionsItem-line"></div>
+                    <div className="flex-row fl-ai-center">
+                        <div className="solutionsItem-sub">{solutionsContent[showIndex].sub}</div>
+                        <div className="solutionsItem-ver flex-column">
+                            {solutionsContent.map((i, ind) => (
+                                <div
+                                    onClick={() => {
+                                        setShowIndex(ind)
+                                    }}
+                                    className={`ver ${showIndex == ind ? "red" : ""}`}
+                                    key={ind}
+                                ></div>
+                            ))}
+                        </div>
+                    </div>
+                    <img className="solutionsItem-img" src={solutionsContent[showIndex].img} />
                 </div>
             </div>
         </div>
