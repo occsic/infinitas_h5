@@ -6,6 +6,7 @@ import { useState } from "react"
 
 export default function InfinitasHomeMobile() {
     const [showIndex, setShowIndex] = useState(0)
+    const [yearIndex, setYearIndex] = useState(1)
 
     const standContent = [
         { img: about, title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
@@ -56,6 +57,49 @@ export default function InfinitasHomeMobile() {
         { title: "NETWORK LAYER", subList1: ["Infinitas Testnet", "Infinitas Mainnet"] },
         { title: "PROTOCOL LAYER", subList1: ["Lightning Network Node", "RGB Node", "Communication/Storage Node"] },
         { title: "DATA LAYER", subList1: ["LNP/BP Association", "Open Source Toolchain", "Fundamental Document Repository"] },
+    ]
+
+    const roadmapData = [
+        {
+            year: "2021",
+            bgc: about,
+            yearData: [
+                { yejiao: "Q1", textList: ["2021Q1", "20"] },
+                { yejiao: "Q2", textList: ["2021Q2", "20"] },
+                { yejiao: "Q3", textList: ["2021Q3", "20"] },
+                { yejiao: "Q4", textList: ["2021Q4", "20"] },
+            ],
+        },
+        {
+            year: "2022",
+            bgc: about,
+            yearData: [
+                { yejiao: "Q1", textList: ["Paraluni TVL reaches $50M+"] },
+                { yejiao: "Q2", textList: ["RGB v0.10 released", "Community followers reached 50K+", "Infinitas seed round launched"] },
+                { yejiao: "Q3", textList: ["2021Q3", "20"] },
+                { yejiao: "Q4", textList: ["2021Q4", "20"] },
+            ],
+        },
+        {
+            year: "2023",
+            bgc: about,
+            yearData: [
+                { yejiao: "Q1", textList: ["2021Q1", "20"] },
+                { yejiao: "Q2", textList: ["2021Q2", "20"] },
+                { yejiao: "Q3", textList: ["2021Q3", "20"] },
+                { yejiao: "Q4", textList: ["2021Q4", "20"] },
+            ],
+        },
+        {
+            year: "2024",
+            bgc: about,
+            yearData: [
+                { yejiao: "Q1", textList: ["2021Q1", "20"] },
+                { yejiao: "Q2", textList: ["2021Q2", "20"] },
+                { yejiao: "Q3", textList: ["2021Q3", "20"] },
+                { yejiao: "Q4", textList: ["2021Q4", "20"] },
+            ],
+        },
     ]
 
     return (
@@ -150,7 +194,7 @@ export default function InfinitasHomeMobile() {
                 <div className="content-overall-main">
                     {overallContent.map((allItem, index) => (
                         <div key={index} className="overallList flex-row">
-                            <div className={`overallList-title flex-column fl-jc-center ${index>=3?'w120':''}`}>{allItem.title}</div>
+                            <div className={`overallList-title flex-column fl-jc-center ${index >= 3 ? "w120" : ""}`}>{allItem.title}</div>
                             <div>
                                 <div className="overallList-subList1">
                                     {allItem.subList1.map((subitem, ind) => (
@@ -169,6 +213,34 @@ export default function InfinitasHomeMobile() {
                                     </div>
                                 ) : null}
                             </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div id="roadmap" className="content">
+                <div className="content-roadmap-title">ROADMAP</div>
+                <div className="roadmap-main flex-row">
+                    {roadmapData[yearIndex].yearData.map((i, ind) => (
+                        <div className="yearData-view" style={{ background: `url(${roadmapData[yearIndex].bgc}) no-repeat`, backgroundSize: "cover" }} key={ind}>
+                            {i.textList.map((text, idx) => (
+                                <div key={idx} className="flex-row year-text">
+                                    <img className="year-icon" src={about} />
+                                    <div>{text}</div>
+                                </div>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+                <div className="yearView flex-row">
+                    {roadmapData.map((i, ind) => (
+                        <div
+                            onClick={() => {
+                                setYearIndex(ind)
+                            }}
+                            className={`yearClass ${ind == yearIndex ? "redyear" : ""}`}
+                            key={i.year}
+                        >
+                            {i.year}
                         </div>
                     ))}
                 </div>

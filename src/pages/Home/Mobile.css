@@ -160,14 +160,14 @@
 .solutionsItem-title {
     font-size: 14px;
     font-weight: bold;
-    color: #ff3150;
+    color: #f44336;
     margin-bottom: 12px;
 }
 .solutionsItem-line {
     width: 48px;
     height: 3px;
     margin-bottom: 16px;
-    background-color: #ff3150;
+    background-color: #f44336;
 }
 .solutionsItem-sub {
     margin-right: 60px;
@@ -185,7 +185,7 @@
     background-color: rgba(15, 25, 35, 0.08);
 }
 .red {
-    background-color: #ff3150;
+    background-color: #f44336;
 }
 .solutionsItem-img {
     margin-top: 12px;
@@ -204,17 +204,16 @@
     line-height: 1.33;
     margin-bottom: 12px;
     text-align: center;
-
 }
-.content-overall-main{
+.content-overall-main {
     overflow-x: auto;
     margin-left: 36px;
 }
-.overallList{
+.overallList {
     margin-bottom: 10px;
     width: 600px;
 }
-.overallList-title{
+.overallList-title {
     padding: 10px 8px;
     background-color: #000;
     font-size: 12px;
@@ -223,10 +222,10 @@
     color: #fff;
     margin-right: 10px;
 }
-.overallList-subList1{
+.overallList-subList1 {
     display: flex;
 }
-.overallsub-item{
+.overallsub-item {
     max-width: 180px;
     padding: 2px 4px;
     background-color: #fff;
@@ -236,13 +235,72 @@
     color: #424242;
     margin-right: 10px;
 }
-.w120{
+.w120 {
     width: 120px;
     height: 20px;
     line-height: 20px;
     padding: 2px 4px;
     text-align: center;
 }
-.mt-10{
+.mt-10 {
     margin-top: 10px;
+}
+
+.content-roadmap-title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.33;
+    text-align: left;
+    color: #424242;
+    margin-bottom: 12px;
+}
+
+.roadmap-main {
+    margin-bottom: 70px;
+}
+.yearView {
+    align-items: flex-end;
+}
+.yearClass {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+    margin-right: 40px;
+}
+.redyear {
+    color: #f44336;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #f44336;
+}
+
+.roadmap-main {
+    overflow-x:auto;
+    flex-wrap: nowrap;
+}
+.yearData-view {
+    width: 260px;
+    height: 240px;
+    flex-shrink:0;
+    margin-right: 42px;
+    
+}
+.year-text{
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.42;
+    color: #1b1a1a;
+    margin-bottom: 24px;
+}
+.year-icon{
+    width: 10px;
+    height: 8px;
+    margin-right: 5px;
 }
