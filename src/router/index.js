@@ -1,8 +1,8 @@
-import InfinitasIntroduction from "../pages/InfinitasIntroduction";
+import InfinitasHome from "../pages/Home";
 export default [
     {
         path: '/',
         exact: true,
-        main: <InfinitasIntroduction/>
+        main: <InfinitasHome/>
     },
 ]
