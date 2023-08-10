@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef, useState} from "react";
 import './PC.css'
 import PCHeader from "../../component/PCHeader";
 import about from '../../static/about.png'
@@ -7,9 +7,20 @@ import HomePCFocus from "./Component/HomePCFocus";
 import {Carousel} from "antd";
 import HomePCSolutions from "./Component/HomePCSolutions";
 import HomeOverallComponent from "./Component/HomeOverallComponent";
+import HomePCRoadmap from "./Component/HomePCRoadmap";
 
 export default function InfinitasHomePC() {
-
+    const roadmapRef=useRef()
+    const [roadMapStatus,setRoadMapStatus]=useState(0);//0.2021 1.2022 2.2023 3.2024
+    const onRoadMapCarouselChange=status=>{
+       setRoadMapStatus(status)
+        roadmapRef.current.goTo(status)
+    }
+    const roadmapList=[
+        [
+            [{text:'Community established',anchor:''},{text:'BTC ecosystem network project - Infinitas established',anchor:''}]
+        ],
+    ]
     return (
         <div className='home-pc'>
 
@@ -110,15 +121,15 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*solutions*/}
-            <div className='height-900 common-width flex-column fl-jc-center' style={{backgroundColor: "#ffffff"}}>
+            <div className='height-900 common-width flex-column fl-jc-center solutions' style={{backgroundColor: "#ffffff"}}>
                 <div className='font-color-42 ' style={{fontSize: '40px', fontWeight: 800}}>SOLUTIONS</div>
                 <Carousel dotPosition={'left'}>
                     <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
-                                     text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
-                    <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
-                                     text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
-                    <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
-                                     text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
+                                     text={'RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
+                    <HomePCSolutions title={'RZK (Recursive Zero Knowledge)'}
+                                     text={'RZK=Z0(...Zn-2(Zn-2,Zn-1)Zn . The verifier does not need to verify the block from scratch, but only needs to download the current block for simple verification. The latest block will include the proof from the founding block to the current block.'}/>
+                    <HomePCSolutions title={'FATLINE PROTOCOL'}
+                                     text={'Fatline Protocol is a lightweight communication + storage protocol between RGB clients. It is compatible with the Nostr protocol to achieve efficient communication between nodes. The communication speed can reach more than 10 times that of Storm+Bifrost.'}/>
                 </Carousel>
             </div>
 
@@ -207,11 +218,40 @@ export default function InfinitasHomePC() {
                             <HomeOverallComponent width={382} height={77} left={25} text={'Fundamental Document Repository'} />
                         </div>
                     </div>
-
-
                 </div>
             </div>
 
+            {/*ROADMAP*/}
+                <div className='common-width' style={{height:'1080px'}}>
+                    <div className='font-color-42' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP</div>
+                        <div style={{height:'48px'}}/>
+                        <Carousel dotPosition={'bottom'} ref={roadmapRef}  dots={false}>
+                             <HomePCRoadmap list={roadmapList[0]}/>
+                            {/*<HomePCRoadmap list={[1,2]}/>*/}
+                            {/*<HomePCRoadmap list={[1,2,3]}/>*/}
+                            {/*<HomePCRoadmap list={[1,2,3,4]}/>*/}
+                        </Carousel>
+
+
+                    <div className='flex-row fl-jc-between' style={{marginTop:'100px'}}>
+                        <div className='flex-column road-time' onClick={()=>onRoadMapCarouselChange(0)}>
+                            <div className={roadMapStatus===0?'road-time-check':'road-time-common'} >2021</div>
+                            <div className={roadMapStatus===0?'road-line-check':'road-line-common'} />
+                        </div>
+                        <div className='flex-column road-time' onClick={()=>onRoadMapCarouselChange(1)}>
+                            <div className={roadMapStatus===1?'road-time-check':'road-time-common'} >2022</div>
+                            <div className={roadMapStatus===1?'road-line-check':'road-line-common'} />
+                        </div>
+                        <div className='flex-column road-time' onClick={()=>onRoadMapCarouselChange(2)}>
+                            <div className={roadMapStatus===2?'road-time-check':'road-time-common'} >2023</div>
+                            <div className={roadMapStatus===2?'road-line-check':'road-line-common'} />
+                        </div>
+                        <div className='flex-column road-time' onClick={()=>onRoadMapCarouselChange(3)}>
+                            <div className={roadMapStatus===3?'road-time-check':'road-time-common'} >2024</div>
+                            <div className={roadMapStatus===3?'road-line-check':'road-line-common'} />
+                        </div>
+                    </div>
+                </div>
 
 
         </div>
