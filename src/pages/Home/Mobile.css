@@ -1,0 +1,112 @@
+.content {
+    padding: 48px 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+}
+.content-home {
+    background-color: #0b0b0e;
+    color: #f9f9f9;
+}
+.content-home-title {
+    font-family: Arial_Black;
+    font-size: 26px;
+    line-height: 1.67;
+    letter-spacing: 0.48px;
+    text-align: left;
+    color: #f9f9f9;
+    margin-bottom: 48px;
+}
+.content-home-subtitle {
+    font-size: 20px;
+    line-height: 1.33;
+    letter-spacing: 0.36px;
+    text-align: left;
+    margin-bottom: 48px;
+}
+.content-home-start {
+    display: inline-block;
+    padding: 7px;
+    border: solid 1px #fff;
+    margin-bottom: 48px;
+}
+.content-home-startCont {
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #fff;
+    color: #0f1923;
+    font-weight: bold;
+}
+
+.content-about {
+    color: #424242;
+    padding-bottom: 0;
+}
+
+.content-about-title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+.content-about-subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 60px;
+}
+.content-about-icon {
+    width: 12px;
+    height: 12px;
+    margin-left: 50px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.content-about-subcontent {
+    font-size: 14px;
+    line-height: 1.43;
+    margin-bottom: 48px;
+}
+
+.content-stand {
+    background: #ece8e1;
+    padding: 48px 0;
+}
+.content-stand-title{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.33;
+    margin-bottom: 12px;
+    margin-left: 36px;
+}
+
+.content-stand-content{
+    overflow-x: auto;
+}
+
+.standitem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 40px;
+    background-color: #fff;
+    margin-right: 36px;
+}
+.standitem-title{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+.standitem-sub{
+    width: 238px;
+    height: 157px;
+    font-size: 16px;
+    line-height: 1.43;
+    text-align: left;
+}
+.standitem-img{
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+}

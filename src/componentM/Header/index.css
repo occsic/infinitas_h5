@@ -1,0 +1,12 @@
+.m-header {
+    display: flex;
+    padding: 24px 36px;
+    background-color: #0b0b0e;
+    /* background-color: #ece8e1; */
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+.m-logo {
+    height: 27px;
+}
