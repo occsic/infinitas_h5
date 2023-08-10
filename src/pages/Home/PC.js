@@ -6,6 +6,7 @@ import HomePCStandFor from "./Component/HomePCStandFor";
 import HomePCFocus from "./Component/HomePCFocus";
 import {Carousel} from "antd";
 import HomePCSolutions from "./Component/HomePCSolutions";
+import HomeOverallComponent from "./Component/HomeOverallComponent";
 
 export default function InfinitasHomePC() {
 
@@ -102,27 +103,116 @@ export default function InfinitasHomePC() {
                     <div className='flex-row fl-ai-center fl-jc-between' style={{marginTop: '111px'}}>
                         <HomePCFocus width={281} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'16K'} textWidth={244}/>
                         <HomePCFocus width={281} text={'COMMUNITY FOLLOWERS'} title={'100k+'} textWidth={150}/>
-                        <HomePCFocus width={376} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'4 YEARS+'} textWidth={244}/>
+                        <HomePCFocus width={376} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'4 YEARS+'}
+                                     textWidth={244}/>
                     </div>
                 </div>
             </div>
 
             {/*solutions*/}
             <div className='height-900 common-width flex-column fl-jc-center' style={{backgroundColor: "#ffffff"}}>
-                <div className='font-color-42 ' style={{fontSize:'40px',fontWeight:800}}>SOLUTIONS</div>
+                <div className='font-color-42 ' style={{fontSize: '40px', fontWeight: 800}}>SOLUTIONS</div>
                 <Carousel dotPosition={'left'}>
-                    <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'} text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'} />
-                    <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'} text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'} />
-                    <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'} text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'} />
+                    <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
+                                     text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
+                    <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
+                                     text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
+                    <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
+                                     text={' RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
                 </Carousel>
             </div>
 
             {/*OVERALL ARCHITECTURE*/}
             <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw'}}>
-                <div className='common-width' style={{height:'1222px'}}>
-                    <div className='stand-fontA'>OVERALL ARCHITECTURE</div>
+                <div className='common-width' style={{height: '1222px'}}>
+                    <div className='stand-fontA' style={{marginTop: '150px'}}>OVERALL ARCHITECTURE</div>
+
+                    <div className='flex-row' style={{marginTop: '48px'}}>
+                        <HomeOverallComponent width={179} height={140} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'APPLICATION LAYER'} color={'#FFFFFF'}
+                                              textWidth={118}/>
+                        <div className='flex-column fl-jc-between'>
+                            <div className='flex-row'>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'DeFi'}/>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'NFT Marketplace'}/>
+                                <HomeOverallComponent width={281} height={60} left={25} text={'Decentralized Identity'}/>
+                            </div>
+                            <div className='flex-row'>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Gaming'}/>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Infrastructure'}/>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Others'}/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='flex-row' style={{marginTop: '24px'}}>
+                        <HomeOverallComponent width={179} height={157} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'PRODUCT LAYER'} color={'#FFFFFF'}
+                                              textWidth={86}/>
+                        <div className='flex-column fl-jc-between'>
+                            <div className='flex-row'>
+                                <HomeOverallComponent width={383} height={77} left={25} text={'Contract Development Test Suites DApps Development Tools'} textWidth={230}/>
+                                <HomeOverallComponent width={383} height={77} left={25} text={'DApps Integrated Development Environment Other Extension Tools'} textWidth={306}/>
+                            </div>
+                            <div className='flex-row'>
+                                <HomeOverallComponent width={281} height={60} left={25} text={'Ecosystem Entrance: Wallet'}/>
+                                <HomeOverallComponent width={281} height={60} left={25} text={'Data Tools: Data Explorer'}/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='flex-row' style={{marginTop: '24px'}}>
+                        <HomeOverallComponent width={179} height={140} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'SCHEMAS LAYER'} color={'#FFFFFF'}
+                                              textWidth={86}/>
+                        <div className='flex-column fl-jc-between'>
+                            <div className='flex-row'>
+                                <HomeOverallComponent width={281} height={60} left={25} text={'Synthetic Assets Schemas'}/>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'GameFi Schemas'} />
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Other Schemas'} />
+                            </div>
+                            <div className='flex-row'>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'DEX Schemas'} />
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Staking Schemas'} />
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Lending Schemas'} />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='flex-row' style={{marginTop: '24px'}}>
+                        <HomeOverallComponent width={281} height={77} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'NETWORK LAYER'} color={'#FFFFFF'}/>
+                            <div className='flex-row'>
+                                <HomeOverallComponent width={281} height={77} left={25} text={'Infinitas Testnet'}/>
+                                <HomeOverallComponent width={281} height={77} left={25} text={'Infinitas Mainnet'} />
+                            </div>
+                    </div>
+
+                    <div className='flex-row' style={{marginTop: '24px'}}>
+                        <HomeOverallComponent width={281} height={77} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'PROTOCOL LAYER'} color={'#FFFFFF'}/>
+                        <div className='flex-row'>
+                            <HomeOverallComponent width={281} height={77} left={25} text={'Lightning Network Node'}/>
+                            <HomeOverallComponent width={179} height={77} left={25} text={'RGB Node'} />
+                            <HomeOverallComponent width={383} height={77} left={25} text={'Communication/Storage Node'} />
+                        </div>
+                    </div>
+
+                    <div className='flex-row' style={{marginTop: '24px'}}>
+                        <HomeOverallComponent width={281} height={77} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'DATA LAYER'} color={'#FFFFFF'}/>
+                        <div className='flex-row'>
+                            <HomeOverallComponent width={179} height={77} left={25} text={'LNP/BP Association'}/>
+                            <HomeOverallComponent width={280} height={77} left={25} text={'Open Source Toolchain'} />
+                            <HomeOverallComponent width={382} height={77} left={25} text={'Fundamental Document Repository'} />
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
+
+
 
         </div>
     )
