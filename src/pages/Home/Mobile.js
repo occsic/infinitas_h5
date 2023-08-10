@@ -53,7 +53,24 @@ export default function InfinitasHomeMobile() {
                 </div>
             </div>
 
-
+            <div id="focus" className="content content-focus">
+                <div className="content-focus-title">FOCUS</div>
+                <div className="flex-row mb-10">
+                    <div className="flex-column flex-1 fl-ai-center mr-10 content-focus-view">
+                        <div className="focus-main">16K</div>
+                        <div className="tac focus-sub">DAILY ACTIVE WALLET ADDRESSES</div>
+                    </div>
+                    <div className="flex-column flex-1 fl-ai-center content-focus-view">
+                        <div className="focus-main">100K+</div>
+                        <div className="tac focus-sub">COMMUNITY FOLLOWERS</div>
+                    </div>
+                </div>
+                <div className="flex-column fl-ai-center content-focus-view">
+                    <div className="focus-main">4 YEARS+</div>
+                    <div className="focus-sub">RGB RESEARCH</div>
+                    <div className="focus-sub">EXPERIENCE</div>
+                </div>
+            </div>
         </div>
     )
 }
