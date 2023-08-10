@@ -1,0 +1,6 @@
+.home-pc{
+    background-color: #0f1923;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

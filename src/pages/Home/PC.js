@@ -4,7 +4,7 @@ import PCHeader from "../../component/PCHeader";
 
 export default function InfinitasHomePC(){
     return (
-        <div>
+        <div className='home-pc'>
             <PCHeader />
         </div>
     )
