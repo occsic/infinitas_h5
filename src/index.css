@@ -11,6 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face
+{
+    font-family: 'Arial_Black';
+    src: url('./static/Arial_Black.ttf');
+    font-weight: normal;  
+    font-style: normal;  
+}
+@font-face
+{
+    /* dev */
+    font-family: 'MuktaMahee';
+    src: url('./static/MuktaMahee-Regular.ttf'); 
+    font-weight: normal;  
+    font-style: normal;  
+}
+*{
+    font-family: 'MuktaMahee';
+    font-size: 1.8rem;
+}
 /*html body {*/
 /*  min-height: 100vh;*/
 /*  font-family: PingFang SC-Medium, PingFang SC, serif;*/
