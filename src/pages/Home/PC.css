@@ -1,29 +1,25 @@
 .home-pc{
-    background-color: #0f1923;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.hp-one{
-    height: 918px;
 }
 .hpo-fontA{
     color: #f9f9f9;
     font-size: 40px;
     width: 950px;
-    font-family: ArialBlack;
+    font-family: Arial_Black;
     margin-top: 174px;
     line-height: 1.75;
-    font-weight: bold;
     word-spacing: 10px;
     letter-spacing: 5px;
 }
 .hpo-fontB{
-    font-family: MuktaMahee;
     font-size: 18px;
     width: 612px;
     margin-top: 50px;
     color: #f9f9f9;
+    word-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .hpo-start-border{
@@ -41,4 +37,29 @@
     font-weight: bold;
     color: #0f1923;
     cursor: pointer;
+}
+
+.height-900{
+    height: 900px;
+}
+
+.hp-fontC{
+    font-size: 40px;
+    font-weight: 800;
+    color: #424242;
+}
+.hp-fontD{
+    font-size: 24px;
+    font-weight: 600;
+    color: #424242;
+    margin-top: 48px;
+    width: 587px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.stand-fontA{
+    font-size: 40px;
+    font-weight: 800;
+    color: #424242;
 }
