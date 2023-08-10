@@ -40,6 +40,18 @@ export default function InfinitasHomeMobile() {
                     </div>
                 </div>
             </div>
+            <div id="stand" className="content-stand">
+                <div className="content-stand-title">WE STAND FOR</div>
+                <div className="content-stand-content flex-row">
+                    {standContent.map((i, ind) => (
+                        <div key={ind} className="standitem">
+                            <dvi className="standitem-title">{i.title}</dvi>
+                            <dvi className="standitem-sub">{i.sub}</dvi>
+                            <img className="standitem-img" src={i.img} />
+                        </div>
+                    ))}
+                </div>
+            </div>
 
 
         </div>
