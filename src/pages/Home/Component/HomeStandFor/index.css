@@ -1,0 +1,12 @@
+.stand-block{
+    height: 315px;
+    padding-top: 24px;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+}
+.stand-fontB{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
