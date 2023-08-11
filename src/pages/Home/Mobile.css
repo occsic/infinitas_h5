@@ -1,14 +1,14 @@
-.content {
-    padding: 48px 36px;
+.homecontent {
+    padding: 75px 36px 48px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
 }
-.content-home {
+.homecontent-home {
     background-color: #0b0b0e;
     color: #f9f9f9;
 }
-.content-home-title {
+.homecontent-home-title {
     font-family: Arial_Black;
     font-size: 26px;
     line-height: 1.67;
@@ -17,20 +17,20 @@
     color: #f9f9f9;
     margin-bottom: 48px;
 }
-.content-home-subtitle {
+.homecontent-home-subtitle {
     font-size: 20px;
     line-height: 1.33;
     letter-spacing: 0.36px;
     text-align: left;
     margin-bottom: 48px;
 }
-.content-home-start {
+.homecontent-home-start {
     display: inline-block;
     padding: 7px;
     border: solid 1px #fff;
     margin-bottom: 48px;
 }
-.content-home-startCont {
+.homecontent-home-startCont {
     padding: 10px 30px;
     text-align: center;
     background-color: #fff;
@@ -38,41 +38,40 @@
     font-weight: bold;
 }
 
-.content-about {
+.homecontent-about {
     color: #424242;
-    padding-bottom: 0;
 }
 
-.content-about-title {
+.homecontent-about-title {
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 12px;
 }
-.content-about-subtitle {
+.homecontent-about-subtitle {
     font-size: 20px;
     font-weight: 600;
     line-height: 1.5;
     letter-spacing: 0.32px;
     margin-bottom: 60px;
 }
-.content-about-icon {
+.homecontent-about-icon {
     width: 12px;
     height: 12px;
     margin-left: 50px;
     margin-right: 5px;
     margin-top: 3px;
 }
-.content-about-subcontent {
+.homecontent-about-subhomecontent {
     font-size: 14px;
     line-height: 1.43;
     margin-bottom: 48px;
 }
 
-.content-stand {
+.homecontent-stand {
     background: #ece8e1;
-    padding: 48px 0;
+    padding: 75px 0 48px;
 }
-.content-stand-title {
+.homecontent-stand-title {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.33;
@@ -80,7 +79,7 @@
     margin-left: 36px;
 }
 
-.content-stand-content {
+.homecontent-stand-homecontent {
     overflow-x: auto;
 }
 
@@ -114,18 +113,18 @@
     margin-top: auto;
 }
 
-.content-focus {
+.homecontent-focus {
     background-color: #0b0b0e;
     color: #fff;
 }
-.content-focus-title {
+.homecontent-focus-title {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.33;
     margin-bottom: 24px;
 }
 
-.content-focus-view {
+.homecontent-focus-view {
     padding: 40px 10px 20px;
     border: solid 1px rgba(33, 191, 115, 0.2);
     background-color: rgba(33, 191, 115, 0.1);
@@ -150,7 +149,7 @@
     margin-right: 10px;
 }
 
-.content-solutions-title {
+.homecontent-solutions-title {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.33;
@@ -194,18 +193,18 @@
     background-color: #0f1923;
 }
 
-.content-overall {
+.homecontent-overall {
     background-color: #ece8e1;
     padding: 48px 0;
 }
-.content-overall-title {
+.homecontent-overall-title {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.33;
     margin-bottom: 12px;
     text-align: center;
 }
-.content-overall-main {
+.homecontent-overall-main {
     overflow-x: auto;
     margin-left: 36px;
 }
@@ -246,7 +245,7 @@
     margin-top: 10px;
 }
 
-.content-roadmap-title {
+.homecontent-roadmap-title {
     font-size: 30px;
     font-weight: 800;
     line-height: 1.33;

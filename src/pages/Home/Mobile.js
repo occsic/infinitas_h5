@@ -100,36 +100,36 @@ export default function InfinitasHomeMobile() {
     return (
         <div>
             <MHeader activeIndex={'1'}/>
-            <div id="home" className="content content-home">
-                <div className="content-home-title">BASED ON BITCOIN PROVIDE INFINITELY SCALABLE POWER FOR WEB 3.0</div>
-                <div className="content-home-subtitle">TO MEET THE VALUE PURSUIT OF 100 MILLION PEOPLE WHO ARE FASTER, TRUER AND SAFER</div>
-                <div className="content-home-start">
-                    <div className="content-home-startCont">START</div>
+            <div id="home" className="homecontent homecontent-home">
+                <div className="homecontent-home-title">BASED ON BITCOIN PROVIDE INFINITELY SCALABLE POWER FOR WEB 3.0</div>
+                <div className="homecontent-home-subtitle">TO MEET THE VALUE PURSUIT OF 100 MILLION PEOPLE WHO ARE FASTER, TRUER AND SAFER</div>
+                <div className="homecontent-home-start">
+                    <div className="homecontent-home-startCont">START</div>
                 </div>
             </div>
-            <div id="about" className="content content-about">
-                <div className="content-about-title">ABOUT US</div>
-                <div className="content-about-subtitle">
+            <div id="about" className="homecontent homecontent-about">
+                <div className="homecontent-about-title">ABOUT US</div>
+                <div className="homecontent-about-subtitle">
                     INFINITAS IS A TURING-COMPLETE BITCOIN APPLICATION ECOSYSTEM WITH INFINITE SCALABILITY. INFINITAS WILL CREATE THE NEXT GENERATION OF BITCOIN LARGE-SCALE APPLICATION SCENARIOS.
                 </div>
                 <div className="flex-row">
-                    <img className="content-about-icon" src={about} />
-                    <div className="content-about-subcontent">
+                    <img className="homecontent-about-icon" src={about} />
+                    <div className="homecontent-about-subcontent">
                         Combining the mutual support and complement of the Lightning Network and the RGB protocol, Infinitas can achieve a more efficient and scalable Bitcoin ecosystem. Make Bitcoin
                         greater again.
                     </div>
                 </div>
                 <div className="flex-row">
-                    <img className="content-about-icon" src={about} />
-                    <div className="content-about-subcontent">
+                    <img className="homecontent-about-icon" src={about} />
+                    <div className="homecontent-about-subcontent">
                         Create a fairer decentralized crypto world for miners, verifiers, node service providers, exchanges, and users. In the future, hundreds of millions of economic participants
                         will be active in the ecosystem to create value.
                     </div>
                 </div>
             </div>
-            <div id="stand" className="content-stand">
-                <div className="content-stand-title">WE STAND FOR</div>
-                <div className="content-stand-content flex-row">
+            <div id="stand" className="homecontent-stand">
+                <div className="homecontent-stand-title">WE STAND FOR</div>
+                <div className="homecontent-stand-homecontent flex-row">
                     {standContent.map((i, ind) => (
                         <div key={ind} className="standitem">
                             <dvi className="standitem-title">{i.title}</dvi>
@@ -140,27 +140,27 @@ export default function InfinitasHomeMobile() {
                 </div>
             </div>
 
-            <div id="focus" className="content content-focus">
-                <div className="content-focus-title">FOCUS</div>
+            <div id="focus" className="homecontent homecontent-focus">
+                <div className="homecontent-focus-title">FOCUS</div>
                 <div className="flex-row mb-10">
-                    <div className="flex-column flex-1 fl-ai-center mr-10 content-focus-view">
+                    <div className="flex-column flex-1 fl-ai-center mr-10 homecontent-focus-view">
                         <div className="focus-main">16K</div>
                         <div className="tac focus-sub">DAILY ACTIVE WALLET ADDRESSES</div>
                     </div>
-                    <div className="flex-column flex-1 fl-ai-center content-focus-view">
+                    <div className="flex-column flex-1 fl-ai-center homecontent-focus-view">
                         <div className="focus-main">100K+</div>
                         <div className="tac focus-sub">COMMUNITY FOLLOWERS</div>
                     </div>
                 </div>
-                <div className="flex-column fl-ai-center content-focus-view">
+                <div className="flex-column fl-ai-center homecontent-focus-view">
                     <div className="focus-main">4 YEARS+</div>
                     <div className="focus-sub">RGB RESEARCH</div>
                     <div className="focus-sub">EXPERIENCE</div>
                 </div>
             </div>
 
-            <div id="solutions" className="content content-solutions">
-                <div className="content-solutions-title">SOLUTIONS</div>
+            <div id="solutions" className="homecontent homecontent-solutions">
+                <div className="homecontent-solutions-title">SOLUTIONS</div>
 
                 <div className="solutionsItem">
                     <div className="solutionsItem-title">{solutionsContent[showIndex].title}</div>
@@ -183,10 +183,10 @@ export default function InfinitasHomeMobile() {
                 </div>
             </div>
 
-            <div id="overall" className="content-overall">
-                <div className="content-overall-title">OVERALL</div>
-                <div className="content-overall-title">ARCHITECTURE</div>
-                <div className="content-overall-main">
+            <div id="overall" className="homecontent-overall">
+                <div className="homecontent-overall-title">OVERALL</div>
+                <div className="homecontent-overall-title">ARCHITECTURE</div>
+                <div className="homecontent-overall-main">
                     {overallContent.map((allItem, index) => (
                         <div key={index} className="overallList flex-row">
                             <div className={`overallList-title flex-column fl-jc-center ${index >= 3 ? "w120" : ""}`}>{allItem.title}</div>
@@ -212,8 +212,8 @@ export default function InfinitasHomeMobile() {
                     ))}
                 </div>
             </div>
-            <div id="roadmap" className="content">
-                <div className="content-roadmap-title">ROADMAP</div>
+            <div id="roadmap" className="homecontent">
+                <div className="homecontent-roadmap-title">ROADMAP</div>
                 <div className="roadmap-main flex-row">
                     {roadmapData[yearIndex].yearData.map((i, ind) => (
                         <div className="yearData-view" key={ind}>

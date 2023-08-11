@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import "./index.css"
-import logo from './mlogo.png'
+import logo from "./mlogo.png"
 import { Tooltip, Popover, Drawer, Menu, Collapse } from "antd"
 import { MenuOutlined, RightOutlined, CloseOutlined } from "@ant-design/icons"
-export default function MHeader({activeIndex}) {
+export default function MHeader({ activeIndex }) {
     const [open, setOpen] = useState(false)
 
     const changeCollapse = () => {}
@@ -16,12 +16,78 @@ export default function MHeader({activeIndex}) {
             label: <div className="font-fff itemsTitle">HOME</div>,
             children: (
                 <div className="itemsI">
-                    <p>About us</p>
-                    <p>We stand for</p>
-                    <p>Focus</p>
-                    <p>Solutions</p>
-                    <p>Overall Architecture</p>
-                    <p>Roadmap</p>
+                    <p
+                        onClick={() => {
+                            if (window.location.pathname != "/") {
+                                window.location.href = "/"
+                            } else {
+                               document.getElementById('about').scrollIntoView()
+                            }
+                            setOpen(false)
+                        }}
+                    >
+                        About us
+                    </p>
+                    <p
+                        onClick={() => {
+                            setOpen(false)
+                            if (window.location.pathname != "/") {
+                                window.location.href = "/"
+                            } else {
+                                document.getElementById('stand').scrollIntoView()
+                            }
+                        }}
+                    >
+                        We stand for
+                    </p>
+                    <p
+                        onClick={() => {
+                            setOpen(false)
+                            if (window.location.pathname != "/") {
+                                window.location.href = "/"
+                            } else {
+                                document.getElementById('focus').scrollIntoView()
+                            }
+                        }}
+                    >
+                        Focus
+                    </p>
+                    <p
+                        onClick={() => {
+                            setOpen(false)
+                            if (window.location.pathname != "/") {
+                                window.location.href = "/"
+                            } else {
+                                document.getElementById('solutions').scrollIntoView()
+                            }
+                        }}
+                    >
+                        Solutions
+                    </p>
+                    <p
+                        onClick={() => {
+                            setOpen(false)
+                            if (window.location.pathname != "/") {
+                                window.location.href = "/"
+                            } else {
+                                document.getElementById('overall').scrollIntoView()
+                            }
+                        }}
+                    >
+                        Overall Architecture
+                    </p>
+                    <p
+                        onClick={() => {
+                            setOpen(false)
+                            if (window.location.pathname != "/") {
+                                window.location.href = "/"
+                            } else {
+                                document.getElementById('roadmap').scrollIntoView()
+                            }
+                        }}
+                    >
+                        Roadmap
+                    </p>
                 </div>
             ),
         },
@@ -30,9 +96,9 @@ export default function MHeader({activeIndex}) {
             label: <div className="font-fff  itemsTitle">LEARN</div>,
             children: (
                 <div className="itemsI">
-                    <p>RGB</p>
-                    <p>LIGHTING NETWORK</p>
-                    <p>ZK-SNARK</p>
+                    <p onClick={() => (window.location.href = "/rgb")}>RGB</p>
+                    <p onClick={() => (window.location.href = "/network")}>LIGHTING NETWORK</p>
+                    <p onClick={() => (window.location.href = "/zksnark")}>ZK-SNARK</p>
                 </div>
             ),
         },
@@ -63,7 +129,12 @@ export default function MHeader({activeIndex}) {
         <>
             <div className="m-header">
                 <img className="m-header-logo" src={logo} width={180} height={35} />
-                <MenuOutlined onClick={()=>{setOpen(true)}} style={{ fontSize: "20px", color: "#000" }} />
+                <MenuOutlined
+                    onClick={() => {
+                        setOpen(true)
+                    }}
+                    style={{ fontSize: "20px", color: "#000" }}
+                />
             </div>
             <Drawer width="330" className="showview" placement="right" onClose={closeDrawer} open={open}>
                 <div className="closeicon flex-row">
