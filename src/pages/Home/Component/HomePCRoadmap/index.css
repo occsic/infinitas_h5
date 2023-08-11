@@ -11,3 +11,16 @@
     padding-left: 40px;
     padding-right: 60px;
 }
+.hpr-fontA{
+    font-size: 22px;
+    font-weight: 500;
+    color: #1b1a1a;
+    margin-left: 15px;
+}
+.hpr-fontB{
+    font-size: 40px;
+    font-weight: 500;
+    color: #1b1a1a;
+    margin-left: 5px;
+    line-height: 40px;
+}

@@ -10,16 +10,32 @@ import HomeOverallComponent from "./Component/HomeOverallComponent";
 import HomePCRoadmap from "./Component/HomePCRoadmap";
 
 export default function InfinitasHomePC() {
-    const roadmapRef=useRef()
-    const [roadMapStatus,setRoadMapStatus]=useState(0);//0.2021 1.2022 2.2023 3.2024
-    const onRoadMapCarouselChange=status=>{
-       setRoadMapStatus(status)
+    const roadmapRef = useRef()
+    const [roadMapStatus, setRoadMapStatus] = useState(0);//0.2021 1.2022 2.2023 3.2024
+    const onRoadMapCarouselChange = status => {
+        setRoadMapStatus(status)
         roadmapRef.current.goTo(status)
     }
-    const roadmapList=[
+    const roadmapList = [
+        [[{text: 'Community established', anchor: ''}, {
+            text: 'BTC ecosystem network project - Infinitas established',
+            anchor: ''
+        }]],
         [
-            [{text:'Community established',anchor:''},{text:'BTC ecosystem network project - Infinitas established',anchor:''}]
+            [{text: 'Launched Infinitas mainnet', anchor: 'BTC Halve'}, {text: 'Building DeFi (DEX) Schemas',anchor: ''}, {text: 'Provide SDKs', anchor: ''}],
+            [{text: 'Total number of ecosystem projects reaches', anchor: '200+'}, {text: 'Listing on centralized exchange', anchor: ''}, {text: 'Development of DApp integration environment', anchor: ''}],
         ],
+        [
+            [{text: 'Paraluni TVL reaches', anchor: '$50M+'}],
+            [{text: 'RGB v0.10 released', anchor: ''}, {text: 'Community followers reached ', anchor: '50K+'}, {text: 'Infinitas seed round launched', anchor: ''}],
+            [{text: 'BTB miners reached ', anchor: '5K+'}, {text: 'Community followers reached', anchor: '100K+'}, {text: 'RGB & BTC-Eco related research released', anchor: ''}, {text: 'Join the LNP/BP Association', anchor: ''}],
+        ],
+        [
+            [{text: 'Paraluni TVL reaches', anchor: '$50M+'}],
+            [{text: 'RGB v0.10 released', anchor: ''}, {text: 'Community followers reached ', anchor: '50K+'}, {text: 'Infinitas seed round launched', anchor: ''}],
+            [{text: 'BTB miners reached ', anchor: '5K+'}, {text: 'Community followers reached', anchor: '100K+'}, {text: 'RGB & BTC-Eco related research released', anchor: ''}, {text: 'Join the LNP/BP Association', anchor: ''}],
+            [{text: 'Develop and release the Infinitas testnet', anchor: ''}, {text: 'Cooperation with mainstream wallets', anchor: ''}, {text: 'Develop Infinitas mainnet', anchor: ''}, {text: 'Launched the official version of data explorer', anchor: ''}],
+        ]
     ]
     return (
         <div className='home-pc'>
@@ -121,7 +137,8 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*solutions*/}
-            <div className='height-900 common-width flex-column fl-jc-center solutions' style={{backgroundColor: "#ffffff"}}>
+            <div className='height-900 common-width flex-column fl-jc-center solutions'
+                 style={{backgroundColor: "#ffffff"}}>
                 <div className='font-color-42 ' style={{fontSize: '40px', fontWeight: 800}}>SOLUTIONS</div>
                 <Carousel dotPosition={'left'}>
                     <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
@@ -146,7 +163,8 @@ export default function InfinitasHomePC() {
                             <div className='flex-row'>
                                 <HomeOverallComponent width={179} height={60} left={25} text={'DeFi'}/>
                                 <HomeOverallComponent width={179} height={60} left={25} text={'NFT Marketplace'}/>
-                                <HomeOverallComponent width={281} height={60} left={25} text={'Decentralized Identity'}/>
+                                <HomeOverallComponent width={281} height={60} left={25}
+                                                      text={'Decentralized Identity'}/>
                             </div>
                             <div className='flex-row'>
                                 <HomeOverallComponent width={179} height={60} left={25} text={'Gaming'}/>
@@ -162,12 +180,18 @@ export default function InfinitasHomePC() {
                                               textWidth={86}/>
                         <div className='flex-column fl-jc-between'>
                             <div className='flex-row'>
-                                <HomeOverallComponent width={383} height={77} left={25} text={'Contract Development Test Suites DApps Development Tools'} textWidth={230}/>
-                                <HomeOverallComponent width={383} height={77} left={25} text={'DApps Integrated Development Environment Other Extension Tools'} textWidth={306}/>
+                                <HomeOverallComponent width={383} height={77} left={25}
+                                                      text={'Contract Development Test Suites DApps Development Tools'}
+                                                      textWidth={230}/>
+                                <HomeOverallComponent width={383} height={77} left={25}
+                                                      text={'DApps Integrated Development Environment Other Extension Tools'}
+                                                      textWidth={306}/>
                             </div>
                             <div className='flex-row'>
-                                <HomeOverallComponent width={281} height={60} left={25} text={'Ecosystem Entrance: Wallet'}/>
-                                <HomeOverallComponent width={281} height={60} left={25} text={'Data Tools: Data Explorer'}/>
+                                <HomeOverallComponent width={281} height={60} left={25}
+                                                      text={'Ecosystem Entrance: Wallet'}/>
+                                <HomeOverallComponent width={281} height={60} left={25}
+                                                      text={'Data Tools: Data Explorer'}/>
                             </div>
                         </div>
                     </div>
@@ -178,14 +202,15 @@ export default function InfinitasHomePC() {
                                               textWidth={86}/>
                         <div className='flex-column fl-jc-between'>
                             <div className='flex-row'>
-                                <HomeOverallComponent width={281} height={60} left={25} text={'Synthetic Assets Schemas'}/>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'GameFi Schemas'} />
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Other Schemas'} />
+                                <HomeOverallComponent width={281} height={60} left={25}
+                                                      text={'Synthetic Assets Schemas'}/>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'GameFi Schemas'}/>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Other Schemas'}/>
                             </div>
                             <div className='flex-row'>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'DEX Schemas'} />
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Staking Schemas'} />
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Lending Schemas'} />
+                                <HomeOverallComponent width={179} height={60} left={25} text={'DEX Schemas'}/>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Staking Schemas'}/>
+                                <HomeOverallComponent width={179} height={60} left={25} text={'Lending Schemas'}/>
                             </div>
                         </div>
                     </div>
@@ -193,10 +218,10 @@ export default function InfinitasHomePC() {
                     <div className='flex-row' style={{marginTop: '24px'}}>
                         <HomeOverallComponent width={281} height={77} bgColor={'#000000'} fontSize={'20'}
                                               fontWeight={800} text={'NETWORK LAYER'} color={'#FFFFFF'}/>
-                            <div className='flex-row'>
-                                <HomeOverallComponent width={281} height={77} left={25} text={'Infinitas Testnet'}/>
-                                <HomeOverallComponent width={281} height={77} left={25} text={'Infinitas Mainnet'} />
-                            </div>
+                        <div className='flex-row'>
+                            <HomeOverallComponent width={281} height={77} left={25} text={'Infinitas Testnet'}/>
+                            <HomeOverallComponent width={281} height={77} left={25} text={'Infinitas Mainnet'}/>
+                        </div>
                     </div>
 
                     <div className='flex-row' style={{marginTop: '24px'}}>
@@ -204,8 +229,9 @@ export default function InfinitasHomePC() {
                                               fontWeight={800} text={'PROTOCOL LAYER'} color={'#FFFFFF'}/>
                         <div className='flex-row'>
                             <HomeOverallComponent width={281} height={77} left={25} text={'Lightning Network Node'}/>
-                            <HomeOverallComponent width={179} height={77} left={25} text={'RGB Node'} />
-                            <HomeOverallComponent width={383} height={77} left={25} text={'Communication/Storage Node'} />
+                            <HomeOverallComponent width={179} height={77} left={25} text={'RGB Node'}/>
+                            <HomeOverallComponent width={383} height={77} left={25}
+                                                  text={'Communication/Storage Node'}/>
                         </div>
                     </div>
 
@@ -214,44 +240,46 @@ export default function InfinitasHomePC() {
                                               fontWeight={800} text={'DATA LAYER'} color={'#FFFFFF'}/>
                         <div className='flex-row'>
                             <HomeOverallComponent width={179} height={77} left={25} text={'LNP/BP Association'}/>
-                            <HomeOverallComponent width={280} height={77} left={25} text={'Open Source Toolchain'} />
-                            <HomeOverallComponent width={382} height={77} left={25} text={'Fundamental Document Repository'} />
+                            <HomeOverallComponent width={280} height={77} left={25} text={'Open Source Toolchain'}/>
+                            <HomeOverallComponent width={382} height={77} left={25}
+                                                  text={'Fundamental Document Repository'}/>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/*ROADMAP*/}
-                <div className='common-width' style={{height:'1080px'}}>
-                    <div className='font-color-42' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP</div>
-                        <div style={{height:'48px'}}/>
-                        <Carousel dotPosition={'bottom'} ref={roadmapRef}  dots={false}>
-                             <HomePCRoadmap list={roadmapList[0]}/>
-                            {/*<HomePCRoadmap list={[1,2]}/>*/}
-                            {/*<HomePCRoadmap list={[1,2,3]}/>*/}
-                            {/*<HomePCRoadmap list={[1,2,3,4]}/>*/}
-                        </Carousel>
+            <div className='common-width' style={{height: '1080px'}}>
+                <div className='font-color-42' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP
+                </div>
+                <div style={{height: '48px'}}/>
+                <Carousel dotPosition={'bottom'} ref={roadmapRef} dots={false}>
+                    <HomePCRoadmap list={roadmapList[0]}/>
+                    <HomePCRoadmap list={roadmapList[1]}/>
+                    <HomePCRoadmap list={roadmapList[2]}/>
+                    <HomePCRoadmap list={roadmapList[3]}/>
+                </Carousel>
 
 
-                    <div className='flex-row fl-jc-between' style={{marginTop:'100px'}}>
-                        <div className='flex-column road-time' onClick={()=>onRoadMapCarouselChange(0)}>
-                            <div className={roadMapStatus===0?'road-time-check':'road-time-common'} >2021</div>
-                            <div className={roadMapStatus===0?'road-line-check':'road-line-common'} />
-                        </div>
-                        <div className='flex-column road-time' onClick={()=>onRoadMapCarouselChange(1)}>
-                            <div className={roadMapStatus===1?'road-time-check':'road-time-common'} >2022</div>
-                            <div className={roadMapStatus===1?'road-line-check':'road-line-common'} />
-                        </div>
-                        <div className='flex-column road-time' onClick={()=>onRoadMapCarouselChange(2)}>
-                            <div className={roadMapStatus===2?'road-time-check':'road-time-common'} >2023</div>
-                            <div className={roadMapStatus===2?'road-line-check':'road-line-common'} />
-                        </div>
-                        <div className='flex-column road-time' onClick={()=>onRoadMapCarouselChange(3)}>
-                            <div className={roadMapStatus===3?'road-time-check':'road-time-common'} >2024</div>
-                            <div className={roadMapStatus===3?'road-line-check':'road-line-common'} />
-                        </div>
+                <div className='flex-row fl-jc-between' style={{marginTop: '100px'}}>
+                    <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(0)}>
+                        <div className={roadMapStatus === 0 ? 'road-time-check' : 'road-time-common'}>2021</div>
+                        <div className={roadMapStatus === 0 ? 'road-line-check' : 'road-line-common'}/>
+                    </div>
+                    <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(1)}>
+                        <div className={roadMapStatus === 1 ? 'road-time-check' : 'road-time-common'}>2022</div>
+                        <div className={roadMapStatus === 1 ? 'road-line-check' : 'road-line-common'}/>
+                    </div>
+                    <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(2)}>
+                        <div className={roadMapStatus === 2 ? 'road-time-check' : 'road-time-common'}>2023</div>
+                        <div className={roadMapStatus === 2 ? 'road-line-check' : 'road-line-common'}/>
+                    </div>
+                    <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(3)}>
+                        <div className={roadMapStatus === 3 ? 'road-time-check' : 'road-time-common'}>2024</div>
+                        <div className={roadMapStatus === 3 ? 'road-line-check' : 'road-line-common'}/>
                     </div>
                 </div>
+            </div>
 
 
         </div>
