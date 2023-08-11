@@ -17,40 +17,40 @@ export default function PCFooter(){
                         <div className='pcf-title'>
                             HOME
                         </div>
-                        {list[0].map(item=>(
-                            <div className='pcf-des'>{item}</div>
+                        {list[0].map((item,index)=>(
+                            <div className='pcf-des' key={index}>{item}</div>
                         ))}
                     </div>
                     <div className='flex-column'>
                         <div className='pcf-title'>
                             LEARN
                         </div>
-                        {list[1].map(item=>(
-                            <div className='pcf-des'>{item}</div>
+                        {list[1].map((item,index)=>(
+                            <div className='pcf-des' key={index}>{item}</div>
                         ))}
                     </div>
                     <div className='flex-column'>
                         <div className='pcf-title'>
                             resources
                         </div>
-                        {list[2].map(item=>(
-                            <div className='pcf-des'>{item}</div>
+                        {list[2].map((item,index)=>(
+                            <div className='pcf-des' key={index}>{item}</div>
                         ))}
                     </div>
                     <div className='flex-column'>
                         <div className='pcf-title'>
                             BUILD
                         </div>
-                        {list[3].map(item=>(
-                            <div className='pcf-des'>{item}</div>
+                        {list[3].map((item,index)=>(
+                            <div className='pcf-des' key={index}>{item}</div>
                         ))}
                     </div>
                     <div className='flex-column'>
                         <div className='pcf-title'>
                             CONTACT
                         </div>
-                        {list[4].map(item=>(
-                            <div className='pcf-des'>{item}</div>
+                        {list[4].map((item,index)=>(
+                            <div className='pcf-des' key={index}>{item}</div>
                         ))}
                     </div>
                 </div>

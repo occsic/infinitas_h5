@@ -18,24 +18,19 @@ export default function InfinitasHomePC() {
         roadmapRef.current.goTo(status)
     }
     const roadmapList = [
-        [[{text: 'Community established', anchor: ''}, {
-            text: 'BTC ecosystem network project - Infinitas established',
-            anchor: ''
-        }]],
+        [[{text: 'DeFi 2.0 project - Paraluni established', anchor: ''}, {text: 'Complete the translation of RGB protocol documents', anchor: ''}]],
         [
-            [{text: 'Launched Infinitas mainnet', anchor: 'BTC Halve'}, {text: 'Building DeFi (DEX) Schemas',anchor: ''}, {text: 'Provide SDKs', anchor: ''}],
-            [{text: 'Total number of ecosystem projects reaches', anchor: '200+'}, {text: 'Listing on centralized exchange', anchor: ''}, {text: 'Development of DApp integration environment', anchor: ''}],
+            [{text: 'Community established', anchor: ''}, {text: 'BTC ecosystem network project - Infinitas established',anchor: ''}],
         ],
         [
             [{text: 'Paraluni TVL reaches', anchor: '$50M+'}],
             [{text: 'RGB v0.10 released', anchor: ''}, {text: 'Community followers reached ', anchor: '50K+'}, {text: 'Infinitas seed round launched', anchor: ''}],
-            [{text: 'BTB miners reached ', anchor: '5K+'}, {text: 'Community followers reached', anchor: '100K+'}, {text: 'RGB & BTC-Eco related research released', anchor: ''}, {text: 'Join the LNP/BP Association', anchor: ''}],
+            [{text: 'BTB miners reached ', anchor: '5K+'}, {text: 'Community followers reached', anchor: '100K+'}, {text: 'RGB & BTC-Eco related research released', anchor: ''}, {text: 'Join the LNP/BP Association', anchor: '',noSlice:true}],
+            [{text: 'Develop and release the Infinitas testnet', anchor: '',noSlice:true},{text: 'Cooperation with mainstream wallets', anchor: '',noSlice:true},{text: 'Develop Infinitas mainnet', anchor: '',noSlice:true},{text: 'Launched the official version of data explorer', anchor: '',noSlice:true}]
         ],
         [
-            [{text: 'Paraluni TVL reaches', anchor: '$50M+'}],
-            [{text: 'RGB v0.10 released', anchor: ''}, {text: 'Community followers reached ', anchor: '50K+'}, {text: 'Infinitas seed round launched', anchor: ''}],
-            [{text: 'BTB miners reached ', anchor: '5K+'}, {text: 'Community followers reached', anchor: '100K+'}, {text: 'RGB & BTC-Eco related research released', anchor: ''}, {text: 'Join the LNP/BP Association', anchor: ''}],
-            [{text: 'Develop and release the Infinitas testnet', anchor: ''}, {text: 'Cooperation with mainstream wallets', anchor: ''}, {text: 'Develop Infinitas mainnet', anchor: ''}, {text: 'Launched the official version of data explorer', anchor: ''}],
+            [{text: 'Launched Infinitas mainnet ', anchor: 'BTC Halve',noSlice:true},{text: 'Building DeFi (DEX) Schemas ', anchor: '',noSlice:true},{text: 'Provide SDKs', anchor: '',noSlice:true}],
+            [{text: 'Total number of ecosystem projects reaches', anchor: '200+',noSlice:true}, {text: 'Listing on centralized exchange', anchor: '',noSlice:true}, {text: 'Development of DApp integration environment', anchor: '',noSlice:true}],
         ]
     ]
     return (
