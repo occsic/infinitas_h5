@@ -60,9 +60,9 @@ export default function PCFooter(){
                     <div style={{fontSize:'12px',color:'#ffffff'}}>Copyright © 2024, Infinitas - Network. All rights reserved.</div>
                     <div className='flex-row fl-ai-center'>
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/telegram.png"} width={24} height={24}/>
-                        <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/twitter.png"} width={24} height={24}/>
+                        <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/twitter.png"} onClick={()=>window.location.href='https://twitter.com/iftas_eco'} width={24} height={24}/>
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/ins.png"} width={24} height={24}/>
-                        <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/discord.png"} width={24} height={24}/>
+                        <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/discord.png"} onClick={()=>window.location.href='https://discord.gg/wukSjfSd6a'} width={24} height={24}/>
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/youtube.png"} width={24} height={24}/>
                         <img src={"https://static.paraluni.org/images/infiweb/twitch.png"} width={24} height={24}/>
                     </div>

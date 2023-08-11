@@ -47,6 +47,16 @@ export default function PCHeader(props) {
         </div>
     );
 
+    const content3 = (
+        <div className='pch-content'>
+            <div className='pchc-text' onClick={()=>window.location.href='https://docsend.com/view/tpa2xg6c773gqdkn'}>PITCH DECK</div>
+            <div className='pchc-text' onClick={()=>window.location.href='https://infinitas-official.gitbook.io/infinitas-whitepaper/'}>DOC</div>
+            <div className='pchc-text'>Tech WHITE PAPER </div>
+            <div className='pchc-text'>ONE PAPER</div>
+            <div style={{height: '10px'}}/>
+        </div>
+    );
+
     return (
         <div className='flex-center pc-header-container'>
             <div className='pc-header'>
@@ -63,9 +73,12 @@ export default function PCHeader(props) {
                              content={content2}>
                         <div className='pch-tag'>LEARN</div>
                     </Popover>
+                    <Popover overlayInnerStyle={{padding: '0'}} placement="bottomLeft" color={'rgba(0, 0, 0, 0.2)'}
+                             content={content3}>
+                        <div className='pch-tag'>RESOURCES</div>
+                    </Popover>
 
 
-                    <div className='pch-tag'>RESOURCES</div>
                     <div className='pch-tag'>BUILD</div>
                     <div className='pch-tag'>CONTACT</div>
                 </div>
