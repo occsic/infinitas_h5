@@ -3,6 +3,7 @@ import './PC.css'
 import PCHeader from "../../component/PCHeader";
 import {Carousel} from "antd";
 import RGBPCMainFeatures from "./Component/RGBPCMainFeatures";
+import PCFooter from "../../component/PCFooter";
 
 export default function RGBPC() {
     const designRef = useRef()
@@ -151,10 +152,50 @@ export default function RGBPC() {
                             <div className='font-color-white' style={{fontSize:'14px',fontWeight:'bold'}}>RGB V0.10</div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
+
+            {/*RGB IN INFINITAS*/}
+            <div className='common-width'>
+                <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '122px'}}>RGB IN INFINITAS</div>
+                <div className='flex-row fl-jc-between' style={{marginTop:'48px'}}>
+                    <div className='flex-row' >
+                        <img src={''} width={178} height={190}/>
+                        <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>Infinitas will complete the RGB protocol's compatibility and support for the Lightning Network to create a Turing-complete Bitcoin intelligent application network. At the same time, the concept of Global State is introduced to help more developers build complex applications (such as synthetic assets, algorithmic stable coins, etc.) on RGB.</div>
+                    </div>
+                    <div className='flex-row'>
+                        <img src={''} width={178} height={190}/>
+                        <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>Not only that, RGB v0.10 introduces a new smart contract model, and it is written and compiled in Rust, which can support various complex application scenarios. opens up possibilities.</div>
+                    </div>
+                </div>
+                <div className='flex-row fl-jc-between' style={{marginTop:'48px'}}>
+                    <div className='flex-row' >
+                        <img src={''} width={178} height={190}/>
+                        <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>The RGB standard library can run without I/O and file system access. Replacing the complex stack with a single API library and rgb command line tools will enhance the mass adoption of Bitcoin and decentralized finance.</div>
+                    </div>
+                    <div className='flex-row'>
+                        <img src={''} width={178} height={190}/>
+                        <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>In other words, Infinitas will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.</div>
+                    </div>
+                </div>
+                <div style={{height:'125px'}}/>
+            </div>
+
+            {/*DETAILED REFERENCE*/}
+            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+                <div className='common-width'>
+                    <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '162px',textAlign:'center'}}>DETAILED REFERENCE</div>
+                    <div className='font-color-42 font-size-16' style={{marginTop:'12px'}}>https://rgb.tech/blog/release-v0-10/</div>
+                    <div style={{height:'75px'}}/>
+                    <iframe width="1200" height="555" src="https://www.youtube.com/embed/VmB5SaaaABI"
+                            title="YouTube video player" frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen />
+                    <div style={{height:'314px'}}/>
+                </div>
+            </div>
+
+            <PCFooter />
 
         </div>
     )
