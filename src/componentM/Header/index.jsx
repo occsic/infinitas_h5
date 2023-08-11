@@ -3,7 +3,7 @@ import "./index.css"
 import logo from './mlogo.png'
 import { Tooltip, Popover, Drawer, Menu, Collapse } from "antd"
 import { MenuOutlined, RightOutlined, CloseOutlined } from "@ant-design/icons"
-export default function MHeader() {
+export default function MHeader({activeIndex}) {
     const [open, setOpen] = useState(false)
 
     const changeCollapse = () => {}
@@ -30,6 +30,7 @@ export default function MHeader() {
             label: <div className="font-fff  itemsTitle">LEARN</div>,
             children: (
                 <div className="itemsI">
+                    <p>RGB</p>
                     <p>LIGHTING NETWORK</p>
                     <p>FZK-SNARKocus</p>
                 </div>
@@ -40,6 +41,7 @@ export default function MHeader() {
             label: <div className="font-fff  itemsTitle">RESOURCES</div>,
             children: (
                 <div className="itemsI">
+                    <p>PITCH DECK</p>
                     <p>DOC</p>
                     <p>TECH WHITEPAPER</p>
                     <p>ONE PAPER</p>
@@ -51,6 +53,7 @@ export default function MHeader() {
             label: <div className="font-fff  itemsTitle">BUILD</div>,
             children: (
                 <div className="itemsI">
+                    <p>ARTICLE</p>
                     <p>ONLINE IDE</p>
                 </div>
             ),
@@ -66,7 +69,7 @@ export default function MHeader() {
                 <div className="closeicon flex-row">
                     <CloseOutlined onClick={closeDrawer} style={{ color: "#fff", fontSize: "30px" }} />
                 </div>
-                <Collapse defaultActiveKey={'1'} accordion ghost items={items} expandIconPosition="end" onChange={changeCollapse} />
+                <Collapse defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={changeCollapse} />
                 <div className="flex-row fl-ai-center endItem">
                     <div className="font-fff  itemsTitle">CONTACT</div>
                     <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />

@@ -99,7 +99,7 @@ export default function InfinitasHomeMobile() {
 
     return (
         <div>
-            <MHeader />
+            <MHeader activeIndex={'1'}/>
             <div id="home" className="content content-home">
                 <div className="content-home-title">BASED ON BITCOIN PROVIDE INFINITELY SCALABLE POWER FOR WEB 3.0</div>
                 <div className="content-home-subtitle">TO MEET THE VALUE PURSUIT OF 100 MILLION PEOPLE WHO ARE FASTER, TRUER AND SAFER</div>
@@ -245,7 +245,7 @@ export default function InfinitasHomeMobile() {
                 </div>
             </div>
         
-            <MFooter />
+            <MFooter activeIndex={'1'}/>
 
 
         </div>
