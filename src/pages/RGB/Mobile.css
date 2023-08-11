@@ -26,3 +26,158 @@
     background-color: #363636;
     margin-right: 20px;
 }
+
+.rgb-desing {
+    padding: 48px 36px;
+}
+
+.desing-title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.33;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.desingItem-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f44336;
+    margin-bottom: 12px;
+}
+.desingItem-line {
+    width: 48px;
+    height: 3px;
+    margin-bottom: 16px;
+    background-color: #f44336;
+}
+.desingItem-sub {
+    margin-right: 60px;
+    width: 240px;
+    font-size: 14px;
+    line-height: 1.43;
+}
+.desingItem-img {
+    margin-top: 24px;
+    width: 100%;
+    height: 162px;
+    background-color: #0f1923;
+}
+.desingItem-ver .ver {
+    height: 48px;
+}
+
+.rgb-main {
+    background-color: #ece8e1;
+}
+.rgb-main-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: #424242;
+    margin-bottom: 24px;
+}
+.rgb-main-c {
+    overflow-x: auto;
+}
+.rgb-main-cI {
+    width: 150px;
+    margin-right: 36px;
+}
+.rgb-main-cI-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #424242;
+    margin-bottom: 12px;
+}
+.rgb-main-cI-sub {
+    font-size: 14px;
+    color: #424242;
+    margin-bottom: 20px;
+}
+.rgb-main-cI-img {
+    width: 70px;
+}
+.infinitas-title,
+.rgb-code-title {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 1.33;
+    color: #424242;
+    margin-bottom: 24px;
+}
+.rgb-code-content {
+    font-size: 14px;
+    text-align: left;
+    color: #424242;
+    margin-bottom: 48px;
+}
+.rgb-code-view {
+    padding: 48px 0;
+    border-radius: 2px;
+    border: solid 1px rgba(0, 0, 0, 0);
+    background-color: #8b8b8b;
+    margin-bottom: 36px;
+}
+.rgb-code-btn {
+    width: 200px;
+    padding: 18px 0 17px;
+    text-align: center;
+    margin: 0 auto;
+    border: solid 1px #0f1923;
+    display: block;
+    text-decoration: none;
+    color: #0f1923;
+}
+.rgb-code-down {
+    margin: 0 10px;
+    padding: 7px;
+    border: solid 1px #0f1923;
+}
+.rgb-code-viewbtn {
+    padding: 6px 0;
+    text-align: center;
+    background-color: #0f1923;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+.rgb-code-viewSub {
+    font-size: 12px;
+}
+.rgb-code-viewdown {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.infinitas-item {
+    margin-bottom: 48px;
+}
+.endImg {
+    flex-direction: row-reverse !important;
+}
+.infinitas-itemImg {
+    width: 78px;
+    height: 78px;
+    margin-right: 20px;
+}
+.infinitas-itemText {
+    font-size: 14px;
+    color: #424242;
+}
+.rgb-video {
+    background-color: #0b0b0e;
+    padding: 48px 0;
+}
+.rgb-video-title {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+}
+.rgb-video-link {
+    display: block;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fff;
+    text-align: center;
+}
