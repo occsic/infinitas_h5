@@ -1,12 +1,41 @@
 .m-header {
     display: flex;
     padding: 24px 36px;
-    background-color: #0b0b0e;
-    /* background-color: #ece8e1; */
+    background-color: #ece8e1;
     align-items: center;
     align-content: center;
     justify-content: space-between;
 }
-.m-logo {
+.m-header-logo {
     height: 27px;
+}
+
+.showview {
+    background: #000 !important;
+}
+.showview .ant-drawer-header {
+    display: none;
+}
+
+.showview .ant-collapse-expand-icon {
+    color: #fff;
+}
+.showview .font-fff {
+    color: #fff;
+}
+.showview .itemsTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+.showview .itemsI {
+    font-size: 16px;
+    color: #ece8e1;
+}
+.showview .endItem {
+    padding: 0 14px 0 12px;
+    justify-content: space-between;
+}
+.closeicon {
+    justify-content: flex-end;
+    margin: 28px 0 40px;
 }

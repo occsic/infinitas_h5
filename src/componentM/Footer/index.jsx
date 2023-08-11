@@ -3,7 +3,7 @@ import "./index.css"
 import logo from "../../static/Logo.png"
 import { Tooltip, Popover, Collapse } from "antd"
 import { MenuOutlined, RightOutlined } from "@ant-design/icons"
-export default function MHeader() {
+export default function MHeader({activeIndex}) {
     const items = [
         {
             key: "1",
@@ -24,6 +24,7 @@ export default function MHeader() {
             label: <div className="font-fff  itemsTitle">LEARN</div>,
             children: (
                 <div className="itemsI">
+                    <p>RGB</p>
                     <p>LIGHTING NETWORK</p>
                     <p>FZK-SNARKocus</p>
                 </div>
@@ -34,6 +35,7 @@ export default function MHeader() {
             label: <div className="font-fff  itemsTitle">RESOURCES</div>,
             children: (
                 <div className="itemsI">
+                    <p>PITCH DECK</p>
                     <p>DOC</p>
                     <p>TECH WHITEPAPER</p>
                     <p>ONE PAPER</p>
@@ -45,6 +47,7 @@ export default function MHeader() {
             label: <div className="font-fff  itemsTitle">BUILD</div>,
             children: (
                 <div className="itemsI">
+                    <p>ARTICLE</p>
                     <p>ONLINE IDE</p>
                 </div>
             ),
@@ -52,12 +55,12 @@ export default function MHeader() {
     ]
 
     const iconData = [
-        { img: logo, href: "111" },
-        { img: logo, href: "111" },
-        { img: logo, href: "111" },
-        { img: logo, href: "111" },
-        { img: logo, href: "111" },
-        { img: logo, href: "111" },
+        { img: 'https://static.paraluni.org/images/infiweb/telegram.png', href: "111" },
+        { img: 'https://static.paraluni.org/images/infiweb/twitter.png', href: "111" },
+        { img: 'https://static.paraluni.org/images/infiweb/ins.png', href: "111" },
+        { img: 'https://static.paraluni.org/images/infiweb/discord.png', href: "111" },
+        { img: 'https://static.paraluni.org/images/infiweb/youtube.png', href: "111" },
+        { img: "https://static.paraluni.org/images/infiweb/twitch.png", href: "111" },
     ]
 
     const aaaa = (e, xx) => {
@@ -67,7 +70,7 @@ export default function MHeader() {
     return (
         <div className="m-footer">
             <img className="m-logo" src={logo} />
-            <Collapse accordion ghost items={items} expandIconPosition="end" onChange={aaaa} />
+            <Collapse defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={aaaa} />
             <div className="flex-row fl-ai-center endItem">
                 <div className="font-fff  itemsTitle">CONTACT</div>
                 <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />
@@ -75,7 +78,7 @@ export default function MHeader() {
             <div className="font-fff tac foottext">Copyright © 2024, Infinitas - Network. All rights reserved.</div>
             <div className="flex-row fl-jc-center">
                 {iconData.map((icon, ind) => (
-                    <img key={ind} src={logo} className="iconimg" />
+                    <img key={ind} src={icon.img} className="iconimg" />
                 ))}
             </div>
         </div>
