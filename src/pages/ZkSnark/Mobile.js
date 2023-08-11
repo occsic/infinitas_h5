@@ -80,17 +80,17 @@ export default function ZkSnarkMobile() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div></div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className="zk-text zk-main-top colorF">FEATURES</div>
+                <div className="colorF zk-main-sub">
+                    <div className="flex-row fl-jc-between">
+                        <div className="zk-bg zk-bg1">LIGHTWEIGHT AND FAST SYNC</div>
+                        <div className="zk-bg zk-bg2">DECENTRALIZED</div>
+                    </div>
+                    <div className="flex-row fl-jc-between">
+                        <div className="zk-bg zk-bg3">PRIVACY PROTECTION</div>
+                        <div className="zk-bg zk-bg4">SCALABILITY</div>
+                        <div className="zk-bg zk-bg5">RICH ECOSYSTEM</div>
+                    </div>
                 </div>
             </div>
 
