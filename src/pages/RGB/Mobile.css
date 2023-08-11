@@ -128,24 +128,39 @@
     text-decoration: none;
     color: #0f1923;
 }
-.rgb-code-down{
+.rgb-code-down {
     margin: 0 10px;
     padding: 7px;
     border: solid 1px #0f1923;
 }
-.rgb-code-viewbtn{
-    padding: 6px 0 ;
+.rgb-code-viewbtn {
+    padding: 6px 0;
     text-align: center;
     background-color: #0f1923;
     display: block;
     color: #fff;
     text-decoration: none;
-
 }
-.rgb-code-viewSub{
+.rgb-code-viewSub {
     font-size: 12px;
 }
-.rgb-code-viewdown{
+.rgb-code-viewdown {
     font-size: 16px;
     font-weight: bold;
+}
+
+.infinitas-item {
+    margin-bottom: 48px;
+}
+.endImg {
+    flex-direction: row-reverse !important;
+}
+.infinitas-itemImg {
+    width: 78px;
+    height: 78px;
+    margin-right: 20px;
+}
+.infinitas-itemText {
+  font-size: 14px;
+  color: #424242;
 }

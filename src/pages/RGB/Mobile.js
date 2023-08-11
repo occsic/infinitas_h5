@@ -41,6 +41,22 @@ export default function RGBMobile() {
         { title: "5", img: about, sub: "There is no concept of block and chain." },
     ]
 
+    const infinitasData = [
+        {
+            img: about,
+            title: "Infinitas will complete the RGB protocol's compatibility and support for the Lightning Network to create a Turing-complete Bitcoin intelligent application network. At the same time, the concept of Global State is introduced to help more developers build complex applications (such as synthetic assets, algorithmic stable coins, etc.) on RGB.",
+        },
+        {
+            img: about,
+            title: "Not only that, RGB v0.10 introduces a new smart contract model, and it is written and compiled in Rust, which can support various complex application scenarios. opens up possibilities.",
+            type: "end",
+        },
+        {
+            img: about,
+            title: "The RGB standard library can run without I/O and file system access. Replacing the complex stack with a single API library and rgb command line tools will enhance the mass adoption of Bitcoin and decentralized finance.",
+        },
+        { img: about, title: "In other words, Infinitas will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.", type: "end" },
+    ]
     return (
         <div>
             <MHeader activeIndex={"2"} />
@@ -101,7 +117,9 @@ export default function RGBMobile() {
                     stronger, more flexible, and more secure, and lay a solid foundation for future development.
                 </div>
                 <div className="rgb-code-view">
-                    <a className="rgb-code-btn" href="https://github.com/RGB-WG">RGB SOURCE CODE</a>
+                    <a className="rgb-code-btn" href="https://github.com/RGB-WG">
+                        RGB SOURCE CODE
+                    </a>
                 </div>
                 <div className="rgb-code-down">
                     <a className="rgb-code-viewbtn" href="https://rgb.tech">
@@ -112,6 +130,12 @@ export default function RGBMobile() {
             </div>
             <div className="content">
                 <div className="infinitas-title">RGB IN INFINITAS</div>
+                {infinitasData.map((item, index) => (
+                    <div key={index} className={`infinitas-item flex-row ${item.type == "end" ? "endImg" : ""}`}>
+                        <img className="infinitas-itemImg" src={item.img} />
+                        <div className="infinitas-itemText">{item.title}</div>
+                    </div>
+                ))}
             </div>
 
             <MFooter activeIndex={"2"} />
