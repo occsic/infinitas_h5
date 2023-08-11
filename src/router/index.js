@@ -15,6 +15,6 @@ export default [
     {
         path: 'network',
         exact: true,
-        main: <RGB />
+        main: <Network />
     },
 ]
