@@ -183,10 +183,11 @@ export default function InfinitasHomePC() {
                 <Carousel dotPosition={'left'}>
                     <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
                                      text={'RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
-                    <HomePCSolutions title={'RZK (Recursive Zero Knowledge)'}
-                                     text={'RZK=Z0(...Zn-2(Zn-2,Zn-1)Zn . The verifier does not need to verify the block from scratch, but only needs to download the current block for simple verification. The latest block will include the proof from the founding block to the current block.'}/>
                     <HomePCSolutions title={'FATLINE PROTOCOL'}
                                      text={'Fatline Protocol is a lightweight communication + storage protocol between RGB clients. It is compatible with the Nostr protocol to achieve efficient communication between nodes. The communication speed can reach more than 10 times that of Storm+Bifrost.'}/>
+                    <HomePCSolutions title={'RZK (Recursive Zero Knowledge)'}
+                                     text={'RZK=Z0(...Zn-2(Zn-2,Zn-1)Zn . The verifier does not need to verify the block from scratch, but only needs to download the current block for simple verification. The latest block will include the proof from the founding block to the current block.'}/>
+
                 </Carousel>
             </div>
 

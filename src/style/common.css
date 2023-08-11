@@ -80,6 +80,16 @@
 .font-color-white{
     color: #ffffff;
 }
+.font-color-green{
+    color: #26ff96;
+}
+.font-color-red{
+    color: #ff3150;
+}
+
+.font-color-khaki{
+    color: #ece8e1;
+}
 
 .bg-color-white{
     background-color: #ffffff;

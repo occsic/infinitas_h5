@@ -1,0 +1,16 @@
+.rgb-fontA{
+    font-family: Arial_Black;
+    font-size: 40px;
+    color: #f9f9f9;
+    margin-top: 180px;
+    letter-spacing: 10px;
+}
+.rgb-des{
+    padding: 20px 65px 20px 20px;
+    border-radius: 2px;
+    background-color:#424242;
+    color: #f9f9f9;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
