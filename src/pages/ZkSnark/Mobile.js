@@ -28,6 +28,21 @@ export default function ZkSnarkMobile() {
             sub: "Thus actually running the generator requires a very secure process to make sure no-one learns about and saves the parameter anywhere. This was the reason for the extremely elaborate ceremony the Zcash team conducted in order to generate the proving key and verification key, while making sure the “toxic waste” parameter lambda was destroyed in the process.",
         },
     ]
+
+    const zkReferenceData = [
+        {
+            img: about,
+            title: "Mina Protocol",
+            link: "https://minaprotocol.com/blog/what-are-zk-snarks",
+            button: "GO",
+        },
+        {
+            img: about,
+            title: "Learn Zcash",
+            link: "https://z.cash/learn/what-are-zk-snarks/",
+            button: "GO",
+        },
+    ]
     return (
         <div>
             <MHeader activeIndex={"2"} />
@@ -95,7 +110,19 @@ export default function ZkSnarkMobile() {
                 </div>
             </div>
             <div className="zk-em"></div>
-            <div className=""></div>
+            <div className="zk-reference content">
+                <div className="zk-text colorB">DETAILED REFERENCE</div>
+                {zkReferenceData.map((item, inx) => (
+                    <div key={inx} className="zk-reference-item flex-column fl-ai-center">
+                        <img className="zk-reference-item-img" src={item.img} />
+                        <div className="zk-reference-item-title">{item.title}</div>
+                        <div className="zk-reference-item-link">{item.link}</div>
+                        <div className="zk-reference-item-btn" onClick={() => window.open(item.link)}>
+                            {item.button}
+                        </div>
+                    </div>
+                ))}
+            </div>
 
             <MFooter activeIndex={"2"} />
         </div>

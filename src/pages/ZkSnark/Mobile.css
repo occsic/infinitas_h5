@@ -71,3 +71,31 @@
     background-color: #0b0b0e;
     height: 500px;
 }
+.zk-reference-item {
+    padding: 0 40px;
+    text-align: center;
+    margin-bottom: 72px;
+}
+.zk-reference-item-img {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 12px;
+}
+.zk-reference-item-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0f1923;
+    margin-bottom: 6px;
+
+}
+.zk-reference-item-link {
+    font-size: 12px;
+    color: #424242;
+    margin-bottom: 12px;
+
+}
+.zk-reference-item-btn {
+    width: 200px;
+    padding: 20px 0;
+    border: solid 1px #0f1923;
+}
