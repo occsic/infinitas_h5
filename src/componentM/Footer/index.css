@@ -1,0 +1,44 @@
+.m-footer {
+    padding: 50px 36px 40px;
+    background-color: #0b0b0e;
+    color: #fff;
+    .ant-collapse-expand-icon {
+        color: #fff;
+    }
+}
+.m-logo {
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+.font-fff {
+    color: #fff;
+}
+.itemsTitle {
+    font-size: 24px;
+    font-weight: 600;
+}
+.itemsI {
+    font-size: 16px;
+    color: #ece8e1;
+}
+.endItem {
+    padding: 0 14px 0 12px;
+    justify-content: space-between;
+}
+.foottext {
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #ece8e1;
+    padding: 0 50px;
+}
+.iconimg {
+    width: 24px;
+    height: 24px;
+    margin-right: 18px;
+}
+.iconimg:last-child {
+    margin-right: 0;
+}
