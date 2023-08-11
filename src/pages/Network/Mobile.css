@@ -55,3 +55,21 @@
 .endImg {
     flex-direction: row-reverse !important;
 }
+.network-main-c{
+    margin-top: 24px;
+    overflow-x: auto;
+}
+.network-main-cI{
+    margin-right: 48px;
+}
+.network-main-cI-sub{
+    width: 220px;
+    font-size: 14px;
+    color: #424242;
+}
+.network-main-cI-img{
+    width: 144px;
+}
+.network-infinitas{
+    background-color: #ece8e1;
+}

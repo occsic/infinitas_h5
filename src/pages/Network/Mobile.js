@@ -27,6 +27,24 @@ export default function NetworkMobile() {
             type: "end",
         },
     ]
+    const infinitasData = [
+        {
+            img: about,
+            sub: "Infinitas embeds the RGB protocol into the transactions of the Lightning Network channel, establishes a series of two-way payment channels outside the blockchain, and utilizes the efficient performance of the Lightning Network to allow users to conduct fast and low-cost transactions on these channels.",
+        },
+        {
+            img: about,
+            sub: "Once the Lightning Network channel is established, users can conduct RGB protocol transactions in the channel. This means that users can create and trade RGB tokens, and these transactions are not directly written to the Bitcoin main blockchain, but are carried out within the channel and do not directly affect the Bitcoin main blockchain.",
+        },
+        {
+            img: about,
+            sub: "The more complex smart contracts supported by Infinitas allow users to perform more types of transaction operations within Lightning Network channels, including conditional payments, multi-party signatures, and more. It provides users with more flexible and diversified trading options.",
+        },
+        {
+            img: about,
+            sub: "The combination of Infinitas brings more functionality and scalability to the Bitcoin ecosystem, providing users with a better transaction experience and more usage options. At the same time, the transactions in the Lightning Network are carried out in the channel and will not be immediately exposed to the entire Bitcoin network, thus providing higher transaction privacy to a certain extent.",
+        },
+    ]
     return (
         <div>
             <MHeader activeIndex={"2"} />
@@ -44,12 +62,24 @@ export default function NetworkMobile() {
                 {workData.map((item, index) => (
                     <div key={index} className={`work-item flex-row ${item.type == "end" ? "endImg" : ""}`}>
                         <img className="work-itemImg" src={item.img} />
-                        <div className={`colorF work-itemText  ${item.type == "end" ? "mr20" : "ml20"}`} >{item.title}</div>
+                        <div className={`colorF work-itemText  ${item.type == "end" ? "mr20" : "ml20"}`}>{item.title}</div>
                     </div>
                 ))}
             </div>
-            <div className="network-infinitas"></div>
-            <div className="network-reference"></div>
+            <div className="network-infinitas content">
+                <div className="network-text colorB">LIGHTNING NETWORK IN INFINITAS</div>
+                <div className="network-main-c flex-row">
+                    {infinitasData.map((item) => (
+                        <div className="flex-shrink network-main-cI" key={item.title}>
+                            <div className="network-main-cI-sub">{item.sub}</div>
+                            <img className="network-main-cI-img" src={item.img} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+            <div className="network-reference content">
+                <div className="network-text colorB">DETAILED REFERENCE</div>
+            </div>
             <MFooter activeIndex={"2"} />
         </div>
     )
