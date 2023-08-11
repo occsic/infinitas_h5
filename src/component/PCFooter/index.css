@@ -1,0 +1,23 @@
+.pc-footer{
+    background-color: #0f1923;
+    width: 100vw;
+    height: 512px;
+}
+.pcf-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #f9f9f9;
+}
+.pcf-des{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ece8e1;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.pcf-line{
+    background-color: rgb(236, 232, 225);
+    width: 1200px;
+    height: 1px;
+    margin-top: 67px;
+}

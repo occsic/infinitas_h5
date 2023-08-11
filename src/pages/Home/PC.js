@@ -8,6 +8,7 @@ import {Carousel} from "antd";
 import HomePCSolutions from "./Component/HomePCSolutions";
 import HomeOverallComponent from "./Component/HomeOverallComponent";
 import HomePCRoadmap from "./Component/HomePCRoadmap";
+import PCFooter from "../../component/PCFooter";
 
 export default function InfinitasHomePC() {
     const roadmapRef = useRef()
@@ -281,6 +282,7 @@ export default function InfinitasHomePC() {
                 </div>
             </div>
 
+            <PCFooter />
 
         </div>
     )
