@@ -161,6 +161,23 @@
     margin-right: 20px;
 }
 .infinitas-itemText {
-  font-size: 14px;
-  color: #424242;
+    font-size: 14px;
+    color: #424242;
+}
+.rgb-video {
+    background-color: #0b0b0e;
+    padding: 48px 0;
+}
+.rgb-video-title {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 800;
+}
+.rgb-video-link {
+    display: block;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fff;
+    text-align: center;
 }
