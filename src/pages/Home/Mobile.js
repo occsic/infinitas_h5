@@ -1,6 +1,7 @@
 import React from "react"
 import "./Mobile.css"
 import MHeader from "../../componentM/Header"
+import MFooter from "../../componentM/Footer"
 import about from "../../static/about.png"
 import { useState } from "react"
 
@@ -245,6 +246,10 @@ export default function InfinitasHomeMobile() {
                     ))}
                 </div>
             </div>
+        
+            <MFooter />
+
+
         </div>
     )
 }
