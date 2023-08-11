@@ -26,6 +26,7 @@
     width: 280px;
     font-size: 14px;
 }
+
 .zk-main {
     background: #0b0b0e;
 }
@@ -54,4 +55,19 @@
 }
 .zkmainItem-ver .red {
     background-color: #f44336;
+}
+
+.zk-dec {
+    background-color: #ece8e1;
+}
+.zk-dec-text{
+    font-size: 14px;
+    margin-bottom: 48px;
+}
+.zk-mb-24{
+    margin-bottom: 24px;
+}
+.zk-em{
+    background-color: #0b0b0e;
+    height: 500px;
 }
