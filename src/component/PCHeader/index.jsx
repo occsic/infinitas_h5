@@ -20,7 +20,7 @@ export default function PCHeader(props){
     const content2 = (
         <div className='pch-content'>
             <Link to={'/rgb'}><div className='pchc-text'>RGB</div></Link>
-            <div className='pchc-text'>LIGHTING NETWORK</div>
+            <Link to={'/network'}><div className='pchc-text'>LIGHTING NETWORK</div></Link>
             <div className='pchc-text'>ZK-SNARK</div>
             <div style={{height:'10px'}}/>
         </div>
