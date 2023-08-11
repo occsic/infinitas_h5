@@ -56,18 +56,49 @@
 .zkmainItem-ver .red {
     background-color: #f44336;
 }
+.zk-main-top {
+    margin: 48px 0 24px;
+}
+.zk-main-sub {
+    font-size: 12px;
+}
+.zk-bg {
+    flex: 1;
+    height: 114px;
+    background: #fff;
+    color: #424242;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.zk-bg1 {
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+.zk-bg2 {
+    margin-bottom: 6px;
+}
+.zk-bg3 {
+    margin-right: 6px;
+}
+.zk-bg4 {
+    margin-right: 6px;
+}
+.zk-bg5 {
+}
 
 .zk-dec {
     background-color: #ece8e1;
 }
-.zk-dec-text{
+.zk-dec-text {
     font-size: 14px;
     margin-bottom: 48px;
 }
-.zk-mb-24{
+.zk-mb-24 {
     margin-bottom: 24px;
 }
-.zk-em{
+.zk-em {
     background-color: #0b0b0e;
     height: 500px;
 }
@@ -86,13 +117,11 @@
     font-weight: bold;
     color: #0f1923;
     margin-bottom: 6px;
-
 }
 .zk-reference-item-link {
     font-size: 12px;
     color: #424242;
     margin-bottom: 12px;
-
 }
 .zk-reference-item-btn {
     width: 200px;
