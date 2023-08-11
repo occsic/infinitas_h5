@@ -16,20 +16,23 @@ export default function PCHeader(){
         </div>
     );
     return (
-        <div className='pc-header'>
-            <div style={{flex:0.42}}>
-                <img src={logo} width={180} height={35}/>
-            </div>
-            <div className='flex-row fl-ai-center fl-jc-between' style={{flex:0.58}}>
-                <Popover overlayInnerStyle={{padding:'0'}} placement="bottomLeft" color={'rgba(0, 0, 0, 0.2)'}  content={content}>
-                    <div className='pch-tag'>HOME</div>
-                </Popover>
+        <div className='flex-center pc-header-container'>
+            <div className='pc-header'>
+                <div style={{flex:0.42}}>
+                    <img src={logo} width={180} height={35}/>
+                </div>
+                <div className='flex-row fl-ai-center fl-jc-between' style={{flex:0.58}}>
+                    <Popover overlayInnerStyle={{padding:'0'}} placement="bottomLeft" color={'rgba(0, 0, 0, 0.2)'}  content={content}>
+                        <div className='pch-tag'>HOME</div>
+                    </Popover>
 
-                <div className='pch-tag'>LEARN</div>
-                <div className='pch-tag'>RESOURCES</div>
-                <div className='pch-tag'>BUILD</div>
-                <div className='pch-tag'>CONTACT</div>
+                    <div className='pch-tag'>LEARN</div>
+                    <div className='pch-tag'>RESOURCES</div>
+                    <div className='pch-tag'>BUILD</div>
+                    <div className='pch-tag'>CONTACT</div>
+                </div>
             </div>
         </div>
+
     )
 }
