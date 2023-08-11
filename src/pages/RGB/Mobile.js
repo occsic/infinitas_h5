@@ -133,7 +133,7 @@ export default function RGBMobile() {
                 {infinitasData.map((item, index) => (
                     <div key={index} className={`infinitas-item flex-row ${item.type == "end" ? "endImg" : ""}`}>
                         <img className="infinitas-itemImg" src={item.img} />
-                        <div className="infinitas-itemText">{item.title}</div>
+                        <div className={`infinitas-itemText  ${item.type == "end" ? "mr20" : "ml20"}`} >{item.title}</div>
                     </div>
                 ))}
             </div>
