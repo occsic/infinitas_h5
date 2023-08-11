@@ -3,6 +3,7 @@ import './PC.css'
 import PCHeader from "../../component/PCHeader";
 import {Carousel} from "antd";
 import PCFooter from "../../component/PCFooter";
+import HomePCSolutions from "../Home/Component/HomePCSolutions";
 
 export default function ZkSnarkPC() {
     return (
@@ -36,9 +37,65 @@ export default function ZkSnarkPC() {
 
             {/*第二部分*/}
             <div className='flex-center bg-color-black' style={{width: '100vw'}}>
-                <div className='common-width'>
+                <div className='common-width snark-follow'>
                     <div className='font-color-white' style={{fontWeight: 800, fontSize: '40px', marginTop: '230px'}}>A ZK-SNARK CONSISTS OF THREE</div>
                     <div className='font-color-white' style={{fontWeight: 800, fontSize: '40px'}}>ALGORITHMS G, P, V DEFINED AS FOLLOWS:</div>
+                    <div style={{height:'100px'}}/>
+                    <Carousel dotPosition={'right'}>
+
+                           <div>
+                               <div className='flex-row'>
+                                   <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                   <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
+                                       The key generator G takes a secret parameter
+                                       lambda and a program C, and generates two publicly
+                                       available keys, a proving key pk, and a verification key vk.
+                                       These keys are public parameters that only need to be generated once
+                                       for a given program C.
+                                   </div>
+                               </div>
+                           </div>
+                        <div>
+                            <div className='flex-row'>
+                                <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
+                                    The prover P takes as input the proving key pk, a public input x and a private witness w. The algorithm generates a
+                                    proof prf = P(pk, x, w) that the prover knows a witness w and that the witness satisfies the program.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='flex-row'>
+                                <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
+                                    The verifier V computes V(vk, x, prf) which returns true if the proof is correct, and false otherwise. Thus this function
+                                    returns true if the prover knows a witness w satisfying C(x,w) == true.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='flex-row'>
+                                <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
+                                    Note here the secret parameter lambda used in the generator. This parameter sometimes makes it tricky to use zk-SNARKs
+                                    in real-world applications. The reason for this is that anyone who knows this parameter can generate fake proofs. Specifically,
+                                    given any program C and public input x a person who knows lambda can generate a proof fake_prf such that V(vk, x, fake_prf) evaluates
+                                    to true without knowledge of the secret w.
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div className='flex-row'>
+                                <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
+                                    Thus actually running the generator requires a very secure process to make sure no-one learns about and saves the
+                                    parameter anywhere. This was the reason for the extremely elaborate ceremony the Zcash team conducted in order to generate
+                                    the proving key and verification key, while making sure the “toxic waste” parameter lambda was destroyed in the process.
+                                </div>
+                            </div>
+                        </div>
+                    </Carousel>
+                    <div style={{height:'138px'}}/>
                     <div className='font-color-white' style={{fontWeight: 800, fontSize: '40px'}}>FEATURES</div>
                     <div className='flex-row fl-ai-center fl-jc-between' style={{marginTop:'96px'}}>
                         <div className='snark-img-main' style={{width:'713px',height:'451px',backgroundImage:"url(https://swiperjs.com/demos/images/nature-2.jpg)"}}><div style={{marginLeft:'40px',marginBottom:'60px'}}>LIGHTWEIGHT AND FAST SYNC</div></div>
