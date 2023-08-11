@@ -7,7 +7,7 @@ export default function ZkSnarkPC() {
     return (
         <div className='home-pc'>
             <PCHeader/>
-
+            <div style={{height:'100px'}} />
         </div>
     )
 }
