@@ -45,6 +45,22 @@ export default function NetworkMobile() {
             sub: "The combination of Infinitas brings more functionality and scalability to the Bitcoin ecosystem, providing users with a better transaction experience and more usage options. At the same time, the transactions in the Lightning Network are carried out in the channel and will not be immediately exposed to the entire Bitcoin network, thus providing higher transaction privacy to a certain extent.",
         },
     ]
+
+    const referenceData = [
+        {
+            img: about,
+            title: "The Bitcoin Lightning Network",
+            link: "https://lightning.network/lightning-network-summary.pdf",
+            button: "GO",
+        },
+        {
+            img: about,
+            title: "The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments",
+            link: "https://lightning.network/lightning-network-paper.pdf",
+            button: "GO",
+        },
+    ]
+
     return (
         <div>
             <MHeader activeIndex={"2"} />
@@ -79,6 +95,16 @@ export default function NetworkMobile() {
             </div>
             <div className="network-reference content">
                 <div className="network-text colorB">DETAILED REFERENCE</div>
+                {referenceData.map((item, inx) => (
+                    <div key={inx} className="reference-item flex-column fl-ai-center">
+                        <img className="reference-item-img" src={item.img} />
+                        <div className="reference-item-title">{item.title}</div>
+                        <div className="reference-item-link">{item.link}</div>
+                        <div className="reference-item-btn" onClick={() => window.open(item.link)}>
+                            {item.button}
+                        </div>
+                    </div>
+                ))}
             </div>
             <MFooter activeIndex={"2"} />
         </div>
