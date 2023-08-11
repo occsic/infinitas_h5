@@ -92,15 +92,15 @@ export default function InfinitasHomePC() {
                     <div className='hpo-fontB'>TO MEET THE VALUE PURSUIT OF 100 MILLION PEOPLE WHO ARE FASTER, TRUER AND
                         SAFER.
                     </div>
-                    <div className='hpo-start-border'>
-                        <div className='hpo-start flex-center'>START</div>
+                    <div className='hpo-start-border' onClick={()=> window.scrollTo(0,900)}>
+                        <div className='hpo-start flex-center' >START</div>
                     </div>
                 </div>
             </div>
 
 
             {/*about us*/}
-            <div className='height-900 common-width flex-column fl-jc-center' style={{backgroundColor: "#ffffff"}}>
+            <div className='height-900 common-width flex-column fl-jc-center' style={{backgroundColor: "#ffffff"}} id={'about'}>
                 <div className='hp-fontC'>ABOUT US</div>
                 <div className='hp-fontD'>INFINITAS IS A TURING-COMPLETE BITCOIN application ecosystem with infinite
                     scalability. Infinitas will create the next generation of bitcoin large-scale application scenarios.
