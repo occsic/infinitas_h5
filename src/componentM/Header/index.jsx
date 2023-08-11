@@ -32,7 +32,7 @@ export default function MHeader({activeIndex}) {
                 <div className="itemsI">
                     <p>RGB</p>
                     <p>LIGHTING NETWORK</p>
-                    <p>FZK-SNARKocus</p>
+                    <p>ZK-SNARK</p>
                 </div>
             ),
         },
