@@ -4,10 +4,11 @@ import MHeader from "../../componentM/Header"
 import MFooter from "../../componentM/Footer"
 import about from "../../static/about.png"
 import { useState } from "react"
+import {CheckOutlined } from '@ant-design/icons'
 
 export default function InfinitasHomeMobile() {
     const [showIndex, setShowIndex] = useState(0)
-    const [yearIndex, setYearIndex] = useState(1)
+    const [yearIndex, setYearIndex] = useState(2)
 
     const standContent = [
         { img: about, title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
@@ -63,42 +64,35 @@ export default function InfinitasHomeMobile() {
     const roadmapData = [
         {
             year: "2021",
-            bgc: about,
+            bgc: 'https://static.paraluni.org/images/infiweb/roadmap_bg.png',
             yearData: [
-                { yejiao: "Q1", textList: ["2021Q1", "20"] },
-                { yejiao: "Q2", textList: ["2021Q2", "20"] },
-                { yejiao: "Q3", textList: ["2021Q3", "20"] },
-                { yejiao: "Q4", textList: ["2021Q4", "20"] },
+                { yejiao: "--", textList: ["DeFi 2.0 project - Paraluni established", "Complete the translation of RGB protocol documents"] },
             ],
         },
         {
+            
             year: "2022",
-            bgc: about,
+            bgc: 'https://static.paraluni.org/images/infiweb/roadmap_bg.png',
             yearData: [
-                { yejiao: "Q1", textList: ["Paraluni TVL reaches $50M+"] },
-                { yejiao: "Q2", textList: ["RGB v0.10 released", "Community followers reached 50K+", "Infinitas seed round launched"] },
-                { yejiao: "Q3", textList: ["2021Q3", "20"] },
-                { yejiao: "Q4", textList: ["2021Q4", "20"] },
+                { yejiao: "--", textList: ["Community established","BTC ecosystem network project - Infinitas established"] },
             ],
         },
         {
             year: "2023",
-            bgc: about,
+            bgc: 'https://static.paraluni.org/images/infiweb/roadmap_bg.png',
             yearData: [
-                { yejiao: "Q1", textList: ["2021Q1", "20"] },
-                { yejiao: "Q2", textList: ["2021Q2", "20"] },
-                { yejiao: "Q3", textList: ["2021Q3", "20"] },
-                { yejiao: "Q4", textList: ["2021Q4", "20"] },
+                { yejiao: "Q1", textList: [<div>Paraluni TVL reaches <span style={{fontWeight:600,fontSize:'22px'}}>$50M+</span></div>] },
+                { yejiao: "Q2", textList: ["RGB v0.10 released", <div>Community followers reached <span style={{fontWeight:600,fontSize:'22px'}}>50K+</span></div>,'Infinitas seed round launched'] },
+                { yejiao: "Q3", textList: ["BTB miners reached 5k+", <div>Community followers reached <span style={{fontWeight:600,fontSize:'22px'}}>100K+</span></div>,"RGB & BTC-Eco related research released","Join the LNP/BP Association"] },
+                { yejiao: "Q4", textList: ["Develop and release the Infinitas testnet", "Cooperation with mainstream wallets","Develop Infinitas mainnet","Launched the official version of data explorer"] },
             ],
         },
         {
             year: "2024",
-            bgc: about,
+            bgc: 'https://static.paraluni.org/images/infiweb/roadmap_bg.png',
             yearData: [
-                { yejiao: "Q1", textList: ["2021Q1", "20"] },
-                { yejiao: "Q2", textList: ["2021Q2", "20"] },
-                { yejiao: "Q3", textList: ["2021Q3", "20"] },
-                { yejiao: "Q4", textList: ["2021Q4", "20"] },
+                { yejiao: "Q1", textList: ["Launched Infinitas mainnet (BTC减半)", "Building DeFi (DEX) Schemas","Provide SDKs"] },
+                { yejiao: "Q2", textList: ["Total number of ecosystem projects reaches 200+", "Listing on centralized exchange","Development of DApp integration environment"] },
             ],
         },
     ]
@@ -222,13 +216,17 @@ export default function InfinitasHomeMobile() {
                 <div className="content-roadmap-title">ROADMAP</div>
                 <div className="roadmap-main flex-row">
                     {roadmapData[yearIndex].yearData.map((i, ind) => (
-                        <div className="yearData-view" style={{ background: `url(${roadmapData[yearIndex].bgc}) no-repeat`, backgroundSize: "cover" }} key={ind}>
+                        <div className="yearData-view" key={ind}>
+                            <img style={{marginBottom:'20px'}} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
                             {i.textList.map((text, idx) => (
                                 <div key={idx} className="flex-row year-text">
-                                    <img className="year-icon" src={about} />
+                                    <CheckOutlined className="year-icon" style={{color:'#f44336',marginRight:'10px'}} />
                                     <div>{text}</div>
+                                    
                                 </div>
                             ))}
+
+                            <div className="year_ji">{i.yejiao}</div>
                         </div>
                     ))}
                 </div>

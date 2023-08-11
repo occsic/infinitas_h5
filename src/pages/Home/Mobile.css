@@ -282,25 +282,40 @@
 .roadmap-main {
     overflow-x:auto;
     flex-wrap: nowrap;
+    position: relative;
 }
 .yearData-view {
     width: 260px;
     height: 240px;
     flex-shrink:0;
     margin-right: 42px;
-    
+    position: relative;
+    background-color: #ece8e1;
+    background-image: url(https://static.paraluni.org/images/infiweb/roadmap_bg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 12px 16px;
 }
 .year-text{
-    align-items: center;
     flex-wrap: nowrap;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.42;
     color: #1b1a1a;
     margin-bottom: 24px;
+    align-items: center;
 }
 .year-icon{
     width: 10px;
     height: 8px;
     margin-right: 5px;
+}
+.year_ji{
+    position: absolute;
+    right: 24px;
+    bottom: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.13;
+    color: #000;
 }
