@@ -185,7 +185,7 @@ export default function RGBPC() {
             <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
                 <div className='common-width'>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '162px',textAlign:'center'}}>DETAILED REFERENCE</div>
-                    <div className='font-color-42 font-size-16' style={{marginTop:'12px'}}>https://rgb.tech/blog/release-v0-10/</div>
+                    <div className='font-color-42 font-size-16' style={{marginTop:'12px',textAlign:'center',textDecoration:'underline',cursor:'pointer'}} onClick={()=>window.location.href='  https://rgb.tech/blog/release-v0-10/'}>https://rgb.tech/blog/release-v0-10/</div>
                     <div style={{height:'75px'}}/>
                     <iframe width="1200" height="555" src="https://www.youtube.com/embed/VmB5SaaaABI"
                             title="YouTube video player" frameBorder="0"
