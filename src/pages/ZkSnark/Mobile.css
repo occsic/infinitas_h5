@@ -63,14 +63,24 @@
     font-size: 12px;
 }
 .zk-bg {
-    flex: 1;
-    height: 114px;
-    background: #fff;
-    color: #424242;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255,.1);
+    color: #fff;
     display: flex;
-    align-items: flex-end;
-    padding: 10px;
+    align-items: center;
+    padding: 20px 0;
+    margin-right: 10px;
     box-sizing: border-box;
+    flex-direction: column;
+    width: 200px;
+}
+.zk-bg-main {
+    overflow-x: auto;
+}
+.zk-bg-img {
+    width: 98px;
+    height: 98px;
+    margin-bottom: 30px;
 }
 .zk-bg1 {
     margin-right: 6px;
@@ -127,4 +137,7 @@
     width: 200px;
     padding: 20px 0;
     border: solid 1px #0f1923;
+}
+.mb50 {
+    margin-bottom: 50px;
 }
