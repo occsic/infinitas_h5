@@ -3,6 +3,7 @@ import "./Mobile.css"
 import MHeader from "../../componentM/Header"
 import MFooter from "../../componentM/Footer"
 import iconbg from "../../static/iconbg.png"
+import { Carousel } from "antd"
 
 export default function RGBMobile() {
     const [showIndex, setShowIndex] = useState(0)
@@ -22,15 +23,16 @@ export default function RGBMobile() {
 
     const solutionsContent = [
         {
-            img: 'https://static.paraluni.org/images/infiweb/rgb_bg2.png',
-            title: "SINGLE-USE-SEALS",
-            sub: "Similar to the Single-use-seals used to protect freight containers in the real world, the original meaning of single-use-seal sis a unique object that can be closed on messages only once. Once it is used, it will be permanently opened and cannot be closed again. Whenever the status of a smart contract changes on the RGB network, a bitcoin native UTXO will be created in the owner's wallet. When the owner submits a transaction on the RGB network, the UTXO is spent/closed. In short, single-use-seal is an abstract mechanism to prevent double payment.",
-        },
-        {
             img: 'https://static.paraluni.org/images/infiweb/rgb_bg1.png', // dev
             title: "CLIENT-SIDE VALIDATION",
             sub: `Client-side validation is a paradigm proposed by Peter Todd in 2016. Its core idea is that in a distributed system, the validation of state does not need to be implemented globally by all parties involved in the decentralization protocol; Instead, only the parties involved in a specific state transition need to verify. Using this method, the state transition is not published in the global network, but transformed into a short encrypted commitment by using a cryptographic hash function, which needs to be a part of a "Proof-of-Publication" medium and has three main characteristics: receipt proof, non-publication proof and membership proof. The first Client-side validation system is the Open Time Stamps protocol, which was also proposed and developed by Peter Todd in 2014-2016.`,
         },
+        {
+            img: 'https://static.paraluni.org/images/infiweb/rgb_bg2.png',
+            title: "SINGLE-USE-SEALS",
+            sub: "Similar to the Single-use-seals used to protect freight containers in the real world, the original meaning of single-use-seal sis a unique object that can be closed on messages only once. Once it is used, it will be permanently opened and cannot be closed again. Whenever the status of a smart contract changes on the RGB network, a bitcoin native UTXO will be created in the owner's wallet. When the owner submits a transaction on the RGB network, the UTXO is spent/closed. In short, single-use-seal is an abstract mechanism to prevent double payment.",
+        },
+      
     ]
 
     const mainData = [
@@ -71,28 +73,20 @@ export default function RGBMobile() {
                     ))}
                 </div>
             </div>
-            <div className="rgb-desing">
+            <div className="rgb-desing rgb-desingView">
                 <div className="desing-title">SOLUTIONS</div>
-
-                <div className="desingItem">
-                    <div className="desingItem-title">{solutionsContent[showIndex].title}</div>
-                    <div className="desingItem-line"></div>
-                    <div className="flex-row">
-                        <div className="desingItem-sub">{solutionsContent[showIndex].sub}</div>
-                        <div className="desingItem-ver flex-column">
-                            {solutionsContent.map((i, ind) => (
-                                <div
-                                    onClick={() => {
-                                        setShowIndex(ind)
-                                    }}
-                                    className={`ver ${showIndex == ind ? "red" : ""}`}
-                                    key={ind}
-                                ></div>
-                            ))}
+                <Carousel dotPosition={"right"}>
+                    {solutionsContent.map((i) => (
+                        <div key={i.title} className="desingItem">
+                            <div className="desingItem-title">{i.title}</div>
+                            <div className="desingItem-line"></div>
+                            <div className="flex-row fl-ai-center">
+                                <div className="desingItem-sub">{i.sub}</div>
+                            </div>
+                            <img className="desingItem-img" src={i.img} />
                         </div>
-                    </div>
-                    <img className="desingItem-img" src={solutionsContent[showIndex].img} />
-                </div>
+                    ))}
+                </Carousel>
             </div>
             <div className="rgb-main content">
                 <div className="rgb-main-title">MAIN FEATURES</div>

@@ -62,6 +62,7 @@
     width: 240px;
     font-size: 14px;
     line-height: 1.43;
+    height: 450px;
 }
 .desingItem-img {
     margin-top: 24px;
@@ -70,9 +71,7 @@
     background-color: #0f1923;
     object-fit: cover;
 }
-.desingItem-ver .ver {
-    height: 48px;
-}
+
 
 .rgb-main {
     background-color: #ece8e1;
@@ -190,4 +189,35 @@
     line-height: 1.43;
     color: #fff;
     text-align: center;
+}
+
+
+
+
+
+.rgb-desingView .ant-carousel-vertical .slick-dots{
+    top: 31%;
+}
+.rgb-desingView .ant-carousel .slick-dots li.slick-active {
+    width: 4px;
+    height: 48px;
+    background-color: #ff3150;
+}
+
+.rgb-desingView .ant-carousel .slick-dots li {
+    width: 4px;
+    height: 48px;
+    background-color: rgba(15, 25, 35, 0.08);
+}
+
+.rgb-desingView .ant-carousel .slick-dots li.slick-active button {
+    width: 4px;
+    height: 48px;
+    background-color: #ff3150;
+}
+
+.rgb-desingView .ant-carousel .slick-dots li button {
+    width: 4px;
+    height: 48px;
+    background-color: rgba(15, 25, 35, 0.08);
 }
