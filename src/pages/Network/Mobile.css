@@ -69,6 +69,7 @@
 }
 .network-main-cI-img {
     width: 144px;
+    object-fit: cover;
 }
 .network-infinitas {
     background-color: #ece8e1;
@@ -81,7 +82,6 @@
 .reference-item-img {
     width: 46px;
     height: 46px;
-    border-radius: 50%;
     margin-bottom: 12px;
 }
 .reference-item-title {
