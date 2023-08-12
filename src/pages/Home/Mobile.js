@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import "./Mobile.css"
 import MHeader from "../../componentM/Header"
 import MFooter from "../../componentM/Footer"
@@ -10,7 +10,13 @@ import { Carousel } from "antd"
 export default function InfinitasHomeMobile() {
     const [showIndex, setShowIndex] = useState(0)
     const [yearIndex, setYearIndex] = useState(2)
+    const roadmapRef = useRef()
 
+    useEffect(()=>{
+        if (roadmapRef.current) {
+            roadmapRef.current.goTo(2)
+        }
+    },[])
     const standContent = [
         {
             img: "https://static.paraluni.org/images/infiweb/home_icon1.png",
@@ -240,29 +246,40 @@ export default function InfinitasHomeMobile() {
                     ))}
                 </div>
             </div>
-            <div id="roadmap" className="homecontent">
+            <div className="homecontent">
                 <div className="homecontent-roadmap-title">ROADMAP</div>
-                <div className="roadmap-main flex-row" id='roadmap'>
-                    {roadmapData[yearIndex].yearData.map((i, ind) => (
-                        <div className="yearData-view" key={ind}>
-                            <img style={{ marginBottom: "20px" }} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
-                            {i.textList.map((text, idx) => (
-                                <div key={idx} className="flex-row year-text">
-                                    <CheckOutlined className="year-icon" style={{ color: "#f44336", marginRight: "10px" }} />
-                                    <div>{text}</div>
-                                </div>
-                            ))}
+                <Carousel dotPosition={"bottom"} ref={roadmapRef} dots={false}>
+                    {roadmapData.map((i, ixxx) => (
+                        <div key={ixxx} className="roadmap-main" id="roadmap">
+                            <div className="roadmapscroll flex-row" style={{ overflowX: "auto" }}>
+                                {i.yearData.map((i, ind) => (
+                                    <div className="yearData-view" key={ind}>
+                                        <img style={{ marginBottom: "20px" }} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
+                                        {i.textList.map((text, idx) => (
+                                            <div key={idx} className="flex-row year-text">
+                                                <CheckOutlined className="year-icon" style={{ color: "#f44336", marginRight: "10px" }} />
+                                                <div>{text}</div>
+                                            </div>
+                                        ))}
 
-                            <div className="year_ji">{i.yejiao}</div>
+                                        <div className="year_ji">{i.yejiao}</div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     ))}
-                </div>
+                </Carousel>
+
                 <div className="yearView flex-row">
                     {roadmapData.map((i, ind) => (
                         <div
                             onClick={() => {
                                 setYearIndex(ind)
-                                document.getElementById('roadmap').scrollLeft = 0
+                                roadmapRef.current.goTo(ind)
+                                Array.prototype.forEach.call(
+                                    document.getElementsByClassName("roadmapscroll"),
+                                    i=>i.scrollLeft=0
+                                )
                             }}
                             className={`yearClass ${ind == yearIndex ? "redyear" : ""}`}
                             key={i.year}
