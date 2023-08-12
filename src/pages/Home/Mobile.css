@@ -120,6 +120,34 @@
 
 }
 
+.homecontent-solutions .ant-carousel-vertical .slick-dots{
+    top: 31%;
+}
+.homecontent-solutions .ant-carousel .slick-dots li.slick-active {
+    width: 4px;
+    height: 48px;
+    background-color: #ff3150;
+}
+
+.homecontent-solutions .ant-carousel .slick-dots li {
+    width: 4px;
+    height: 48px;
+    background-color: rgba(15, 25, 35, 0.08);
+}
+
+.homecontent-solutions .ant-carousel .slick-dots li.slick-active button {
+    width: 4px;
+    height: 48px;
+    background-color: #ff3150;
+}
+
+.homecontent-solutions .ant-carousel .slick-dots li button {
+    width: 4px;
+    height: 48px;
+    background-color: rgba(15, 25, 35, 0.08);
+}
+
+
 .homecontent-focus {
     background-color: #0b0b0e;
     color: #fff;

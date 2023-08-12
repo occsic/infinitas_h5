@@ -5,43 +5,52 @@ import MFooter from "../../componentM/Footer"
 import about from "../../static/about.png"
 import { useState } from "react"
 import { CheckOutlined } from "@ant-design/icons"
+import { Carousel } from "antd"
 
 export default function InfinitasHomeMobile() {
     const [showIndex, setShowIndex] = useState(0)
     const [yearIndex, setYearIndex] = useState(2)
 
     const standContent = [
-        { img: 'https://static.paraluni.org/images/infiweb/home_icon1.png', title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
-        { img: 'https://static.paraluni.org/images/infiweb/home_icon2.png', title: "ADAPTER TECHNOLOGY", sub: "Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status." },
         {
-            img: 'https://static.paraluni.org/images/infiweb/home_icon3.png',
+            img: "https://static.paraluni.org/images/infiweb/home_icon1.png",
+            title: "POW PROTECTION",
+            sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets.",
+        },
+        {
+            img: "https://static.paraluni.org/images/infiweb/home_icon2.png",
+            title: "ADAPTER TECHNOLOGY",
+            sub: "Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status.",
+        },
+        {
+            img: "https://static.paraluni.org/images/infiweb/home_icon3.png",
             title: "PRIVACY PRESERVING+++",
             sub: "A higher level of privacy protection for Infinitas assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.",
         },
         {
-            img: 'https://static.paraluni.org/images/infiweb/home_icon4.png',
+            img: "https://static.paraluni.org/images/infiweb/home_icon4.png",
             title: "ENRICHED GLOBAL STATE",
             sub: "Extended Global State, which is critical for building complex applications (such as synthetic assets, algorithmic stablecoins, etc.) on RGB. Make the RGB contract have a global state that can be accessed by virtual machines and clients (such as wallets, etc.).",
         },
         {
-            img: 'https://static.paraluni.org/images/infiweb/home_icon5.png',
+            img: "https://static.paraluni.org/images/infiweb/home_icon5.png",
             title: "OPTIMIZING THE LIGHTNING NETWORK",
             sub: "Through improvements to the Lightning Network (such as light block technology, node automatic expansion technology, and offline autonomy), higher transaction throughput is achieved while maintaining low-latency transaction confirmation time.",
         },
     ]
     const solutionsContent = [
         {
-            img: 'https://static.paraluni.org/images/infiweb/home_bg2.png',
+            img: "https://static.paraluni.org/images/infiweb/home_bg2.png",
             title: "SLR (SECURITY-LIGHTING-RGB) PROTOCOL",
             sub: "RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.",
         },
         {
-            img: 'https://static.paraluni.org/images/infiweb/home_bg3.png',
+            img: "https://static.paraluni.org/images/infiweb/home_bg3.png",
             title: "RZK (RECURSIVE ZERO KNOWLEDGE)",
             sub: "RZK=Z0(...Zn-2(Zn-2,Zn-1)Zn . The verifier does not need to verify the block from scratch, but only needs to download the current block for simple verification. The latest block will include the proof from the founding block to the current block.",
         },
         {
-            img: 'https://static.paraluni.org/images/infiweb/home_bg4.png',
+            img: "https://static.paraluni.org/images/infiweb/home_bg4.png",
             title: "FATLINE PROTOCOL",
             sub: "Fatline Protocol is a lightweight communication + storage protocol between RGB clients. It is compatible with the Nostr protocol to achieve efficient communication between nodes. The communication speed can reach more than 10 times that of Storm+Bifrost.",
         },
@@ -188,26 +197,18 @@ export default function InfinitasHomeMobile() {
 
             <div id="solutions" className="homecontent homecontent-solutions">
                 <div className="homecontent-solutions-title">SOLUTIONS</div>
-
-                <div className="solutionsItem">
-                    <div className="solutionsItem-title">{solutionsContent[showIndex].title}</div>
-                    <div className="solutionsItem-line"></div>
-                    <div className="flex-row fl-ai-center">
-                        <div className="solutionsItem-sub">{solutionsContent[showIndex].sub}</div>
-                        <div className="solutionsItem-ver flex-column">
-                            {solutionsContent.map((i, ind) => (
-                                <div
-                                    onClick={() => {
-                                        setShowIndex(ind)
-                                    }}
-                                    className={`ver ${showIndex == ind ? "red" : ""}`}
-                                    key={ind}
-                                ></div>
-                            ))}
+                <Carousel dotPosition={"right"}>
+                    {solutionsContent.map((i) => (
+                        <div key={i.title} className="solutionsItem">
+                            <div className="solutionsItem-title">{i.title}</div>
+                            <div className="solutionsItem-line"></div>
+                            <div className="flex-row fl-ai-center">
+                                <div className="solutionsItem-sub">{i.sub}</div>
+                            </div>
+                            <img className="solutionsItem-img" src={i.img} />
                         </div>
-                    </div>
-                    <img className="solutionsItem-img" src={solutionsContent[showIndex].img} />
-                </div>
+                    ))}
+                </Carousel>
             </div>
 
             <div id="overall" className="homecontent-overall">
@@ -241,7 +242,7 @@ export default function InfinitasHomeMobile() {
             </div>
             <div id="roadmap" className="homecontent">
                 <div className="homecontent-roadmap-title">ROADMAP</div>
-                <div className="roadmap-main flex-row">
+                <div className="roadmap-main flex-row" id='roadmap'>
                     {roadmapData[yearIndex].yearData.map((i, ind) => (
                         <div className="yearData-view" key={ind}>
                             <img style={{ marginBottom: "20px" }} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
@@ -261,6 +262,7 @@ export default function InfinitasHomeMobile() {
                         <div
                             onClick={() => {
                                 setYearIndex(ind)
+                                document.getElementById('roadmap').scrollLeft = 0
                             }}
                             className={`yearClass ${ind == yearIndex ? "redyear" : ""}`}
                             key={i.year}
