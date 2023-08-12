@@ -2,7 +2,7 @@ import React from "react";
 import './index.css'
 
 export default function HomePCStandFor(props){
-    const {title,describe,width,textWidth}=props
+    const {title,describe,width,textWidth,img}=props
     return (
         <div className='bg-color-white stand-block' style={{width:`${width}px`}}>
             <div className='stand-fontB'>
@@ -12,7 +12,7 @@ export default function HomePCStandFor(props){
                 {describe}
             </div>
             <div className='flex-1 flex-column fl-ai-end' style={{justifyContent:'flex-end'}}>
-                <img width={77} height={77} src={''}/>
+                <img style={{marginRight:'14px',marginBottom:'14px'}} width={77} height={77} src={img}/>
             </div>
         </div>
     )

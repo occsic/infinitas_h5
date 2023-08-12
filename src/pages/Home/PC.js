@@ -86,14 +86,16 @@ export default function InfinitasHomePC() {
             <div style={{height: '100px'}}/>
 
             {/*第一部分*/}
-            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw'}}>
+            <div className='flex-center' style={{backgroundImage: 'url(https://static.paraluni.org/images/infiweb/home_bg1.png)', width: '100vw',backgroundSize:"100% 100%"}}>
                 <div className='height-900 common-width'>
                     <div className='hpo-fontA'>BASED ON BITCOIN PROVIDE INFINITELY SCALABLE POWER FOR WEB 3.0</div>
                     <div className='hpo-fontB'>TO MEET THE VALUE PURSUIT OF 100 MILLION PEOPLE WHO ARE FASTER, TRUER AND
                         SAFER.
                     </div>
                     <div className='hpo-start-border' onClick={()=> window.scrollTo(0,900)}>
-                        <div className='hpo-start flex-center' >START</div>
+                        <div className='hpo-start flex-center'>
+                            <img style={{marginRight:'5px'}} src={'https://static.paraluni.org/images/infiweb/BTC.png'} width={23} height={23}/>
+                            EGIN</div>
                     </div>
                 </div>
             </div>
@@ -135,28 +137,38 @@ export default function InfinitasHomePC() {
                             title={'POW PROTECTION'}
                             width={305}
                             textWidth={256}
-                            describe={'It ensures that Infinitas assets are protected by the whole- network hash rate in the Bitcoin blockchain, enhancing the security of assets.'}/>
+                            describe={'It ensures that Infinitas assets are protected by the whole- network hash rate in the Bitcoin blockchain, enhancing the security of assets.'}
+                            img={'https://static.paraluni.org/images/infiweb/home_icon1.png'}
+                        />
                         <HomePCStandFor
                             title={'ADAPTER TECHNOLOGY'}
                             width={305}
                             textWidth={256}
-                            describe={'Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status.'}/>
+                            describe={'Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status.'}
+                            img={'https://static.paraluni.org/images/infiweb/home_icon2.png'}
+                        />
                         <HomePCStandFor
                             title={'PRIVACY PRESERVING+++'}
                             width={305}
                             textWidth={256}
-                            describe={'A higher level of privacy protection for Infinitas assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.'}/>
+                            describe={'A higher level of privacy protection for Infinitas assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.'}
+                            img={'https://static.paraluni.org/images/infiweb/home_icon3.png'}
+                        />
                     </div>
                     <div className='flex-row fl-jc-between' style={{marginTop: '48px'}}>
                         <HomePCStandFor
                             title={'ENRICHED GLOBAL STATE'}
                             width={484}
                             textWidth={357}
-                            describe={'Extended Global State, which is critical for building complex applications (such as synthetic assets, algorithmic stablecoins, etc.) on RGB. Make the RGB contract have a global state that can be accessed by virtual machines and clients (such as wallets, etc.).'}/>
+                            describe={'Extended Global State, which is critical for building complex applications (such as synthetic assets, algorithmic stablecoins, etc.) on RGB. Make the RGB contract have a global state that can be accessed by virtual machines and clients (such as wallets, etc.).'}
+                            img={'https://static.paraluni.org/images/infiweb/home_icon4.png'}
+                        />
                         <HomePCStandFor
                             title={'OPTIMIZING THE LIGHTNING NETWORK'}
                             textWidth={409}
-                            describe={'Through improvements to the Lightning Network (such as light block technology, node automatic expansion technology, and offline autonomy), higher transaction throughput is achieved while maintaining low-latency transaction confirmation time.'}/>
+                            describe={'Through improvements to the Lightning Network (such as light block technology, node automatic expansion technology, and offline autonomy), higher transaction throughput is achieved while maintaining low-latency transaction confirmation time.'}
+                            img={'https://static.paraluni.org/images/infiweb/home_icon5.png'}
+                        />
                     </div>
                 </div>
             </div>
@@ -182,11 +194,15 @@ export default function InfinitasHomePC() {
                 <div className='font-color-42 ' style={{fontSize: '40px', fontWeight: 800}}>SOLUTIONS</div>
                 <Carousel dotPosition={'left'}>
                     <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
-                                     text={'RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}/>
+                                     text={'RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}
+                                     img={'https://static.paraluni.org/images/infiweb/home_bg2.png'}
+                    />
                     <HomePCSolutions title={'FATLINE PROTOCOL'}
-                                     text={'Fatline Protocol is a lightweight communication + storage protocol between RGB clients. It is compatible with the Nostr protocol to achieve efficient communication between nodes. The communication speed can reach more than 10 times that of Storm+Bifrost.'}/>
+                                     text={'Fatline Protocol is a lightweight communication + storage protocol between RGB clients. It is compatible with the Nostr protocol to achieve efficient communication between nodes. The communication speed can reach more than 10 times that of Storm+Bifrost.'}
+                                     img={'https://static.paraluni.org/images/infiweb/home_bg3.png'}/>
                     <HomePCSolutions title={'RZK (Recursive Zero Knowledge)'}
-                                     text={'RZK=Z0(...Zn-2(Zn-2,Zn-1)Zn . The verifier does not need to verify the block from scratch, but only needs to download the current block for simple verification. The latest block will include the proof from the founding block to the current block.'}/>
+                                     text={'RZK=Z0(...Zn-2(Zn-2,Zn-1)Zn . The verifier does not need to verify the block from scratch, but only needs to download the current block for simple verification. The latest block will include the proof from the founding block to the current block.'}
+                                     img={'https://static.paraluni.org/images/infiweb/home_bg4.png'}/>
 
                 </Carousel>
             </div>

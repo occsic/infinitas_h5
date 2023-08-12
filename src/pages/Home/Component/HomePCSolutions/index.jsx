@@ -14,7 +14,7 @@ export default function HomePCSolutions(props){
                     {text}
                 </div>
             </div>
-            <img width={587} height={315} src={''}/>
+            <img width={587} height={315} src={img}/>
         </div>
 
 
