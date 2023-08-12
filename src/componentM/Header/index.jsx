@@ -19,9 +19,11 @@ export default function MHeader({ activeIndex }) {
                     <p
                         onClick={() => {
                             if (window.location.pathname != "/") {
+                                window.sessionStorage.setItem("t", "about")
                                 window.location.href = "/"
                             } else {
-                               document.getElementById('about').scrollIntoView()
+                                document.getElementById("about").scrollIntoView()
+                                window.scrollBy(0, -48)
                             }
                             setOpen(false)
                         }}
@@ -32,9 +34,11 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             setOpen(false)
                             if (window.location.pathname != "/") {
+                                window.sessionStorage.setItem("t", "stand")
                                 window.location.href = "/"
                             } else {
-                                document.getElementById('stand').scrollIntoView()
+                                document.getElementById("stand").scrollIntoView()
+                                window.scrollBy(0, -48)
                             }
                         }}
                     >
@@ -44,9 +48,11 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             setOpen(false)
                             if (window.location.pathname != "/") {
+                                window.sessionStorage.setItem("t", "focus")
                                 window.location.href = "/"
                             } else {
-                                document.getElementById('focus').scrollIntoView()
+                                document.getElementById("focus").scrollIntoView()
+                                window.scrollBy(0, -48)
                             }
                         }}
                     >
@@ -56,9 +62,11 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             setOpen(false)
                             if (window.location.pathname != "/") {
+                                window.sessionStorage.setItem("t", "solutions")
                                 window.location.href = "/"
                             } else {
-                                document.getElementById('solutions').scrollIntoView()
+                                document.getElementById("solutions").scrollIntoView()
+                                window.scrollBy(0, -48)
                             }
                         }}
                     >
@@ -68,9 +76,11 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             setOpen(false)
                             if (window.location.pathname != "/") {
+                                window.sessionStorage.setItem("t", "overall")
                                 window.location.href = "/"
                             } else {
-                                document.getElementById('overall').scrollIntoView()
+                                document.getElementById("overall").scrollIntoView()
+                                window.scrollBy(0, -48)
                             }
                         }}
                     >
@@ -80,9 +90,11 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             setOpen(false)
                             if (window.location.pathname != "/") {
+                                window.sessionStorage.setItem("t", "roadmap")
                                 window.location.href = "/"
                             } else {
-                                document.getElementById('roadmap').scrollIntoView()
+                                document.getElementById("roadmap").scrollIntoView()
+                                window.scrollBy(0, -48)
                             }
                         }}
                     >

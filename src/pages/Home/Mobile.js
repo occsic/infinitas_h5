@@ -16,6 +16,11 @@ export default function InfinitasHomeMobile() {
         if (roadmapRef.current) {
             roadmapRef.current.goTo(2)
         }
+        if (window.sessionStorage.getItem('t')) {
+            document.getElementById(window.sessionStorage.getItem('t')).scrollIntoView();
+            window.scrollBy(0, -48);
+            window.sessionStorage.setItem('t','')
+        }
     },[])
     const standContent = [
         {
@@ -174,8 +179,8 @@ export default function InfinitasHomeMobile() {
                 <div className="homecontent-stand-homecontent flex-row">
                     {standContent.map((i, ind) => (
                         <div key={ind} className="standitem">
-                            <dvi className="standitem-title">{i.title}</dvi>
-                            <dvi className="standitem-sub">{i.sub}</dvi>
+                            <div className="standitem-title">{i.title}</div>
+                            <div className="standitem-sub">{i.sub}</div>
                             <img className="standitem-img" src={i.img} />
                         </div>
                     ))}
@@ -246,11 +251,11 @@ export default function InfinitasHomeMobile() {
                     ))}
                 </div>
             </div>
-            <div className="homecontent">
+            <div className="homecontent"  id="roadmap">
                 <div className="homecontent-roadmap-title">ROADMAP</div>
                 <Carousel dotPosition={"bottom"} ref={roadmapRef} dots={false}>
                     {roadmapData.map((i, ixxx) => (
-                        <div key={ixxx} className="roadmap-main" id="roadmap">
+                        <div key={ixxx} className="roadmap-main">
                             <div className="roadmapscroll flex-row" style={{ overflowX: "auto" }}>
                                 {i.yearData.map((i, ind) => (
                                     <div className="yearData-view" key={ind}>
