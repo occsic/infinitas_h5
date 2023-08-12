@@ -114,8 +114,8 @@ export default function RGBPC() {
                     </div>
                     <div style={{width: '50%'}}>
                     <div className='flex-row fl-ai-center' style={{position:'relative'}}>
-                        <img ref={designImgRef1} src={'https://swiperjs.com/demos/images/nature-2.jpg'} className={`rgb-design-img ${designStatus===0?'rgbd-img-select':'rgbd-img-unselect'}`}/>
-                        <img ref={designImgRef2} src={'https://swiperjs.com/demos/images/nature-3.jpg'} className={`rgb-design-img ${designStatus===1?'rgbd-img-select':'rgbd-img-unselect'}`}/>
+                        <img ref={designImgRef1} src={'https://static.paraluni.org/images/infiweb/rgb_bg2.png'} className={`rgb-design-img ${designStatus===0?'rgbd-img-select':'rgbd-img-unselect'}`}/>
+                        <img ref={designImgRef2} src={'https://static.paraluni.org/images/infiweb/rgb_bg1.png'} className={`rgb-design-img ${designStatus===1?'rgbd-img-select':'rgbd-img-unselect'}`}/>
                     </div>
                     </div>
                 </div>
@@ -127,11 +127,11 @@ export default function RGBPC() {
                 <div className='common-width'>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '122px'}}>MAIN FEATURES</div>
                     <div className='flex-row fl-jc-between' style={{marginTop:'50px'}}>
-                        <RGBPCMainFeatures sort={1} text={'High confidentiality, security, scalability'} img={''} textWidth={136}/>
-                        <RGBPCMainFeatures sort={2} text={'There is no congestion in the bitcoin time chain, because the transaction only keeps homomorphic commitments that need extra storage.'} img={''} textWidth={172}/>
-                        <RGBPCMainFeatures sort={3} text={'High confidentiality, security, scalability'} img={''} textWidth={171}/>
-                        <RGBPCMainFeatures sort={4} text={'High confidentiality, security, scalability'} img={''} textWidth={169}/>
-                        <RGBPCMainFeatures sort={5} text={'High confidentiality, security, scalability'} img={''} textWidth={150}/>
+                        <RGBPCMainFeatures sort={1} text={'High confidentiality, security, scalability'} img={'https://static.paraluni.org/images/infiweb/rgb_bg3.png'} textWidth={136}/>
+                        <RGBPCMainFeatures sort={2} text={'There is no congestion in the bitcoin time chain, because the transaction only keeps homomorphic commitments that need extra storage.'} img={'https://static.paraluni.org/images/infiweb/rgb_bg4.png'} textWidth={172}/>
+                        <RGBPCMainFeatures sort={3} text={'High confidentiality, security, scalability'} img={'https://static.paraluni.org/images/infiweb/rgb_bg5.png'} textWidth={171}/>
+                        <RGBPCMainFeatures sort={4} text={'High confidentiality, security, scalability'} img={'https://static.paraluni.org/images/infiweb/rgb_bg6.png'} textWidth={169}/>
+                        <RGBPCMainFeatures sort={5} text={'High confidentiality, security, scalability'} img={'https://static.paraluni.org/images/infiweb/rgb_bg7.png'} textWidth={150}/>
                     </div>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '270px'}}>RGB V0.10</div>
                     <div className='flex-row fl-jc-between' style={{marginTop:'48px'}}>
@@ -143,7 +143,7 @@ export default function RGBPC() {
                             encoding formats, Rust Bitcoin dependency issues, lack of WASM compatibility, global state and context management problems,
                             integration issues with the Lightning Network, inflexibility of the backup process, insufficient support for mobile wallets, etc.
                             These improvements make the RGB protocol stronger, more flexible, and more secure, and lay a solid foundation for future development.</div>
-                        <img src={''} width={612} height={400} />
+                        <img src={'https://static.paraluni.org/images/infiweb/rgb_bg8.png'} width={612} height={400} />
                     </div>
 
                     <div className='rgb-download-out' onClick={()=>window.location.href='https://rgb.tech'}>
@@ -160,21 +160,21 @@ export default function RGBPC() {
                 <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '122px'}}>RGB IN INFINITAS</div>
                 <div className='flex-row fl-jc-between' style={{marginTop:'48px'}}>
                     <div className='flex-row' >
-                        <img src={''} width={178} height={190}/>
+                        <img src={'https://static.paraluni.org/images/infiweb/rgb_bg9.png'} width={178} height={190}/>
                         <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>Infinitas will complete the RGB protocol's compatibility and support for the Lightning Network to create a Turing-complete Bitcoin intelligent application network. At the same time, the concept of Global State is introduced to help more developers build complex applications (such as synthetic assets, algorithmic stable coins, etc.) on RGB.</div>
                     </div>
                     <div className='flex-row'>
-                        <img src={''} width={178} height={190}/>
+                        <img src={'https://static.paraluni.org/images/infiweb/rgb_bg10.png'} width={178} height={190}/>
                         <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>Not only that, RGB v0.10 introduces a new smart contract model, and it is written and compiled in Rust, which can support various complex application scenarios. opens up possibilities.</div>
                     </div>
                 </div>
                 <div className='flex-row fl-jc-between' style={{marginTop:'48px'}}>
                     <div className='flex-row' >
-                        <img src={''} width={178} height={190}/>
+                        <img src={'https://static.paraluni.org/images/infiweb/rgb_bg11.png'} width={178} height={190}/>
                         <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>The RGB standard library can run without I/O and file system access. Replacing the complex stack with a single API library and rgb command line tools will enhance the mass adoption of Bitcoin and decentralized finance.</div>
                     </div>
                     <div className='flex-row'>
-                        <img src={''} width={178} height={190}/>
+                        <img src={'https://static.paraluni.org/images/infiweb/rgb_bg12.png'} width={178} height={190}/>
                         <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>In other words, Infinitas will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.</div>
                     </div>
                 </div>

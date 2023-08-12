@@ -4,7 +4,7 @@ import PCHeader from "../../component/PCHeader";
 import {Carousel} from "antd";
 import RGBPCMainFeatures from "../RGB/Component/RGBPCMainFeatures";
 import PCFooter from "../../component/PCFooter";
-
+import pdf from '../../static/pdf.png'
 export default function NetworkPC() {
     return (
         <div className='home-pc'>
@@ -14,7 +14,7 @@ export default function NetworkPC() {
             <div className='common-width'>
                 <div style={{height:'73px'}}/>
                 <div className='flex-row fl-ai-center'>
-                    <img src={''} width={380} height={357} />
+                    <img src={'https://static.paraluni.org/images/infiweb/lighting_bg1.png'} width={380} height={357} />
                     <div className='flex-column fl-jc-between' style={{height:'357px',marginLeft:'154px'}}>
                         <div>
                             <div className='network-fontA'>WHAT IS</div>
@@ -37,14 +37,14 @@ export default function NetworkPC() {
                     <div className='font-color-white' style={{marginTop:'174px',fontWeight:800,fontSize:'40px'}}>HOW IT WORKS</div>
                     <div className='flex-row fl-jc-between'>
                         <div className='flex-column'>
-                            <img src={''} width={485} height={436} style={{marginTop:'88px'}}/>
+                            <img src={'https://static.paraluni.org/images/infiweb/lighting_bg2.png'} width={485} height={436} style={{marginTop:'88px'}}/>
                             <div className='font-size-16 font-color-white' style={{marginTop:'40px',width:'485px'}}>
                                 The Lightning Network is dependent upon the underlying technology of the blockchain.
                                 By using real Bitcoin/blockchain transactions and using its native smart-contract
                                 scripting language, it is possible to create a secure network of participants which
                                 are able to transact at high volume and high speed.
                             </div>
-                                <img src={''} width={485} height={436} style={{marginTop:'250px'}}/>
+                                <img src={'https://static.paraluni.org/images/infiweb/lighting_bg3.png'} width={485} height={436} style={{marginTop:'250px'}}/>
                                 <div className='font-size-16 font-color-white' style={{marginTop:'40px',width:'485px'}}>
                                     Lightning Network. By creating a network of these two-party ledger entries, it is possible
                                     to find a path across the network similar to routing packets on the internet. The nodes along
@@ -53,7 +53,7 @@ export default function NetworkPC() {
                                 </div>
                         </div>
                         <div className='flex-column'>
-                            <img src={''} width={485} height={436} style={{marginTop:'206px'}}/>
+                            <img src={'https://static.paraluni.org/images/infiweb/lighting_bg4.png'} width={485} height={436} style={{marginTop:'206px'}}/>
                             <div className='font-size-16 font-color-white' style={{marginTop:'40px',width:'485px'}}>
                                 Bidirectional Payment Channels. Two participants create a ledger entry on the blockchain which
                                 requires both participants to sign off on any spending of funds. Both parties create transactions
@@ -63,7 +63,7 @@ export default function NetworkPC() {
                                 smart-contract scripting. This entry can be closed out at any time by either party without any trust or custodianship
                                 by broadcasting the most recent version to the blockchain.
                             </div>
-                            <img src={''} width={485} height={436} style={{marginTop:'100px'}}/>
+                            <img src={'https://static.paraluni.org/images/infiweb/lighting_bg5.png'} width={485} height={436} style={{marginTop:'100px'}}/>
                             <div className='font-size-16 font-color-white' style={{marginTop:'40px',width:'485px'}}>
                                 Blockchain as Arbiter. As a result, it is possible to conduct transactions off-blockchain without limitations.
                                 Transactions can be made off-chain with confidence of on-blockchain enforceability. This is similar to how one
@@ -82,10 +82,10 @@ export default function NetworkPC() {
                 <div className='common-width'>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '137px'}}>LIGHTNING NETWORK IN INFINITAS</div>
                     <div className='flex-row fl-jc-between' style={{marginTop:'80px'}}>
-                        <RGBPCMainFeatures text={'Infinitas embeds the RGB protocolinto the transactions of the Lightning Network channel, establishes a series of two-way payment channels outside the blockchain, and utilizes the efficient performance of the Lightning Network to allow users to conduct fast and low-cost transactions on these channels'} img={''} textWidth={257} imgWidth={270}/>
-                        <RGBPCMainFeatures text={'Once the Lightning Network channel is established, users can conduct RGB protocol transactions in the channel. This means that users can create and trade RGB tokens, and these transactions are not directly written to the Bitcoin main blockchain, but are carried out within the channel and do not directly affect the Bitcoin main blockchain.'} img={''} textWidth={257} imgWidth={270}/>
-                        <RGBPCMainFeatures text={'The more complex smart contracts supported by Infinitas allow users to perform more types of transaction operations within Lightning Network channels, including conditional payments, multi-party signatures, and more. It provides users with more flexible and diversified trading options.'} img={''} textWidth={257} imgWidth={270}/>
-                        <RGBPCMainFeatures text={'The combination of Infinitas brings more functionality and scalability to the Bitcoin ecosystem, providing users with a better transaction experience and more usage options. At the same time, the transactions in the Lightning Network are carried out in the channel and will not be immediately exposed to the entire Bitcoin network, thus providing higher transaction privacy to a certain extent.'} img={''} textWidth={257} imgWidth={270}/>
+                        <RGBPCMainFeatures text={'Infinitas embeds the RGB protocolinto the transactions of the Lightning Network channel, establishes a series of two-way payment channels outside the blockchain, and utilizes the efficient performance of the Lightning Network to allow users to conduct fast and low-cost transactions on these channels'} img={'https://static.paraluni.org/images/infiweb/lighting_bg6.png'} textWidth={257} imgWidth={270}/>
+                        <RGBPCMainFeatures text={'Once the Lightning Network channel is established, users can conduct RGB protocol transactions in the channel. This means that users can create and trade RGB tokens, and these transactions are not directly written to the Bitcoin main blockchain, but are carried out within the channel and do not directly affect the Bitcoin main blockchain.'} img={'https://static.paraluni.org/images/infiweb/lighting_bg7.png'} textWidth={257} imgWidth={270}/>
+                        <RGBPCMainFeatures text={'The more complex smart contracts supported by Infinitas allow users to perform more types of transaction operations within Lightning Network channels, including conditional payments, multi-party signatures, and more. It provides users with more flexible and diversified trading options.'} img={'https://static.paraluni.org/images/infiweb/lighting_bg8.png'} textWidth={257} imgWidth={270}/>
+                        <RGBPCMainFeatures text={'The combination of Infinitas brings more functionality and scalability to the Bitcoin ecosystem, providing users with a better transaction experience and more usage options. At the same time, the transactions in the Lightning Network are carried out in the channel and will not be immediately exposed to the entire Bitcoin network, thus providing higher transaction privacy to a certain extent.'} img={'https://static.paraluni.org/images/infiweb/lighting_bg9.png'} textWidth={257} imgWidth={270}/>
                     </div>
                 </div>
             </div>
@@ -95,13 +95,13 @@ export default function NetworkPC() {
                 <div style={{height:'128px'}}/>
                 <div className='flex-row fl-jc-between fl-ai-center'>
                     <div className='flex-column fl-ai-center'>
-                        <img src={''} width={46} height={46}/>
+                        <img src={pdf} width={46} height={46}/>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>The Bitcoin Lightning Network</div>
                         <div className='font-color-42' style={{fontSize:'14px',marginTop:'12px'}}>https://lightning.network/lightning-network-summary.pdf</div>
                         <div className='network-circle font-color-42 flex-center' onClick={()=>window.location.href='https://lightning.network/lightning-network-summary.pdf'}>READ</div>
                     </div>
                     <div className='flex-column fl-ai-center'>
-                        <img src={''} width={46} height={46}/>
+                        <img src={pdf} width={46} height={46}/>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>The Bitcoin Lightning Network:</div>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold'}}>Scalable Off-Chain Instant Payments</div>
                         <div className='font-color-42' style={{fontSize:'14px',marginTop:'12px'}}>https://lightning.network/lightning-network-paper.pdf</div>
