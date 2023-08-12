@@ -14,7 +14,7 @@ export default function ZkSnarkPC() {
             <div className='common-width'>
                 <div style={{height:'73px'}}/>
                 <div className='flex-row'>
-                    <img src={''} width={380} height={357} />
+                    <img src={'https://static.paraluni.org/images/infiweb/snark_bg1.png'} width={380} height={357} />
                     <div className='flex-column fl-jc-between' style={{marginLeft:'154px'}}>
                         <div>
                             <div className='network-fontA'>WHAT IS</div>
@@ -45,7 +45,7 @@ export default function ZkSnarkPC() {
 
                            <div>
                                <div className='flex-row'>
-                                   <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                   <img src={'https://static.paraluni.org/images/infiweb/snark_bg2.png'} style={{objectFit:'cover'}} width={281} height={186} />
                                    <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
                                        The key generator G takes a secret parameter
                                        lambda and a program C, and generates two publicly
@@ -57,7 +57,7 @@ export default function ZkSnarkPC() {
                            </div>
                         <div>
                             <div className='flex-row'>
-                                <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                <img src={'https://static.paraluni.org/images/infiweb/snark_bg3.png'} style={{objectFit:'cover'}} width={281} height={186} />
                                 <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
                                     The prover P takes as input the proving key pk, a public input x and a private witness w. The algorithm generates a
                                     proof prf = P(pk, x, w) that the prover knows a witness w and that the witness satisfies the program.
@@ -66,7 +66,7 @@ export default function ZkSnarkPC() {
                         </div>
                         <div>
                             <div className='flex-row'>
-                                <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                <img src={'https://static.paraluni.org/images/infiweb/snark_bg4.png'} style={{objectFit:'cover'}} width={281} height={186} />
                                 <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
                                     The verifier V computes V(vk, x, prf) which returns true if the proof is correct, and false otherwise. Thus this function
                                     returns true if the prover knows a witness w satisfying C(x,w) == true.
@@ -75,7 +75,7 @@ export default function ZkSnarkPC() {
                         </div>
                         <div>
                             <div className='flex-row'>
-                                <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                <img src={'https://static.paraluni.org/images/infiweb/snark_bg5.png'} style={{objectFit:'cover'}} width={281} height={186} />
                                 <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
                                     Note here the secret parameter lambda used in the generator. This parameter sometimes makes it tricky to use zk-SNARKs
                                     in real-world applications. The reason for this is that anyone who knows this parameter can generate fake proofs. Specifically,
@@ -86,7 +86,7 @@ export default function ZkSnarkPC() {
                         </div>
                         <div>
                             <div className='flex-row'>
-                                <img src={'https://swiperjs.com/demos/images/nature-2.jpg'} style={{objectFit:'cover'}} width={281} height={186} />
+                                <img src={'https://static.paraluni.org/images/infiweb/snark_bg6.png'} style={{objectFit:'cover'}} width={281} height={186} />
                                 <div className='font-color-white font-size-16' style={{width:'510px',marginLeft:'127px'}}>
                                     Thus actually running the generator requires a very secure process to make sure no-one learns about and saves the
                                     parameter anywhere. This was the reason for the extremely elaborate ceremony the Zcash team conducted in order to generate
@@ -98,15 +98,24 @@ export default function ZkSnarkPC() {
                     <div style={{height:'138px'}}/>
                     <div className='font-color-white' style={{fontWeight: 800, fontSize: '40px'}}>FEATURES</div>
                     <div className='flex-row fl-ai-center fl-jc-between' style={{marginTop:'96px'}}>
-                        <div className='snark-img-main' style={{width:'713px',height:'451px',backgroundImage:"url(https://swiperjs.com/demos/images/nature-2.jpg)"}}><div style={{marginLeft:'40px',marginBottom:'60px'}}>LIGHTWEIGHT AND FAST SYNC</div></div>
-                        <div className='snark-img-main' style={{width:'460px',height:'451px',backgroundImage:"url(https://swiperjs.com/demos/images/nature-2.jpg)"}}>
-                            <div style={{marginLeft:'40px',marginBottom:'60px'}}>DECENTRALIZED</div>
+                        <div className='snark-img-main' style={{width:'713px',height:'451px'}}>
+                            <img className='snark-img-main-img' src={'https://static.paraluni.org/images/infiweb/snark_icon1.png'}/>
+                            <div className='snark-img-main-text'>LIGHTWEIGHT AND FAST SYNC</div></div>
+                        <div className='snark-img-main' style={{width:'460px',height:'451px'}}>
+                            <img className='snark-img-main-img' src={'https://static.paraluni.org/images/infiweb/snark_icon2.png'}/>
+                            <div className='snark-img-main-text'>DECENTRALIZED</div>
                         </div>
                     </div>
                     <div className='flex-row fl-ai-center fl-jc-between' style={{marginTop:'25px'}}>
-                        <div className='snark-img-main' style={{width:'383px',height:'444px',backgroundImage:"url(https://swiperjs.com/demos/images/nature-2.jpg)"}}> <div style={{marginLeft:'40px',marginBottom:'60px'}}>PRIVACY PROTECTION</div></div>
-                        <div className='snark-img-main' style={{width:'383px',height:'444px',backgroundImage:"url(https://swiperjs.com/demos/images/nature-2.jpg)"}}><div style={{marginLeft:'40px',marginBottom:'60px'}}>SCALABILITY</div></div>
-                        <div className='snark-img-main' style={{width:'383px',height:'444px',backgroundImage:"url(https://swiperjs.com/demos/images/nature-2.jpg)"}}><div style={{marginLeft:'40px',marginBottom:'60px'}}>RICH ECOSYSTEM</div></div>
+                        <div className='snark-img-main' style={{width:'383px',height:'444px'}}>
+                            <img className='snark-img-main-img' src={'https://static.paraluni.org/images/infiweb/snark_icon3.png'}/>
+                            <div className='snark-img-main-text'>PRIVACY PROTECTION</div></div>
+                        <div className='snark-img-main' style={{width:'383px',height:'444px'}}>
+                            <img className='snark-img-main-img' src={'https://static.paraluni.org/images/infiweb/snark_icon4.png'}/>
+                            <div className='snark-img-main-text'>SCALABILITY</div></div>
+                        <div className='snark-img-main' style={{width:'383px',height:'444px'}}>
+                            <img className='snark-img-main-img' src={'https://static.paraluni.org/images/infiweb/snark_icon5.png'}/>
+                            <div className='snark-img-main-text'>RICH ECOSYSTEM</div></div>
                     </div>
                     <div style={{height:'208px'}}/>
                 </div>
@@ -139,13 +148,13 @@ export default function ZkSnarkPC() {
                 <div style={{height:'128px'}}/>
                 <div className='flex-row fl-jc-between fl-ai-center'>
                     <div className='flex-column fl-ai-center'>
-                        <img src={''} width={46} height={46}/>
+                        <img src={'https://static.paraluni.org/images/infiweb/snark_icon6.png'} width={46} height={46}/>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>Mina Protocol</div>
                         <div className='font-color-42' style={{fontSize:'14px',marginTop:'12px'}}>https://minaprotocol.com/blog/what-are-zk-snarks</div>
                         <div className='network-circle font-color-42 flex-center' onClick={()=>window.location.href='https://minaprotocol.com/blog/what-are-zk-snarks'}>READ</div>
                     </div>
                     <div className='flex-column fl-ai-center'>
-                        <img src={''} width={46} height={46}/>
+                        <img src={'https://static.paraluni.org/images/infiweb/snark_icon7.png'} width={46} height={46}/>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>Learn Zcash</div>
                         <div className='font-color-42' style={{fontSize:'14px',marginTop:'12px'}}>https://z.cash/learn/what-are-zk-snarks/</div>
                         <div className='network-circle font-color-42 flex-center' onClick={()=>window.location.href='    https://z.cash/learn/what-are-zk-snarks/'}>READ</div>
