@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "./Mobile.css"
 import MHeader from "../../componentM/Header"
 import MFooter from "../../componentM/Footer"
-import about from "../../static/about.png"
+import iconbg from "../../static/iconbg.png"
 
 export default function RGBMobile() {
     const [showIndex, setShowIndex] = useState(0)
@@ -22,40 +22,40 @@ export default function RGBMobile() {
 
     const solutionsContent = [
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/rgb_bg2.png',
             title: "SINGLE-USE-SEALS",
             sub: "Similar to the Single-use-seals used to protect freight containers in the real world, the original meaning of single-use-seal sis a unique object that can be closed on messages only once. Once it is used, it will be permanently opened and cannot be closed again. Whenever the status of a smart contract changes on the RGB network, a bitcoin native UTXO will be created in the owner's wallet. When the owner submits a transaction on the RGB network, the UTXO is spent/closed. In short, single-use-seal is an abstract mechanism to prevent double payment.",
         },
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/rgb_bg1.png', // dev
             title: "CLIENT-SIDE VALIDATION",
             sub: `Client-side validation is a paradigm proposed by Peter Todd in 2016. Its core idea is that in a distributed system, the validation of state does not need to be implemented globally by all parties involved in the decentralization protocol; Instead, only the parties involved in a specific state transition need to verify. Using this method, the state transition is not published in the global network, but transformed into a short encrypted commitment by using a cryptographic hash function, which needs to be a part of a "Proof-of-Publication" medium and has three main characteristics: receipt proof, non-publication proof and membership proof. The first Client-side validation system is the Open Time Stamps protocol, which was also proposed and developed by Peter Todd in 2014-2016.`,
         },
     ]
 
     const mainData = [
-        { title: "1", img: about, sub: "High confidentiality, security, scalability" },
-        { title: "2", img: about, sub: "There is no congestion in the bitcoin time chain, because the transaction only keeps homomorphic commitments that need extra storage." },
-        { title: "3", img: about, sub: "It can be upgraded in the future without hard fork." },
-        { title: "4", img: about, sub: "It is more resistant to censorship than Bitcoin: miners can't see the flow of assets in the transaction." },
-        { title: "5", img: about, sub: "There is no concept of block and chain." },
+        { title: "1", img: 'https://static.paraluni.org/images/infiweb/rgb_bg3.png', sub: "High confidentiality, security, scalability" },
+        { title: "2", img: 'https://static.paraluni.org/images/infiweb/rgb_bg4.png', sub: "There is no congestion in the bitcoin time chain, because the transaction only keeps homomorphic commitments that need extra storage." },
+        { title: "3", img: 'https://static.paraluni.org/images/infiweb/rgb_bg5.png', sub: "It can be upgraded in the future without hard fork." },
+        { title: "4", img: 'https://static.paraluni.org/images/infiweb/rgb_bg6.png', sub: "It is more resistant to censorship than Bitcoin: miners can't see the flow of assets in the transaction." },
+        { title: "5", img: 'https://static.paraluni.org/images/infiweb/rgb_bg7.png', sub: "There is no concept of block and chain." },
     ]
 
     const infinitasData = [
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/rgb_bg9.png',
             title: "Infinitas will complete the RGB protocol's compatibility and support for the Lightning Network to create a Turing-complete Bitcoin intelligent application network. At the same time, the concept of Global State is introduced to help more developers build complex applications (such as synthetic assets, algorithmic stable coins, etc.) on RGB.",
         },
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/rgb_bg10.png',
             title: "Not only that, RGB v0.10 introduces a new smart contract model, and it is written and compiled in Rust, which can support various complex application scenarios. opens up possibilities.",
             type: "end",
         },
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/rgb_bg11.png',
             title: "The RGB standard library can run without I/O and file system access. Replacing the complex stack with a single API library and rgb command line tools will enhance the mass adoption of Bitcoin and decentralized finance.",
         },
-        { img: about, title: "In other words, Infinitas will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.", type: "end" },
+        { img: 'https://static.paraluni.org/images/infiweb/rgb_bg12.png', title: "In other words, Infinitas will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.", type: "end" },
     ]
     return (
         <div>
@@ -65,6 +65,7 @@ export default function RGBMobile() {
                 <div className="rgb-content flex-row">
                     {rgbheader.map((i, ind) => (
                         <div key={ind} className="rgb-contentItem flex-shrink">
+                            <img src={iconbg} className="rgb-contentItemImg"/>
                             {i}
                         </div>
                     ))}
