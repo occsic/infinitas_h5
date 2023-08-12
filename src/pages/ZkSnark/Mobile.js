@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import "./Mobile.css"
 import MHeader from "../../componentM/Header"
 import MFooter from "../../componentM/Footer"
+import { Carousel } from "antd"
 
 export default function ZkSnarkMobile() {
     const [showIndex, setShowIndex] = useState(0)
@@ -62,7 +63,19 @@ export default function ZkSnarkMobile() {
             </div>
             <div className="zk-main content">
                 <div className="zk-text colorF">A ZK-SNARK CONSISTS OF THREE ALGORITHMS G, P, V DEFINED AS FOLLOWS</div>
-                <div className="zkmainItem">
+                <Carousel dotPosition={"right"}>
+                    {SNARK.map((i) => (
+                        <div key={i.title} className="zkmainItem">
+                            <div className="zkmainItem-title">{i.title}</div>
+                            <div className="zkmainItem-line"></div>
+                            <div className="flex-row fl-ai-center">
+                                <div className="zkmainItem-sub">{i.sub}</div>
+                            </div>
+                            <img className="zkmainItem-img" src={i.img} />
+                        </div>
+                    ))}
+                </Carousel>
+                {/* <div className="zkmainItem">
                     <div className="flex-row z">
                         <div>
                             <img className="zkmainItem-img" src={SNARK[showIndex].img} />
@@ -80,7 +93,7 @@ export default function ZkSnarkMobile() {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="zk-text zk-main-top colorF">FEATURES</div>
                 <div className="colorF zk-main-sub">
                     <div className="flex-row fl-jc-between zk-bg-main">

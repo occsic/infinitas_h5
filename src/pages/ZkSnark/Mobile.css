@@ -42,6 +42,7 @@
 .zkmainItem-sub {
     margin-right: 60px;
     width: 220px;
+    height: 260px;
     font-size: 14px;
     line-height: 1.43;
     color: #fff;
@@ -141,3 +142,33 @@
 .mb50 {
     margin-bottom: 50px;
 }
+
+
+.zk-main .ant-carousel-vertical .slick-dots{
+    top: 31%;
+    inset: inline end 0;
+}
+.zk-main .ant-carousel .slick-dots li.slick-active {
+    width: 4px;
+    height: 48px;
+    background-color: #ff3150;
+}
+
+.zk-main .ant-carousel .slick-dots li {
+    width: 4px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.zk-main .ant-carousel .slick-dots li.slick-active button {
+    width: 4px;
+    height: 48px;
+    background-color: #ff3150;
+}
+
+.zk-main .ant-carousel .slick-dots li button {
+    width: 4px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
