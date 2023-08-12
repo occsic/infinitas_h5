@@ -4,44 +4,44 @@ import MHeader from "../../componentM/Header"
 import MFooter from "../../componentM/Footer"
 import about from "../../static/about.png"
 import { useState } from "react"
-import {CheckOutlined } from '@ant-design/icons'
+import { CheckOutlined } from "@ant-design/icons"
 
 export default function InfinitasHomeMobile() {
     const [showIndex, setShowIndex] = useState(0)
     const [yearIndex, setYearIndex] = useState(2)
 
     const standContent = [
-        { img: about, title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
-        { img: about, title: "ADAPTER TECHNOLOGY", sub: "Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status." },
+        { img: 'https://static.paraluni.org/images/infiweb/home_icon1.png', title: "POW PROTECTION", sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets." },
+        { img: 'https://static.paraluni.org/images/infiweb/home_icon2.png', title: "ADAPTER TECHNOLOGY", sub: "Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status." },
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/home_icon3.png',
             title: "PRIVACY PRESERVING+++",
             sub: "A higher level of privacy protection for Infinitas assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.",
         },
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/home_icon4.png',
             title: "ENRICHED GLOBAL STATE",
             sub: "Extended Global State, which is critical for building complex applications (such as synthetic assets, algorithmic stablecoins, etc.) on RGB. Make the RGB contract have a global state that can be accessed by virtual machines and clients (such as wallets, etc.).",
         },
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/home_icon5.png',
             title: "OPTIMIZING THE LIGHTNING NETWORK",
             sub: "Through improvements to the Lightning Network (such as light block technology, node automatic expansion technology, and offline autonomy), higher transaction throughput is achieved while maintaining low-latency transaction confirmation time.",
         },
     ]
     const solutionsContent = [
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/home_bg2.png',
             title: "SLR (SECURITY-LIGHTING-RGB) PROTOCOL",
             sub: "RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.",
         },
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/home_bg3.png',
             title: "RZK (RECURSIVE ZERO KNOWLEDGE)",
             sub: "RZK=Z0(...Zn-2(Zn-2,Zn-1)Zn . The verifier does not need to verify the block from scratch, but only needs to download the current block for simple verification. The latest block will include the proof from the founding block to the current block.",
         },
         {
-            img: about,
+            img: 'https://static.paraluni.org/images/infiweb/home_bg4.png',
             title: "FATLINE PROTOCOL",
             sub: "Fatline Protocol is a lightweight communication + storage protocol between RGB clients. It is compatible with the Nostr protocol to achieve efficient communication between nodes. The communication speed can reach more than 10 times that of Storm+Bifrost.",
         },
@@ -64,47 +64,74 @@ export default function InfinitasHomeMobile() {
     const roadmapData = [
         {
             year: "2021",
-            bgc: 'https://static.paraluni.org/images/infiweb/roadmap_bg.png',
-            yearData: [
-                { yejiao: "--", textList: ["DeFi 2.0 project - Paraluni established", "Complete the translation of RGB protocol documents"] },
-            ],
+            bgc: "https://static.paraluni.org/images/infiweb/roadmap_bg.png",
+            yearData: [{ yejiao: "--", textList: ["DeFi 2.0 project - Paraluni established", "Complete the translation of RGB protocol documents"] }],
         },
         {
-            
             year: "2022",
-            bgc: 'https://static.paraluni.org/images/infiweb/roadmap_bg.png',
-            yearData: [
-                { yejiao: "--", textList: ["Community established","BTC ecosystem network project - Infinitas established"] },
-            ],
+            bgc: "https://static.paraluni.org/images/infiweb/roadmap_bg.png",
+            yearData: [{ yejiao: "--", textList: ["Community established", "BTC ecosystem network project - Infinitas established"] }],
         },
         {
             year: "2023",
-            bgc: 'https://static.paraluni.org/images/infiweb/roadmap_bg.png',
+            bgc: "https://static.paraluni.org/images/infiweb/roadmap_bg.png",
             yearData: [
-                { yejiao: "Q1", textList: [<div>Paraluni TVL reaches <span style={{fontWeight:600,fontSize:'22px'}}>$50M+</span></div>] },
-                { yejiao: "Q2", textList: ["RGB v0.10 released", <div>Community followers reached <span style={{fontWeight:600,fontSize:'22px'}}>50K+</span></div>,'Infinitas seed round launched'] },
-                { yejiao: "Q3", textList: ["BTB miners reached 5k+", <div>Community followers reached <span style={{fontWeight:600,fontSize:'22px'}}>100K+</span></div>,"RGB & BTC-Eco related research released","Join the LNP/BP Association"] },
-                { yejiao: "Q4", textList: ["Develop and release the Infinitas testnet", "Cooperation with mainstream wallets","Develop Infinitas mainnet","Launched the official version of data explorer"] },
+                {
+                    yejiao: "Q1",
+                    textList: [
+                        <div>
+                            Paraluni TVL reaches <span style={{ fontWeight: 600, fontSize: "22px" }}>$50M+</span>
+                        </div>,
+                    ],
+                },
+                {
+                    yejiao: "Q2",
+                    textList: [
+                        "RGB v0.10 released",
+                        <div>
+                            Community followers reached <span style={{ fontWeight: 600, fontSize: "22px" }}>50K+</span>
+                        </div>,
+                        "Infinitas seed round launched",
+                    ],
+                },
+                {
+                    yejiao: "Q3",
+                    textList: [
+                        "BTB miners reached 5k+",
+                        <div>
+                            Community followers reached <span style={{ fontWeight: 600, fontSize: "22px" }}>100K+</span>
+                        </div>,
+                        "RGB & BTC-Eco related research released",
+                        "Join the LNP/BP Association",
+                    ],
+                },
+                {
+                    yejiao: "Q4",
+                    textList: ["Develop and release the Infinitas testnet", "Cooperation with mainstream wallets", "Develop Infinitas mainnet", "Launched the official version of data explorer"],
+                },
             ],
         },
         {
             year: "2024",
-            bgc: 'https://static.paraluni.org/images/infiweb/roadmap_bg.png',
+            bgc: "https://static.paraluni.org/images/infiweb/roadmap_bg.png",
             yearData: [
-                { yejiao: "Q1", textList: ["Launched Infinitas mainnet (BTC减半)", "Building DeFi (DEX) Schemas","Provide SDKs"] },
-                { yejiao: "Q2", textList: ["Total number of ecosystem projects reaches 200+", "Listing on centralized exchange","Development of DApp integration environment"] },
+                { yejiao: "Q1", textList: ["Launched Infinitas mainnet (BTC减半)", "Building DeFi (DEX) Schemas", "Provide SDKs"] },
+                { yejiao: "Q2", textList: ["Total number of ecosystem projects reaches 200+", "Listing on centralized exchange", "Development of DApp integration environment"] },
             ],
         },
     ]
 
     return (
         <div>
-            <MHeader activeIndex={'1'}/>
+            <MHeader activeIndex={"1"} />
             <div id="home" className="homecontent homecontent-home">
                 <div className="homecontent-home-title">BASED ON BITCOIN PROVIDE INFINITELY SCALABLE POWER FOR WEB 3.0</div>
                 <div className="homecontent-home-subtitle">TO MEET THE VALUE PURSUIT OF 100 MILLION PEOPLE WHO ARE FASTER, TRUER AND SAFER</div>
                 <div className="homecontent-home-start">
-                    <div className="homecontent-home-startCont">START</div>
+                    <div className="homecontent-home-startCont flex-row">
+                        <img src={"https://static.paraluni.org/images/infiweb/BTC.png"} width={23} height={23} />
+                        EGIN
+                    </div>
                 </div>
             </div>
             <div id="about" className="homecontent homecontent-about">
@@ -217,12 +244,11 @@ export default function InfinitasHomeMobile() {
                 <div className="roadmap-main flex-row">
                     {roadmapData[yearIndex].yearData.map((i, ind) => (
                         <div className="yearData-view" key={ind}>
-                            <img style={{marginBottom:'20px'}} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
+                            <img style={{ marginBottom: "20px" }} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
                             {i.textList.map((text, idx) => (
                                 <div key={idx} className="flex-row year-text">
-                                    <CheckOutlined className="year-icon" style={{color:'#f44336',marginRight:'10px'}} />
+                                    <CheckOutlined className="year-icon" style={{ color: "#f44336", marginRight: "10px" }} />
                                     <div>{text}</div>
-                                    
                                 </div>
                             ))}
 
@@ -244,10 +270,8 @@ export default function InfinitasHomeMobile() {
                     ))}
                 </div>
             </div>
-        
-            <MFooter activeIndex={'1'}/>
 
-
+            <MFooter activeIndex={"1"} />
         </div>
     )
 }
