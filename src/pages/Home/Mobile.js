@@ -9,13 +9,10 @@ import { Carousel } from "antd"
 
 export default function InfinitasHomeMobile() {
     const [showIndex, setShowIndex] = useState(0)
-    const [yearIndex, setYearIndex] = useState(2)
+    const [yearIndex, setYearIndex] = useState(0)
     const roadmapRef = useRef()
 
     useEffect(()=>{
-        if (roadmapRef.current) {
-            roadmapRef.current.goTo(2)
-        }
         if (window.sessionStorage.getItem('t')) {
             document.getElementById(window.sessionStorage.getItem('t')).scrollIntoView();
             window.scrollBy(0, -48);
@@ -253,9 +250,12 @@ export default function InfinitasHomeMobile() {
             </div>
             <div className="homecontent"  id="roadmap">
                 <div className="homecontent-roadmap-title">ROADMAP</div>
-                <Carousel dotPosition={"bottom"} ref={roadmapRef} dots={false}>
+                <Carousel beforeChange={(e)=>{
+                    console.log(e);
+                    setYearIndex(e==roadmapData.length-1?0:e+1)
+                }} loop={false} dotPosition={"bottom"} ref={roadmapRef} dots={false}>
                     {roadmapData.map((i, ixxx) => (
-                        <div key={ixxx} className="roadmap-main">
+                        <div  key={ixxx} className="roadmap-main">
                             <div className="roadmapscroll flex-row" style={{ overflowX: "auto" }}>
                                 {i.yearData.map((i, ind) => (
                                     <div className="yearData-view" key={ind}>

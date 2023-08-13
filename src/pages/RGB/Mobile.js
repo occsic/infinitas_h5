@@ -136,7 +136,7 @@ export default function RGBMobile() {
                 <div className="rgb-video-title">DETAILED REFERENCE</div>
                 <a className="rgb-video-link" href="https://rgb.tech/blog/release-v0-10/">https://rgb.tech/blog/release-v0-10/</a>
                 <div>
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/VmB5SaaaABI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/VmB5SaaaABI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
             </div>
 
