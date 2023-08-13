@@ -82,7 +82,12 @@ export default function InfinitasHomePC() {
 
             {/*头部*/}
 
-            <PCHeader/>
+            <PCHeader click1={()=> document.getElementById('about').scrollIntoView()}
+                      click2={()=> document.getElementById('stand').scrollIntoView()}
+                      click3={()=> document.getElementById('focus').scrollIntoView()}
+                      click4={()=> document.getElementById('solutions').scrollIntoView()}
+                      click5={()=> document.getElementById('overall').scrollIntoView()}
+                      click6={()=> document.getElementById('roadmap').scrollIntoView()}/>
             <div style={{height: '100px'}}/>
 
             {/*第一部分*/}
@@ -129,7 +134,7 @@ export default function InfinitasHomePC() {
 
 
             {/*we stand for*/}
-            <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw'}}>
+            <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw'}} id={'stand'}>
                 <div className='common-width flex-column fl-jc-center' style={{height: '1033px'}}>
                     <div className='stand-fontA'>WE STAND FOR</div>
                     <div className='flex-row fl-jc-between' style={{marginTop: '40px'}}>
@@ -174,7 +179,7 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*FOUCS*/}
-            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw'}}>
+            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw'}} id={'focus'}>
                 <div className='height-900 common-width'>
                     <div className='font-color-white'
                          style={{fontSize: '40px', marginTop: '120px', fontWeight: 800}}>FOCUS
@@ -190,7 +195,7 @@ export default function InfinitasHomePC() {
 
             {/*solutions*/}
             <div className='height-900 common-width flex-column fl-jc-center solutions'
-                 style={{backgroundColor: "#ffffff"}}>
+                 style={{backgroundColor: "#ffffff"}} id={'solutions'}>
                 <div className='font-color-42 ' style={{fontSize: '40px', fontWeight: 800}}>SOLUTIONS</div>
                 <Carousel dotPosition={'left'}>
                     <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
@@ -208,7 +213,7 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*OVERALL ARCHITECTURE*/}
-            <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw'}}>
+            <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw'}} id={'overall'}>
                 <div className='common-width' style={{height: '1222px'}}>
                     <div className='stand-fontA' style={{marginTop: '150px'}}>OVERALL ARCHITECTURE</div>
 
@@ -306,7 +311,7 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*ROADMAP*/}
-            <div className='common-width' style={{height: '1080px'}}>
+            <div className='common-width' style={{height: '1080px'}} id={'roadmap'}>
                 <div className='font-color-42' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP
                 </div>
                 <div style={{height: '48px'}}/>

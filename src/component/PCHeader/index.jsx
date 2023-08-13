@@ -5,29 +5,15 @@ import {Tooltip, Popover} from "antd";
 import {Link} from "react-router-dom";
 
 export default function PCHeader(props) {
-    const {} = props
+    const {click1,click2,click3,click4,click5,click6} = props
     const content1 = (
         <div className='pch-content'>
-            <Link to={'/'}>
-                <div className='pchc-text'>ABOUT US</div>
-            </Link>
-            <Link to={'/'}>
-                <div className='pchc-text'>WE STAND FOR</div>
-            </Link>
-            <Link to={'/'}>
-                <div className='pchc-text'>FOCUS</div>
-            </Link>
-            <Link to={'/'}>
-                <div className='pchc-text'>SOLUTIONS</div>
-            </Link>
-            <Link to={'/'}>
-                <div className='pchc-text'>OVERALL ARCHITECTURE</div>
-            </Link>
-            <Link to={'/'}>
-                <div className='pchc-text'>ROADMAP</div>
-            </Link>
-
-
+                <div className='pchc-text' onClick={click1}>ABOUT US</div>
+                <div className='pchc-text' onClick={click2}>WE STAND FOR</div>
+                <div className='pchc-text' onClick={click3}>FOCUS</div>
+                <div className='pchc-text' onClick={click4}>SOLUTIONS</div>
+                <div className='pchc-text' onClick={click5}>OVERALL ARCHITECTURE</div>
+                <div className='pchc-text' onClick={click6}>ROADMAP</div>
             <div style={{height: '10px'}}/>
         </div>
     );
