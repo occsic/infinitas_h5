@@ -152,7 +152,7 @@ export default function MHeader({ activeIndex }) {
                 <div className="closeicon flex-row">
                     <CloseOutlined onClick={closeDrawer} style={{ color: "#fff", fontSize: "30px" }} />
                 </div>
-                <Collapse defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={changeCollapse} />
+                <Collapse forceRender defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={changeCollapse} />
                 <div className="flex-row fl-ai-center endItem">
                     <div className="font-fff  itemsTitle">CONTACT</div>
                     <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />

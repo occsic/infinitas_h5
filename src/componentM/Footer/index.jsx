@@ -141,7 +141,7 @@ export default function MHeader({ activeIndex }) {
     return (
         <div className="m-footer">
             <img className="m-logo" src={logo} />
-            <Collapse defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={aaaa} />
+            <Collapse forceRender defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={aaaa} />
             <div className="flex-row fl-ai-center endItem">
                 <div className="font-fff  itemsTitle">CONTACT</div>
                 <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />
