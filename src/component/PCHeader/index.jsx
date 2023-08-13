@@ -47,7 +47,9 @@ export default function PCHeader(props) {
         <div className='flex-center pc-header-container'>
             <div className='pc-header'>
                 <div style={{flex: 0.42}}>
+                    <Link to={'/'}>
                     <img src={logo} width={180} height={35}/>
+                    </Link>
                 </div>
                 <div className='flex-row fl-ai-center fl-jc-between' style={{flex: 0.58}}>
                     <Popover overlayInnerStyle={{padding: '0'}} placement="bottomLeft" color={'rgba(0, 0, 0, 0.2)'}

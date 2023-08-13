@@ -3,6 +3,7 @@ import "./index.css"
 import logo from "./mlogo.png"
 import { Tooltip, Popover, Drawer, Menu, Collapse } from "antd"
 import { MenuOutlined, RightOutlined, CloseOutlined } from "@ant-design/icons"
+import {Link} from "react-router-dom";
 export default function MHeader({ activeIndex }) {
     const [open, setOpen] = useState(false)
 
@@ -140,7 +141,8 @@ export default function MHeader({ activeIndex }) {
     return (
         <>
             <div className="m-header">
-                <img className="m-header-logo" src={logo} width={180} height={35} />
+                <Link to={'/'}> <img className="m-header-logo" src={logo} width={180} height={35} /></Link>
+
                 <MenuOutlined
                     onClick={() => {
                         setOpen(true)
