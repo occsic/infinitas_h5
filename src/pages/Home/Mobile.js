@@ -248,29 +248,43 @@ export default function InfinitasHomeMobile() {
                     ))}
                 </div>
             </div>
-            <div id="roadmap" className="homecontent">
+            <div className="homecontent"  id="roadmap">
                 <div className="homecontent-roadmap-title">ROADMAP</div>
-                <div className="roadmap-main flex-row" id='roadmapscroll'>
-                    {roadmapData[yearIndex].yearData.map((i, ind) => (
-                        <div className="yearData-view " key={ind}>
-                            <img style={{ marginBottom: "20px" }} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
-                            {i.textList.map((text, idx) => (
-                                <div key={idx} className="flex-row year-text">
-                                    <CheckOutlined className="year-icon" style={{ color: "#f44336", marginRight: "10px" }} />
-                                    <div>{text}</div>
-                                </div>
-                            ))}
+                <Carousel beforeChange={(e,n)=>{
+                    console.log(e);
+                    setYearIndex(n)
+                }} loop={false} dotPosition={"bottom"} ref={roadmapRef} dots={false}>
+                    {roadmapData.map((i, ixxx) => (
+                        <div  key={ixxx} className="roadmap-main">
+                            <div className="roadmapscroll flex-row" style={{ overflowX: "auto" }}>
+                                {i.yearData.map((i, ind) => (
+                                    <div className="yearData-view" key={ind}>
+                                        <img style={{ marginBottom: "20px" }} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
+                                        {i.textList.map((text, idx) => (
+                                            <div key={idx} className="flex-row year-text">
+                                                <CheckOutlined className="year-icon" style={{ color: "#f44336", marginRight: "10px" }} />
+                                                <div>{text}</div>
+                                            </div>
+                                        ))}
 
-                            <div className="year_ji">{i.yejiao}</div>
+                                        <div className="year_ji">{i.yejiao}</div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     ))}
-                </div>
+                </Carousel>
+
                 <div className="yearView flex-row">
                     {roadmapData.map((i, ind) => (
                         <div
                             onClick={() => {
                                 setYearIndex(ind)
-                                document.getElementById("roadmapscroll").scrollLeft = 0
+                                roadmapRef.current.goTo(ind)
+                                Array.prototype.forEach.call(
+                                    document.getElementsByClassName("roadmapscroll"),
+                                    i=>i.scrollLeft=0
+                                )
                             }}
                             className={`yearClass ${ind == yearIndex ? "redyear" : ""}`}
                             key={i.year}
