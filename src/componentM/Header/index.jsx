@@ -3,7 +3,7 @@ import "./index.css"
 import logo from "./mlogo.png"
 import { Tooltip, Popover, Drawer, Menu, Collapse } from "antd"
 import { MenuOutlined, RightOutlined, CloseOutlined } from "@ant-design/icons"
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom"
 export default function MHeader({ activeIndex }) {
     const [open, setOpen] = useState(false)
 
@@ -120,8 +120,12 @@ export default function MHeader({ activeIndex }) {
             label: <div className="font-fff  itemsTitle">RESOURCES</div>,
             children: (
                 <div className="itemsI">
-                    <p>PITCH DECK</p>
-                    <p>DOC</p>
+                    <p className="pchc-text" onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>
+                        PITCH DECK
+                    </p>
+                    <p className="pchc-text" onClick={() => (window.location.href = "https://infinitas-official.gitbook.io/infinitas-whitepaper/")}>
+                        DOC
+                    </p>
                     <p>TECH WHITEPAPER</p>
                     <p>ONE PAPER</p>
                 </div>
@@ -141,7 +145,10 @@ export default function MHeader({ activeIndex }) {
     return (
         <>
             <div className="m-header">
-                <Link to={'/'}> <img className="m-header-logo" src={logo} width={180} height={35} /></Link>
+                <Link to={"/"}>
+                    {" "}
+                    <img className="m-header-logo" src={logo} width={180} height={35} />
+                </Link>
 
                 <MenuOutlined
                     onClick={() => {

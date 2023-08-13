@@ -132,7 +132,7 @@ export default function InfinitasHomeMobile() {
             year: "2024",
             bgc: "https://static.paraluni.org/images/infiweb/roadmap_bg.png",
             yearData: [
-                { yejiao: "Q1", textList: ["Launched Infinitas mainnet (BTC减半)", "Building DeFi (DEX) Schemas", "Provide SDKs"] },
+                { yejiao: "Q1", textList: ["Launched Infinitas mainnet (BTC Halve)", "Building DeFi (DEX) Schemas", "Provide SDKs"] },
                 { yejiao: "Q2", textList: ["Total number of ecosystem projects reaches 200+", "Listing on centralized exchange", "Development of DApp integration environment"] },
             ],
         },

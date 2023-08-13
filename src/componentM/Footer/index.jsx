@@ -107,8 +107,12 @@ export default function MHeader({ activeIndex }) {
             label: <div className="font-fff  itemsTitle">RESOURCES</div>,
             children: (
                 <div className="itemsI">
-                    <p>PITCH DECK</p>
-                    <p>DOC</p>
+                    <p className="pchc-text" onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>
+                        PITCH DECK
+                    </p>
+                    <p className="pchc-text" onClick={() => (window.location.href = "https://infinitas-official.gitbook.io/infinitas-whitepaper/")}>
+                        DOC
+                    </p>
                     <p>TECH WHITEPAPER</p>
                     <p>ONE PAPER</p>
                 </div>
