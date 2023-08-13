@@ -64,8 +64,8 @@ export default function ZkSnarkMobile() {
             <div className="zk-main content">
                 <div className="zk-text colorF">A ZK-SNARK CONSISTS OF THREE ALGORITHMS G, P, V DEFINED AS FOLLOWS</div>
                 <Carousel dotPosition={"right"}>
-                    {SNARK.map((i) => (
-                        <div key={i.title} className="zkmainItem">
+                    {SNARK.map((i,ind) => (
+                        <div key={i.title+ind} className="zkmainItem">
                             <div className="zkmainItem-title">{i.title}</div>
                             <div className="zkmainItem-line"></div>
                             <div className="flex-row fl-ai-center">
