@@ -148,7 +148,7 @@ export default function MHeader({ activeIndex }) {
                     style={{ fontSize: "20px", color: "#000" }}
                 />
             </div>
-            <Drawer width="330" className="showview" placement="right" onClose={closeDrawer} open={open}>
+            <Drawer width={330} className="showview" placement="right" onClose={closeDrawer} open={open}>
                 <div className="closeicon flex-row">
                     <CloseOutlined onClick={closeDrawer} style={{ color: "#fff", fontSize: "30px" }} />
                 </div>
