@@ -218,7 +218,7 @@ export default function InfinitasHomePC() {
 
             {/*OVERALL ARCHITECTURE*/}
             <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw'}} id={'overall'}>
-                <div className='common-width' style={{height: '1222px'}}>
+                <div className='common-width' style={{height: '1456px'}}>
                     <div className='stand-fontA' style={{marginTop: '150px'}}>OVERALL ARCHITECTURE</div>
 
                     <div className='flex-row' style={{marginTop: '48px'}}>
@@ -241,73 +241,75 @@ export default function InfinitasHomePC() {
                     </div>
 
                     <div className='flex-row' style={{marginTop: '24px'}}>
-                        <HomeOverallComponent width={179} height={157} bgColor={'#000000'} fontSize={'20'}
+                        <HomeOverallComponent width={222} height={157} bgColor={'#000000'} fontSize={'20'}
                                               fontWeight={800} text={'PRODUCT LAYER'} color={'#FFFFFF'}
                                               textWidth={86}/>
-                        <div className='flex-column fl-jc-between'>
-                            <div className='flex-row'>
-                                <HomeOverallComponent width={383} height={77} left={25}
+                        <div className='flex-column fl-jc-between flex-1' style={{marginLeft:'25px'}}>
+                            <div className='flex-row fl-jc-between'>
+                                <HomeOverallComponent width={446} height={77} left={25}
                                                       text={'Contract Development Test Suites DApps Development Tools'}
                                                       textWidth={230}/>
-                                <HomeOverallComponent width={383} height={77} left={25}
+                                <HomeOverallComponent width={446} height={77} left={25}
                                                       text={'DApps Integrated Development Environment Other Extension Tools'}
                                                       textWidth={306}/>
                             </div>
-                            <div className='flex-row'>
-                                <HomeOverallComponent width={281} height={60} left={25}
+                            <div className='flex-row fl-jc-between'>
+                                <HomeOverallComponent width={289} height={60} left={25}
                                                       text={'Ecosystem Entrance: Wallet'}/>
-                                <HomeOverallComponent width={281} height={60} left={25}
+                                <HomeOverallComponent width={289} height={60} left={25}
                                                       text={'Data Tools: Data Explorer'}/>
+                                <HomeOverallComponent width={289} height={60} left={25}
+                                                      text={'Other Extension Tools'}/>
                             </div>
                         </div>
                     </div>
 
                     <div className='flex-row' style={{marginTop: '24px'}}>
-                        <HomeOverallComponent width={179} height={140} bgColor={'#000000'} fontSize={'20'}
+                        <HomeOverallComponent width={222} height={140} bgColor={'#000000'} fontSize={'20'}
                                               fontWeight={800} text={'SCHEMAS LAYER'} color={'#FFFFFF'}
                                               textWidth={86}/>
-                        <div className='flex-column fl-jc-between'>
-                            <div className='flex-row'>
-                                <HomeOverallComponent width={281} height={60} left={25}
+                        <div className='flex-column fl-jc-between flex-1' style={{marginLeft:'25px'}}>
+                            <div className='flex-row fl-jc-between'>
+                                <HomeOverallComponent width={290} height={60} left={25}
                                                       text={'Synthetic Assets Schemas'}/>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'GameFi Schemas'}/>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Other Schemas'}/>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'GameFi Schemas'}/>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'Other Schemas'}/>
                             </div>
-                            <div className='flex-row'>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'DEX Schemas'}/>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Staking Schemas'}/>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Lending Schemas'}/>
+                            <div className='flex-row fl-jc-between'>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'DEX Schemas'}/>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'Staking Schemas'}/>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'Lending Schemas'}/>
                             </div>
                         </div>
                     </div>
 
                     <div className='flex-row' style={{marginTop: '24px'}}>
-                        <HomeOverallComponent width={281} height={77} bgColor={'#000000'} fontSize={'20'}
-                                              fontWeight={800} text={'NETWORK LAYER'} color={'#FFFFFF'}/>
-                        <div className='flex-row'>
-                            <HomeOverallComponent width={281} height={77} left={25} text={'Infinitas Testnet'}/>
-                            <HomeOverallComponent width={281} height={77} left={25} text={'Infinitas Mainnet'}/>
+                        <HomeOverallComponent width={222} height={140} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'NETWORK LAYER'} color={'#FFFFFF'} textWidth={90}/>
+                        <div className='flex-row flex-1 fl-jc-between' style={{marginLeft:'25px'}}>
+                            <HomeOverallComponent width={447} height={140} left={25} text={'Infinitas Testnet'}/>
+                            <HomeOverallComponent width={447} height={140} left={25} text={'Infinitas Mainnet'}/>
                         </div>
                     </div>
 
                     <div className='flex-row' style={{marginTop: '24px'}}>
-                        <HomeOverallComponent width={281} height={77} bgColor={'#000000'} fontSize={'20'}
-                                              fontWeight={800} text={'PROTOCOL LAYER'} color={'#FFFFFF'}/>
-                        <div className='flex-row'>
-                            <HomeOverallComponent width={281} height={77} left={25} text={'Lightning Network Node'}/>
-                            <HomeOverallComponent width={179} height={77} left={25} text={'RGB Node'}/>
-                            <HomeOverallComponent width={383} height={77} left={25}
+                        <HomeOverallComponent width={222} height={140} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'PROTOCOL LAYER'} color={'#FFFFFF'} textWidth={90}/>
+                        <div className='flex-row flex-1 fl-jc-between' style={{marginLeft:'25px'}}>
+                            <HomeOverallComponent width={290} height={140} left={25} text={'Lightning Network Node'}/>
+                            <HomeOverallComponent width={290} height={140} left={25} text={'RGB Node'}/>
+                            <HomeOverallComponent width={290} height={140} left={25}
                                                   text={'Communication/Storage Node'}/>
                         </div>
                     </div>
 
                     <div className='flex-row' style={{marginTop: '24px'}}>
-                        <HomeOverallComponent width={281} height={77} bgColor={'#000000'} fontSize={'20'}
-                                              fontWeight={800} text={'DATA LAYER'} color={'#FFFFFF'}/>
-                        <div className='flex-row'>
-                            <HomeOverallComponent width={179} height={77} left={25} text={'LNP/BP Association'}/>
-                            <HomeOverallComponent width={280} height={77} left={25} text={'Open Source Toolchain'}/>
-                            <HomeOverallComponent width={382} height={77} left={25}
+                        <HomeOverallComponent width={222} height={140} bgColor={'#000000'} fontSize={'20'}
+                                              fontWeight={800} text={'DATA LAYER'} color={'#FFFFFF'} textWidth={90}/>
+                        <div className='flex-row flex-1 fl-jc-between' style={{marginLeft:'25px'}}>
+                            <HomeOverallComponent width={290} height={140} left={25} text={'LNP/BP Association'}/>
+                            <HomeOverallComponent width={290} height={140} left={25} text={'Open Source Toolchain'}/>
+                            <HomeOverallComponent width={290} height={140} left={25}
                                                   text={'Fundamental Document Repository'}/>
                         </div>
                     </div>
