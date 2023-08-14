@@ -9,8 +9,11 @@ import HomePCSolutions from "./Component/HomePCSolutions";
 import HomeOverallComponent from "./Component/HomeOverallComponent";
 import HomePCRoadmap from "./Component/HomePCRoadmap";
 import PCFooter from "../../component/PCFooter";
+import {useSearchParams} from "react-router-dom";
 
 export default function InfinitasHomePC() {
+    const [searchParams] = useSearchParams()
+    const scrollId=searchParams.get('id')
     const roadmapRef = useRef()
     const [roadMapStatus, setRoadMapStatus] = useState(2);//0.2021 1.2022 2.2023 3.2024
     const onRoadMapCarouselChange = status => {
@@ -77,17 +80,18 @@ export default function InfinitasHomePC() {
             }, {text: 'Development of DApp integration environment', anchor: '', noSlice: true}],
         ]
     ]
+
+    useEffect(()=>{
+       if(scrollId){
+           document.getElementById(scrollId).scrollIntoView()
+       }
+    },[scrollId])
     return (
         <div className='home-pc'>
 
             {/*头部*/}
 
-            <PCHeader click1={()=> document.getElementById('about').scrollIntoView()}
-                      click2={()=> document.getElementById('stand').scrollIntoView()}
-                      click3={()=> document.getElementById('focus').scrollIntoView()}
-                      click4={()=> document.getElementById('solutions').scrollIntoView()}
-                      click5={()=> document.getElementById('overall').scrollIntoView()}
-                      click6={()=> document.getElementById('roadmap').scrollIntoView()}/>
+            <PCHeader />
             <div style={{height: '100px'}}/>
 
             {/*第一部分*/}

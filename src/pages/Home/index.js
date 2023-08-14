@@ -3,10 +3,12 @@ import React, {useEffect, useState} from "react";
 import InfinitasHomeMobile from "./Mobile";
 import InfinitasHomePC from "./PC";
 import BigNumber from "bignumber.js";
+import {useSearchParams} from "react-router-dom";
 
 export default function InfinitasHome(){
     const [isMobileView,setIsMobileView]=useState(false);//是否是手机视图
-
+    const [searchParams] = useSearchParams()
+    const scrollId=searchParams.get('id')
     const resizeUpdate = (e) => {
         // 通过事件对象获取浏览器窗口的高度
         let width = e.target.innerWidth;
@@ -20,7 +22,9 @@ export default function InfinitasHome(){
 
 
     useEffect(()=>{
-        window.scrollTo(0,0)
+       if(!scrollId){
+           window.scrollTo(0,0)
+       }
         const width = window.innerWidth;
         setIsMobileView(BigNumber(width).isLessThan(905))
         window.addEventListener('resize', resizeUpdate);

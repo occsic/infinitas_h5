@@ -2,10 +2,11 @@ import React from "react";
 import './index.css'
 import logo from '../../static/Logo.png'
 import {Link} from "react-router-dom";
+import {useNavigate} from 'react-router-dom'
 export default function PCFooter(props){
-    const {click1,click2,click3,click4,click5,click6}=props
+    const navigate=useNavigate()
     const list=[
-        [{text:'About us',click:click1},{text:'We stand for',click:click2},{text:'Focus',click:click3},{text:"Solutions",click:click4},{text:"Overall Architecture",click:click5},{text:"Roadmap",click:click6}],
+        [{text:'About us',click:()=>navigate('/home?id=about')},{text:'We stand for',click:()=>navigate('/home?id=stand')},{text:'Focus',click:()=>navigate('/home?id=focus')},{text:"Solutions",click:()=>navigate('/home?id=solutions')},{text:"Overall Architecture",click:()=>navigate('/home?id=overall')},{text:"Roadmap",click:()=>navigate('/home?id=roadmap')}],
         [{text:'RGB',link:'/rgb'},{text:"Lighting Network",link:'/network'},{text:"zk-SNARK",link:'/zksnark'}],
         [{text:"Pitch Deck",url:'https://docsend.com/view/tpa2xg6c773gqdkn'},{text:"Doc",url:"https://infinitas-official.gitbook.io/infinitas-whitepaper/"},{text:'Tech Whitepaper'},{text:"One paper"}],
         ["Article","Online IDE"],

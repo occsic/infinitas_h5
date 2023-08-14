@@ -9,6 +9,11 @@ export default [
         main: <InfinitasHome />
     },
     {
+        path: '/home',
+        exact: true,
+        main: <InfinitasHome />
+    },
+    {
         path: 'rgb',
         exact: true,
         main: <RGB />
@@ -23,5 +28,5 @@ export default [
         exact: true,
         main: <ZkSnark />
     },
-    
+
 ]

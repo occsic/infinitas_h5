@@ -3,17 +3,18 @@ import './index.css'
 import logo from '../../static/Logo.png'
 import {Tooltip, Popover} from "antd";
 import {Link} from "react-router-dom";
+import {useNavigate} from 'react-router-dom'
 
-export default function PCHeader(props) {
-    const {click1,click2,click3,click4,click5,click6} = props
+export default function PCHeader() {
+    const navigate=useNavigate()
     const content1 = (
         <div className='pch-content'>
-                <div className='pchc-text' onClick={click1}>ABOUT US</div>
-                <div className='pchc-text' onClick={click2}>WE STAND FOR</div>
-                <div className='pchc-text' onClick={click3}>FOCUS</div>
-                <div className='pchc-text' onClick={click4}>SOLUTIONS</div>
-                <div className='pchc-text' onClick={click5}>OVERALL ARCHITECTURE</div>
-                <div className='pchc-text' onClick={click6}>ROADMAP</div>
+                <div className='pchc-text' onClick={()=>navigate('/home?id=about')}>ABOUT US</div>
+                <div className='pchc-text' onClick={()=>navigate('/home?id=stand')}>WE STAND FOR</div>
+                <div className='pchc-text' onClick={()=>navigate('/home?id=focus')}>FOCUS</div>
+                <div className='pchc-text' onClick={()=>navigate('/home?id=solutions')}>SOLUTIONS</div>
+                <div className='pchc-text' onClick={()=>navigate('/home?id=overall')}>OVERALL ARCHITECTURE</div>
+                <div className='pchc-text' onClick={()=>navigate('/home?id=roadmap')}>ROADMAP</div>
             <div style={{height: '10px'}}/>
         </div>
     );
