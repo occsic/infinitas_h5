@@ -52,6 +52,8 @@ export default function PCHeader(props) {
                     </Link>
                 </div>
                 <div className='flex-row fl-ai-center fl-jc-between' style={{flex: 0.58}}>
+                    <div className='pch-tag' style={{visibility:'hidden'}}>BUILD</div>
+                    <div className='pch-tag' style={{visibility:'hidden'}}>CONTACT</div>
                     <Popover overlayInnerStyle={{padding: '0'}} placement="bottomLeft" color={'rgba(0, 0, 0, 0.2)'}
                              content={content1}>
                         <div className='pch-tag'>HOME</div>
@@ -67,8 +69,7 @@ export default function PCHeader(props) {
                     </Popover>
 
 
-                    <div className='pch-tag'>BUILD</div>
-                    <div className='pch-tag'>CONTACT</div>
+
                 </div>
             </div>
         </div>
