@@ -1,10 +1,12 @@
 import React from "react";
 import './index.css'
 import logo from '../../static/Logo.png'
-export default function PCFooter(){
+import {Link} from "react-router-dom";
+export default function PCFooter(props){
+    const {click1,click2,click3,click4,click5,click6}=props
     const list=[
-        ["About us","We stand for",'Focus',"Solutions","Overall Architecture","Roadmap"],
-        ["RGB","Lighting Network","zk-SNARK"],
+        [{text:'About us',click:click1},{text:'We stand for',click:click2},{text:'Focus',click:click3},{text:"Solutions",click:click4},{text:"Overall Architecture",click:click5},{text:"Roadmap",click:click6}],
+        [{text:'RGB',link:'/rgb'},{text:"Lighting Network",link:'/network'},{text:"zk-SNARK",link:'/zksnark'}],
         ["Pitch Deck","Doc","Tech Whitepaper","One paper"],
         ["Article","Online IDE"],
         ["Developers","Users","Media, Business & Others"],
@@ -18,7 +20,7 @@ export default function PCFooter(){
                             HOME
                         </div>
                         {list[0].map((item,index)=>(
-                            <div className='pcf-des' key={index}>{item}</div>
+                            <div className='pcf-des' key={index} onClick={item.click}>{item.text}</div>
                         ))}
                     </div>
                     <div className='flex-column'>
@@ -26,7 +28,9 @@ export default function PCFooter(){
                             LEARN
                         </div>
                         {list[1].map((item,index)=>(
-                            <div className='pcf-des' key={index}>{item}</div>
+                           <Link to={item.link}>
+                               <div className='pcf-des' key={index}>{item.text}</div>
+                           </Link>
                         ))}
                     </div>
                     <div className='flex-column'>

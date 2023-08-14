@@ -20,6 +20,7 @@ export default function RGB(){
 
 
     useEffect(()=>{
+        window.scrollTo(0,0)
         const width = window.innerWidth;
         setIsMobileView(BigNumber(width).isLessThan(905))
         window.addEventListener('resize', resizeUpdate);

@@ -12,7 +12,7 @@ import PCFooter from "../../component/PCFooter";
 
 export default function InfinitasHomePC() {
     const roadmapRef = useRef()
-    const [roadMapStatus, setRoadMapStatus] = useState(0);//0.2021 1.2022 2.2023 3.2024
+    const [roadMapStatus, setRoadMapStatus] = useState(2);//0.2021 1.2022 2.2023 3.2024
     const onRoadMapCarouselChange = status => {
         setRoadMapStatus(status)
         roadmapRef.current.goTo(status)
@@ -343,7 +343,14 @@ export default function InfinitasHomePC() {
                 </div>
             </div>
 
-            <PCFooter/>
+            <PCFooter
+                click1={()=> document.getElementById('about').scrollIntoView()}
+                click2={()=> document.getElementById('stand').scrollIntoView()}
+                click3={()=> document.getElementById('focus').scrollIntoView()}
+                click4={()=> document.getElementById('solutions').scrollIntoView()}
+                click5={()=> document.getElementById('overall').scrollIntoView()}
+                click6={()=> document.getElementById('roadmap').scrollIntoView()}
+            />
 
         </div>
     )
