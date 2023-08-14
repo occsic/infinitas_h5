@@ -73,20 +73,28 @@ export default function RGBMobile() {
                     ))}
                 </div>
             </div>
-            <div className="rgb-desing rgb-desingView">
+            <div className="rgb-desing">
                 <div className="desing-title">SOLUTIONS</div>
-                <Carousel dotPosition={"right"}>
-                    {solutionsContent.map((i) => (
-                        <div key={i.title} className="desingItem">
-                            <div className="desingItem-title">{i.title}</div>
-                            <div className="desingItem-line"></div>
-                            <div className="flex-row fl-ai-center">
-                                <div className="desingItem-sub">{i.sub}</div>
-                            </div>
-                            <img className="desingItem-img" src={i.img} />
+
+                <div className="desingItem">
+                    <div className="desingItem-title">{solutionsContent[showIndex].title}</div>
+                    <div className="desingItem-line"></div>
+                    <div className="flex-row">
+                        <div className="desingItem-sub">{solutionsContent[showIndex].sub}</div>
+                        <div className="desingItem-ver flex-column">
+                            {solutionsContent.map((i, ind) => (
+                                <div
+                                    onClick={() => {
+                                        setShowIndex(ind)
+                                    }}
+                                    className={`ver ${showIndex == ind ? "red" : ""}`}
+                                    key={ind}
+                                ></div>
+                            ))}
                         </div>
-                    ))}
-                </Carousel>
+                    </div>
+                    <img className="desingItem-img" src={solutionsContent[showIndex].img} />
+                </div>
             </div>
             <div className="rgb-main content">
                 <div className="rgb-main-title">MAIN FEATURES</div>

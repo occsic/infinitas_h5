@@ -63,7 +63,7 @@ export default function ZkSnarkMobile() {
             </div>
             <div className="zk-main content">
                 <div className="zk-text colorF">A ZK-SNARK CONSISTS OF THREE ALGORITHMS G, P, V DEFINED AS FOLLOWS</div>
-                <Carousel dotPosition={"right"}>
+                {/* <Carousel dotPosition={"right"}>
                     {SNARK.map((i,ind) => (
                         <div key={i.title+ind} className="zkmainItem">
                             <div className="zkmainItem-title">{i.title}</div>
@@ -74,12 +74,12 @@ export default function ZkSnarkMobile() {
                             <img className="zkmainItem-img" src={i.img} />
                         </div>
                     ))}
-                </Carousel>
-                {/* <div className="zkmainItem">
+                </Carousel> */}
+                <div className="zkmainItem">
                     <div className="flex-row z">
                         <div>
+                            <div className="zkmainItem-sub" style={{height:'auto'}}>{SNARK[showIndex].sub}</div>
                             <img className="zkmainItem-img" src={SNARK[showIndex].img} />
-                            <div className="zkmainItem-sub">{SNARK[showIndex].sub}</div>
                         </div>
                         <div className="zkmainItem-ver flex-column">
                             {SNARK.map((i, ind) => (
@@ -93,7 +93,7 @@ export default function ZkSnarkMobile() {
                             ))}
                         </div>
                     </div>
-                </div> */}
+                </div>
                 <div className="zk-text zk-main-top colorF">FEATURES</div>
                 <div className="colorF zk-main-sub">
                     <div className="flex-row fl-jc-between zk-bg-main">

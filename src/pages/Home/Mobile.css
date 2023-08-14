@@ -211,6 +211,8 @@
     line-height: 1.43;
 }
 .solutionsItem-ver {
+    margin-left: auto;
+    align-self: start;
 }
 .ver {
     width: 4px;
