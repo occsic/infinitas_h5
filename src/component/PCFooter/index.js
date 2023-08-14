@@ -69,7 +69,7 @@ export default function PCFooter(props){
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/ins.png"} width={24} height={24}/>
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/discord.png"} onClick={()=>window.location.href='https://discord.gg/wukSjfSd6a'} width={24} height={24}/>
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/youtube.png"} width={24} height={24}/>
-                        <img src={"https://static.paraluni.org/images/infiweb/twitch.png"} width={24} height={24}/>
+                        {/*<img src={"https://static.paraluni.org/images/infiweb/twitch.png"} width={24} height={24}/>*/}
                     </div>
                 </div>
             </div>
