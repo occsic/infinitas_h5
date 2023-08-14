@@ -3,10 +3,10 @@ import "./index.css"
 import logo from "../../static/Logo.png"
 import { Tooltip, Popover, Collapse } from "antd"
 import { MenuOutlined, RightOutlined } from "@ant-design/icons"
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom"
 
 export default function MHeader({ activeIndex }) {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     const items = [
         {
             key: "1",
@@ -15,9 +15,9 @@ export default function MHeader({ activeIndex }) {
                 <div className="itemsI">
                     <p
                         onClick={() => {
-                            if (window.location.pathname != "/") {
+                            if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
                                 window.sessionStorage.setItem("t", "about")
-                                navigate('/')
+                                navigate("/")
                             } else {
                                 document.getElementById("about").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -28,9 +28,9 @@ export default function MHeader({ activeIndex }) {
                     </p>
                     <p
                         onClick={() => {
-                            if (window.location.pathname != "/") {
+                            if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
                                 window.sessionStorage.setItem("t", "stand")
-                                navigate('/')
+                                navigate("/")
                             } else {
                                 document.getElementById("stand").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -41,9 +41,9 @@ export default function MHeader({ activeIndex }) {
                     </p>
                     <p
                         onClick={() => {
-                            if (window.location.pathname != "/") {
+                            if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
                                 window.sessionStorage.setItem("t", "focus")
-                                navigate('/')
+                                navigate("/")
                             } else {
                                 document.getElementById("focus").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -54,9 +54,9 @@ export default function MHeader({ activeIndex }) {
                     </p>
                     <p
                         onClick={() => {
-                            if (window.location.pathname != "/") {
+                            if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
                                 window.sessionStorage.setItem("t", "solutions")
-                                navigate('/')
+                                navigate("/")
                             } else {
                                 document.getElementById("solutions").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -67,9 +67,9 @@ export default function MHeader({ activeIndex }) {
                     </p>
                     <p
                         onClick={() => {
-                            if (window.location.pathname != "/") {
+                            if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
                                 window.sessionStorage.setItem("t", "overall")
-                                navigate('/')
+                                navigate("/")
                             } else {
                                 document.getElementById("overall").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -80,9 +80,9 @@ export default function MHeader({ activeIndex }) {
                     </p>
                     <p
                         onClick={() => {
-                            if (window.location.pathname != "/") {
+                            if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
                                 window.sessionStorage.setItem("t", "roadmap")
-                                navigate('/')
+                                navigate("/")
                             } else {
                                 document.getElementById("roadmap").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -99,9 +99,9 @@ export default function MHeader({ activeIndex }) {
             label: <div className="font-fff  itemsTitle">LEARN</div>,
             children: (
                 <div className="itemsI">
-                    <p onClick={() => (navigator('/rgb'))}>RGB</p>
-                    <p onClick={() => (navigate("/network"))}>LIGHTING NETWORK</p>
-                    <p onClick={() => (navigate("/zksnark"))}>ZK-SNARK</p>
+                    <p onClick={() => navigator("/rgb")}>RGB</p>
+                    <p onClick={() => navigate("/network")}>LIGHTING NETWORK</p>
+                    <p onClick={() => navigate("/zksnark")}>ZK-SNARK</p>
                 </div>
             ),
         },
@@ -110,12 +110,8 @@ export default function MHeader({ activeIndex }) {
             label: <div className="font-fff  itemsTitle">RESOURCES</div>,
             children: (
                 <div className="itemsI">
-                    <p onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>
-                        PITCH DECK
-                    </p>
-                    <p onClick={() => (window.location.href = "https://infinitas-official.gitbook.io/infinitas-whitepaper/")}>
-                        DOC
-                    </p>
+                    <p onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>PITCH DECK</p>
+                    <p onClick={() => (window.location.href = "https://infinitas-official.gitbook.io/infinitas-whitepaper/")}>DOC</p>
                     {/* <p>TECH WHITEPAPER</p>
                     <p>ONE PAPER</p> */}
                 </div>
