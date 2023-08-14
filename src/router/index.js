@@ -2,6 +2,7 @@ import InfinitasHome from "../pages/Home";
 import RGB from "../pages/RGB";
 import Network from "../pages/Network";
 import ZkSnark from "../pages/ZkSnark";
+import Contact from "../pages/Contact";
 export default [
     {
         path: '/',
@@ -28,5 +29,9 @@ export default [
         exact: true,
         main: <ZkSnark />
     },
-
+    {
+        path: 'contact',
+        exact: true,
+        main: <Contact />
+    },
 ]
