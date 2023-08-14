@@ -3,7 +3,10 @@ import "./index.css"
 import logo from "../../static/Logo.png"
 import { Tooltip, Popover, Collapse } from "antd"
 import { MenuOutlined, RightOutlined } from "@ant-design/icons"
+import {useNavigate} from 'react-router-dom'
+
 export default function MHeader({ activeIndex }) {
+    const navigate=useNavigate()
     const items = [
         {
             key: "1",
@@ -14,7 +17,7 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             if (window.location.pathname != "/") {
                                 window.sessionStorage.setItem("t", "about")
-                                window.location.href = "/"
+                                navigate('/')
                             } else {
                                 document.getElementById("about").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -27,7 +30,7 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             if (window.location.pathname != "/") {
                                 window.sessionStorage.setItem("t", "stand")
-                                window.location.href = "/"
+                                navigate('/')
                             } else {
                                 document.getElementById("stand").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -40,7 +43,7 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             if (window.location.pathname != "/") {
                                 window.sessionStorage.setItem("t", "focus")
-                                window.location.href = "/"
+                                navigate('/')
                             } else {
                                 document.getElementById("focus").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -53,7 +56,7 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             if (window.location.pathname != "/") {
                                 window.sessionStorage.setItem("t", "solutions")
-                                window.location.href = "/"
+                                navigate('/')
                             } else {
                                 document.getElementById("solutions").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -66,7 +69,7 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             if (window.location.pathname != "/") {
                                 window.sessionStorage.setItem("t", "overall")
-                                window.location.href = "/"
+                                navigate('/')
                             } else {
                                 document.getElementById("overall").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -79,7 +82,7 @@ export default function MHeader({ activeIndex }) {
                         onClick={() => {
                             if (window.location.pathname != "/") {
                                 window.sessionStorage.setItem("t", "roadmap")
-                                window.location.href = "/"
+                                navigate('/')
                             } else {
                                 document.getElementById("roadmap").scrollIntoView()
                                 window.scrollBy(0, -48)
@@ -96,9 +99,9 @@ export default function MHeader({ activeIndex }) {
             label: <div className="font-fff  itemsTitle">LEARN</div>,
             children: (
                 <div className="itemsI">
-                    <p onClick={() => (window.location.href = "/rgb")}>RGB</p>
-                    <p onClick={() => (window.location.href = "/network")}>LIGHTING NETWORK</p>
-                    <p onClick={() => (window.location.href = "/zksnark")}>ZK-SNARK</p>
+                    <p onClick={() => (navigator('/rgb'))}>RGB</p>
+                    <p onClick={() => (navigate("/network"))}>LIGHTING NETWORK</p>
+                    <p onClick={() => (navigate("/zksnark"))}>ZK-SNARK</p>
                 </div>
             ),
         },
