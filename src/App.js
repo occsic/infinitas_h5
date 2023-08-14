@@ -1,7 +1,7 @@
 
 import React,{useEffect,Suspense} from "react";
 import router from "./router";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {HashRouter as Router, Route, Routes} from "react-router-dom";
 const domArr = [];
 for (let i = 0; i < router.length; i += 1) {
     const item = router[i];
