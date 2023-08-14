@@ -201,7 +201,7 @@ export default function InfinitasHomePC() {
             <div className='height-900 common-width flex-column fl-jc-center solutions'
                  style={{backgroundColor: "#ffffff"}} id={'solutions'}>
                 <div className='font-color-42 ' style={{fontSize: '40px', fontWeight: 800}}>SOLUTIONS</div>
-                <Carousel dotPosition={'left'}>
+                <Carousel dotPosition={'left'} autoplay>
                     <HomePCSolutions title={'SLR (SECURITY-LIGHTING-RGB) PROTOCOL'}
                                      text={'RGB and Lightning Network are re-encapsulated, and a transaction data of the client and a UTXO of Bitcoin are sealed at one time. The smart contracts of the RGB protocol only function in the client-side verification paradigm, keeping asset data in a state outside of the blockchain or Lightning Network.'}
                                      img={'https://static.paraluni.org/images/infiweb/home_bg2.png'}
