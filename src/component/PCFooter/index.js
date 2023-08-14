@@ -54,9 +54,9 @@ export default function PCFooter(props){
                         <div className='pcf-title'>
                             CONTACT
                         </div>
-                        {list[4].map((item,index)=>(
-                            <div className='pcf-des' key={index}>{item}</div>
-                        ))}
+                        {/*{list[4].map((item,index)=>(*/}
+                        {/*    <div className='pcf-des' key={index}>{item}</div>*/}
+                        {/*))}*/}
                     </div>
                 </div>
                 <div className='pcf-line' />
