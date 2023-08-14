@@ -134,7 +134,7 @@ export default function MHeader({ activeIndex }) {
         { img: "https://static.paraluni.org/images/infiweb/ins.png", href: "111" },
         { img: "https://static.paraluni.org/images/infiweb/discord.png", href: "111" },
         { img: "https://static.paraluni.org/images/infiweb/youtube.png", href: "111" },
-        { img: "https://static.paraluni.org/images/infiweb/twitch.png", href: "111" },
+        // { img: "https://static.paraluni.org/images/infiweb/twitch.png", href: "111" },
     ]
 
     const aaaa = (e, xx) => {
