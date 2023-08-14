@@ -120,27 +120,27 @@ export default function MHeader({ activeIndex }) {
             label: <div className="font-fff  itemsTitle">RESOURCES</div>,
             children: (
                 <div className="itemsI">
-                    <p className="pchc-text" onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>
+                    <p onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>
                         PITCH DECK
                     </p>
-                    <p className="pchc-text" onClick={() => (window.location.href = "https://infinitas-official.gitbook.io/infinitas-whitepaper/")}>
+                    <p onClick={() => (window.location.href = "https://infinitas-official.gitbook.io/infinitas-whitepaper/")}>
                         DOC
                     </p>
-                    <p>TECH WHITEPAPER</p>
-                    <p>ONE PAPER</p>
+                    {/* <p>TECH WHITEPAPER</p>
+                    <p>ONE PAPER</p> */}
                 </div>
             ),
         },
-        {
-            key: "4",
-            label: <div className="font-fff  itemsTitle">BUILD</div>,
-            children: (
-                <div className="itemsI">
-                    <p>ARTICLE</p>
-                    <p>ONLINE IDE</p>
-                </div>
-            ),
-        },
+        // {
+        //     key: "4",
+        //     label: <div className="font-fff  itemsTitle">BUILD</div>,
+        //     children: (
+        //         <div className="itemsI">
+        //             <p>ARTICLE</p>
+        //             <p>ONLINE IDE</p>
+        //         </div>
+        //     ),
+        // },
     ]
     return (
         <>
@@ -162,10 +162,10 @@ export default function MHeader({ activeIndex }) {
                     <CloseOutlined onClick={closeDrawer} style={{ color: "#fff", fontSize: "30px" }} />
                 </div>
                 <Collapse forceRender defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={changeCollapse} />
-                <div className="flex-row fl-ai-center endItem">
+                {/* <div className="flex-row fl-ai-center endItem">
                     <div className="font-fff  itemsTitle">CONTACT</div>
                     <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />
-                </div>
+                </div> */}
             </Drawer>
         </>
     )
