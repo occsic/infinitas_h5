@@ -222,20 +222,20 @@ export default function InfinitasHomePC() {
                     <div className='stand-fontA' style={{marginTop: '150px'}}>OVERALL ARCHITECTURE</div>
 
                     <div className='flex-row' style={{marginTop: '48px'}}>
-                        <HomeOverallComponent width={179} height={140} bgColor={'#000000'} fontSize={'20'}
+                        <HomeOverallComponent width={222} height={140} bgColor={'#000000'} fontSize={'20'}
                                               fontWeight={800} text={'APPLICATION LAYER'} color={'#FFFFFF'}
                                               textWidth={118}/>
-                        <div className='flex-column fl-jc-between'>
-                            <div className='flex-row'>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'DeFi'}/>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'NFT Marketplace'}/>
-                                <HomeOverallComponent width={281} height={60} left={25}
+                        <div className='flex-column fl-jc-between flex-1' style={{marginLeft:'25px'}}>
+                            <div className='flex-row fl-jc-between'>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'DeFi'}/>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'NFT Marketplace'}/>
+                                <HomeOverallComponent width={290} height={60} left={25}
                                                       text={'Decentralized Identity'}/>
                             </div>
-                            <div className='flex-row'>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Gaming'}/>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Infrastructure'}/>
-                                <HomeOverallComponent width={179} height={60} left={25} text={'Others'}/>
+                            <div className='flex-row fl-jc-between'>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'Gaming'}/>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'Infrastructure'}/>
+                                <HomeOverallComponent width={290} height={60} left={25} text={'Others'}/>
                             </div>
                         </div>
                     </div>
