@@ -29,9 +29,7 @@ export default function PCFooter(props){
                             LEARN
                         </div>
                         {list[1].map((item,index)=>(
-                           <Link to={item.link}>
-                               <div className='pcf-des' key={index}>{item.text}</div>
-                           </Link>
+                               <div className='pcf-des' onClick={()=>navigate(item.link)} key={index}>{item.text}</div>
                         ))}
                     </div>
                     <div className='flex-column'>
