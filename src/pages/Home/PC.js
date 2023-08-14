@@ -86,6 +86,13 @@ export default function InfinitasHomePC() {
            document.getElementById(scrollId).scrollIntoView()
        }
     },[scrollId])
+
+    useEffect(()=>{
+        if(roadmapRef.current){
+            roadmapRef.current.goTo(2)
+        }
+
+    },[roadmapRef])
     return (
         <div className='home-pc'>
 

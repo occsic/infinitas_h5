@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useRef} from "react";
 import './index.css'
 import {CheckOutlined } from '@ant-design/icons'
 export default function HomePCRoadmap(props){
     const {list}=props
+    const ref=useRef()
+    const onMouseDown=event=>{
+        document.onmousemove=function (e){
+            console.log(e.clientX,event.clientX)
+            ref.current.scrollLeft=ref.current.scrollLeft+((e.clientX-event.clientX)/20)
+        }
+        document.onmouseup=function (){
+            document.onmousemove=null
+            document.onmouseup=null
+        }
+    }
     return (
-        <div>
-            <div className='flex-row' style={{width:'1200px',overflow:"auto"}}>
+            <div className='flex-row' style={{width:'1200px',overflow:"auto",userSelect:'none',cursor:'pointer'}} onMouseDown={onMouseDown} ref={ref}>
                 {list.map((item,index)=>{
                 return(
                     <div className='hpr-main flex-column' key={index} style={{width:item.length===2&&index===1?'634px':''}}>
@@ -28,6 +38,5 @@ export default function HomePCRoadmap(props){
                 )
                 })}
             </div>
-        </div>
     )
 }
