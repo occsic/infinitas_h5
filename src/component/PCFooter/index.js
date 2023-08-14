@@ -7,7 +7,7 @@ export default function PCFooter(props){
     const list=[
         [{text:'About us',click:click1},{text:'We stand for',click:click2},{text:'Focus',click:click3},{text:"Solutions",click:click4},{text:"Overall Architecture",click:click5},{text:"Roadmap",click:click6}],
         [{text:'RGB',link:'/rgb'},{text:"Lighting Network",link:'/network'},{text:"zk-SNARK",link:'/zksnark'}],
-        ["Pitch Deck","Doc","Tech Whitepaper","One paper"],
+        [{text:"Pitch Deck",url:'https://docsend.com/view/tpa2xg6c773gqdkn'},{text:"Doc",url:"https://infinitas-official.gitbook.io/infinitas-whitepaper/"},{text:'Tech Whitepaper'},{text:"One paper"}],
         ["Article","Online IDE"],
         ["Developers","Users","Media, Business & Others"],
     ]
@@ -38,7 +38,9 @@ export default function PCFooter(props){
                             resources
                         </div>
                         {list[2].map((item,index)=>(
-                            <div className='pcf-des' key={index}>{item}</div>
+                            <div className='pcf-des' key={index} onClick={()=>{if(item.url){
+                                window.location.href=item.url
+                            }}}>{item.text}</div>
                         ))}
                     </div>
                     <div className='flex-column'>
