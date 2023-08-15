@@ -1,9 +1,8 @@
 .hpr-main{
-    background-color: #ece8e1;
+    background-color: #000000;
     height: 561px;
     margin-right: 60px;
     flex-shrink: 0;
-    background-image: url("https://static.paraluni.org/images/infiweb/roadmap_bg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-top: 33px;
@@ -13,13 +12,13 @@
 .hpr-fontA{
     font-size: 22px;
     font-weight: 500;
-    color: #1b1a1a;
+    color: #ffffff;
     margin-left: 15px;
 }
 .hpr-fontB{
     font-size: 40px;
     font-weight: 500;
-    color: #1b1a1a;
+    color: #ffffff;
     margin-left: 5px;
     line-height: 40px;
 }

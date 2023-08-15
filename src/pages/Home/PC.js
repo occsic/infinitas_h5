@@ -324,37 +324,40 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*ROADMAP*/}
-            <div className='common-width' style={{height: '1080px'}} id={'roadmap'}>
-                <div className='font-color-42' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP
-                </div>
-                <div style={{height: '48px'}}/>
-                <Carousel dotPosition={'bottom'} ref={roadmapRef} dots={false}>
-                    <HomePCRoadmap list={roadmapList[0]}/>
-                    <HomePCRoadmap list={roadmapList[1]}/>
-                    <HomePCRoadmap list={roadmapList[2]}/>
-                    <HomePCRoadmap list={roadmapList[3]}/>
-                </Carousel>
+            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw'}} id={'overall'}>
+                <div className='common-width' style={{height: '1080px'}} id={'roadmap'}>
+                    <div className='font-color-white' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP
+                    </div>
+                    <div style={{height: '48px'}}/>
+                    <Carousel dotPosition={'bottom'} ref={roadmapRef} dots={false}>
+                        <HomePCRoadmap list={roadmapList[0]}/>
+                        <HomePCRoadmap list={roadmapList[1]}/>
+                        <HomePCRoadmap list={roadmapList[2]}/>
+                        <HomePCRoadmap list={roadmapList[3]}/>
+                    </Carousel>
 
 
-                <div className='flex-row fl-jc-between' style={{marginTop: '100px'}}>
-                    <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(0)}>
-                        <div className={roadMapStatus === 0 ? 'road-time-check' : 'road-time-common'}>2021</div>
-                        <div className={roadMapStatus === 0 ? 'road-line-check' : 'road-line-common'}/>
-                    </div>
-                    <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(1)}>
-                        <div className={roadMapStatus === 1 ? 'road-time-check' : 'road-time-common'}>2022</div>
-                        <div className={roadMapStatus === 1 ? 'road-line-check' : 'road-line-common'}/>
-                    </div>
-                    <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(2)}>
-                        <div className={roadMapStatus === 2 ? 'road-time-check' : 'road-time-common'}>2023</div>
-                        <div className={roadMapStatus === 2 ? 'road-line-check' : 'road-line-common'}/>
-                    </div>
-                    <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(3)}>
-                        <div className={roadMapStatus === 3 ? 'road-time-check' : 'road-time-common'}>2024</div>
-                        <div className={roadMapStatus === 3 ? 'road-line-check' : 'road-line-common'}/>
+                    <div className='flex-row fl-jc-between' style={{marginTop: '100px'}}>
+                        <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(0)}>
+                            <div className={roadMapStatus === 0 ? 'road-time-check' : 'road-time-common'}>2021</div>
+                            <div className={roadMapStatus === 0 ? 'road-line-check' : 'road-line-common'}/>
+                        </div>
+                        <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(1)}>
+                            <div className={roadMapStatus === 1 ? 'road-time-check' : 'road-time-common'}>2022</div>
+                            <div className={roadMapStatus === 1 ? 'road-line-check' : 'road-line-common'}/>
+                        </div>
+                        <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(2)}>
+                            <div className={roadMapStatus === 2 ? 'road-time-check' : 'road-time-common'}>2023</div>
+                            <div className={roadMapStatus === 2 ? 'road-line-check' : 'road-line-common'}/>
+                        </div>
+                        <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(3)}>
+                            <div className={roadMapStatus === 3 ? 'road-time-check' : 'road-time-common'}>2024</div>
+                            <div className={roadMapStatus === 3 ? 'road-line-check' : 'road-line-common'}/>
+                        </div>
                     </div>
                 </div>
             </div>
+
 
             <PCFooter
                 click1={()=> document.getElementById('about').scrollIntoView()}

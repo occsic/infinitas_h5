@@ -19,7 +19,7 @@ export default function HomePCRoadmap(props){
                 {list.map((item,index)=>{
                 return(
                     <div className='hpr-main flex-column' key={index} style={{width:item.length===2&&index===1?'634px':''}}>
-                        <img src={'https://static.paraluni.org/images/infiweb/roadmap_1.png'} width={48} height={48}/>
+                        <img src={'https://static.paraluni.org/images/infiweb/roadmap_bg.png'} width={48} height={48}/>
                         <div className='flex-1 flex-column' style={{paddingTop:'40px'}}>
                             {item.map((value,sort)=>{
                                 return (
