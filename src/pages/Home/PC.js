@@ -120,8 +120,7 @@ export default function InfinitasHomePC() {
             {/*about us*/}
             <div className='height-900 common-width flex-column fl-jc-center' style={{backgroundColor: "#ffffff"}} id={'about'}>
                 <div className='hp-fontC'>ABOUT US</div>
-                <div className='hp-fontD'>INFINITAS IS A TURING-COMPLETE BITCOIN application ecosystem with infinite
-                    scalability. Infinitas will create the next generation of bitcoin large-scale application scenarios.
+                <div className='hp-fontD'>INFINITAS IS A TURING-COMPLETE BITCOIN APPLICATION ECOSYSTEM WITH INFINITE SCALABILITY. INFINITAS WILL CREATE THE NEXT GENERATION OF BITCOIN LARGE-SCALE APPLICATION SCENARIOS.
                 </div>
                 <div className='flex-column fl-ai-end' style={{marginTop: '120px'}}>
                     <div className='flex-row'>
