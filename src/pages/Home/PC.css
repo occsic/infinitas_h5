@@ -13,6 +13,7 @@
     line-height: 1.75;
     word-spacing: 10px;
     letter-spacing: 5px;
+    text-shadow:rgba(0,0,0,0.5) 3px 4px 5px
 }
 
 .hpo-fontB {
@@ -58,7 +59,7 @@
     color: #424242;
     margin-top: 48px;
     width: 587px;
-    letter-spacing: 1px;
+    letter-spacing: 0.48px;
     word-spacing: 1px;
 }
 

@@ -5,12 +5,14 @@
     border: solid 0.5px rgb(255, 49, 80);
 }
 .hpf-fontA{
-    font-size: 76px;
+    font-size: 66px;
     font-weight: bold;
     color: #ff3150;
 }
 .hpf-fontB{
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
     color: #ffffff;
+    text-align: center;
+    line-height: 1.1;
 }

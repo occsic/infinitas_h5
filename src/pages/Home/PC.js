@@ -150,37 +150,38 @@ export default function InfinitasHomePC() {
                     <div className='flex-row fl-jc-between' style={{marginTop: '40px'}}>
                         <HomePCStandFor
                             title={'POW PROTECTION'}
-                            width={305}
-                            textWidth={256}
+                            width={351}
+                            textWidth={255}
                             describe={'It ensures that Infinitas assets are protected by the whole- network hash rate in the Bitcoin blockchain, enhancing the security of assets.'}
                             img={'https://static.paraluni.org/images/infiweb/home_icon1.png'}
                         />
                         <HomePCStandFor
                             title={'ADAPTER TECHNOLOGY'}
-                            width={305}
-                            textWidth={256}
+                            width={331}
+                            textWidth={252}
                             describe={'Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status.'}
                             img={'https://static.paraluni.org/images/infiweb/home_icon2.png'}
                         />
                         <HomePCStandFor
                             title={'PRIVACY PRESERVING+++'}
-                            width={305}
-                            textWidth={256}
+                            width={455}
+                            textWidth={353}
                             describe={'A higher level of privacy protection for Infinitas assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.'}
                             img={'https://static.paraluni.org/images/infiweb/home_icon3.png'}
                         />
                     </div>
-                    <div className='flex-row fl-jc-between' style={{marginTop: '48px'}}>
+                    <div className='flex-row fl-jc-between' style={{marginTop: '30px'}}>
                         <HomePCStandFor
                             title={'ENRICHED GLOBAL STATE'}
-                            width={484}
-                            textWidth={357}
+                            width={612}
+                            textWidth={485}
                             describe={'Extended Global State, which is critical for building complex applications (such as synthetic assets, algorithmic stablecoins, etc.) on RGB. Make the RGB contract have a global state that can be accessed by virtual machines and clients (such as wallets, etc.).'}
                             img={'https://static.paraluni.org/images/infiweb/home_icon4.png'}
                         />
                         <HomePCStandFor
+                            width={556}
                             title={'OPTIMIZING THE LIGHTNING NETWORK'}
-                            textWidth={409}
+                            textWidth={454}
                             describe={'Through improvements to the Lightning Network (such as light block technology, node automatic expansion technology, and offline autonomy), higher transaction throughput is achieved while maintaining low-latency transaction confirmation time.'}
                             img={'https://static.paraluni.org/images/infiweb/home_icon5.png'}
                         />
@@ -196,7 +197,7 @@ export default function InfinitasHomePC() {
                     </div>
                     <div className='flex-row fl-ai-center fl-jc-between' style={{marginTop: '111px'}}>
                         <HomePCFocus width={281} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'16K'} textWidth={244}/>
-                        <HomePCFocus width={281} text={'COMMUNITY FOLLOWERS'} title={'100k+'} textWidth={150}/>
+                        <HomePCFocus width={281} text={'COMMUNITY FOLLOWERS'} title={'100K+'} textWidth={150}/>
                         <HomePCFocus width={376} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'4 YEARS+'}
                                      textWidth={244}/>
                     </div>

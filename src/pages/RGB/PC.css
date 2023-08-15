@@ -45,3 +45,25 @@
     width: 100%;
     height: 100%;
 }
+.road-time-common-aa{
+    font-size: 16px;
+    font-weight: 500;
+    color: #424242;
+}
+.road-time-check-aa{
+    font-size: 24px;
+    font-weight: bold;
+    color: #f44336;
+}
+.road-line-common-aa{
+    width: 40px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #424242;
+}
+.road-line-check-aa{
+    width: 40px;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #f44336;
+}

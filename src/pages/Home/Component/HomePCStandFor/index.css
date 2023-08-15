@@ -1,7 +1,7 @@
 .stand-block{
     height: 315px;
-    padding-top: 24px;
-    padding-left: 24px;
+    /*padding-top: 24px;*/
+    /*padding-left: 24px;*/
     display: flex;
     flex-direction: column;
 }

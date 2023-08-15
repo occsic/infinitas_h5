@@ -103,12 +103,12 @@ export default function RGBPC() {
                         </Carousel>
                         <div className='flex-row fl-ai-center' style={{marginTop: '150px'}}>
                             <div className='flex-column road-time' onClick={() => onDesignCarouselChange(0)}>
-                                <div className={designStatus === 0 ? 'road-time-check' : 'road-time-common'}>SINGLE-USE-SEALS</div>
-                                <div className={designStatus === 0 ? 'road-line-check' : 'road-line-common'} style={{width: '200px'}}/>
+                                <div className={designStatus === 0 ? 'road-time-check-aa' : 'road-time-common-aa'}>SINGLE-USE-SEALS</div>
+                                <div className={designStatus === 0 ? 'road-line-check-aa' : 'road-line-common-aa'} style={{width: '200px'}}/>
                             </div>
                             <div className='flex-column road-time' style={{marginLeft: '100px'}} onClick={() => onDesignCarouselChange(1)}>
-                                <div className={designStatus === 1 ? 'road-time-check' : 'road-time-common'}>CLIENT-SIDE VALIDATION</div>
-                                <div className={designStatus === 1 ? 'road-line-check' : 'road-line-common'} style={{width: '200px'}}/>
+                                <div className={designStatus === 1 ? 'road-time-check-aa' : 'road-time-common-aa'}>CLIENT-SIDE VALIDATION</div>
+                                <div className={designStatus === 1 ? 'road-line-check-aa' : 'road-line-common-aa'} style={{width: '200px'}}/>
                             </div>
                         </div>
                     </div>
