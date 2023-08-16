@@ -72,6 +72,7 @@ export default function RGBPC() {
                                     submits a transaction on the RGB network, the UTXO is spent/closed. In short, single-use-seal
                                     is an abstract mechanism to prevent double payment.
                                 </div>
+                                <div className='learn-more' onClick={()=>window.location.href='https://medium.com/@FedericoTenga/understanding-rgb-protocol-7dc7819d3059'}>LEARN MORE</div>
                             </div>
                             <div>
                                 <div className='font-color-42 font-size-16' style={{width: '485px'}}>
@@ -87,10 +88,11 @@ export default function RGBPC() {
                                     is the Open Time Stamps protocol, which was also proposed and developed by Peter
                                     Todd in 2014-2016.
                                 </div>
+                                <div className='learn-more' onClick={()=>window.location.href='https://medium.com/@FedericoTenga/understanding-rgb-protocol-7dc7819d3059'}>LEARN MORE</div>
                             </div>
 
                         </Carousel>
-                        <div className='flex-row fl-ai-center' style={{marginTop: '150px'}}>
+                        <div className='flex-row fl-ai-center' style={{marginTop: '50px'}}>
                             <div className='flex-column road-time' onClick={() => onDesignCarouselChange(0)}>
                                 <div className={designStatus === 0 ? 'road-time-check-aa' : 'road-time-common-aa'}>SINGLE-USE-SEALS</div>
                                 <div className={designStatus === 0 ? 'road-line-check-aa' : 'road-line-common-aa'} style={{width: '200px'}}/>
@@ -103,8 +105,8 @@ export default function RGBPC() {
                     </div>
                     <div style={{width: '50%'}}>
                     <div className='flex-row fl-ai-center' style={{position:'relative'}}>
-                        <img ref={designImgRef1} src={'https://static.paraluni.org/images/infiweb/rgb_bg2.png'} className={`rgb-design-img ${designStatus===0?'rgbd-img-select':'rgbd-img-unselect'}`}/>
-                        <img ref={designImgRef2} src={'https://static.paraluni.org/images/infiweb/rgb_bg1.png'} className={`rgb-design-img ${designStatus===1?'rgbd-img-select':'rgbd-img-unselect'}`}/>
+                        <img ref={designImgRef1} src={'https://static.paraluni.org/images/infiweb/rgb_bg14.svg'} className={`rgb-design-img ${designStatus===0?'rgbd-img-select':'rgbd-img-unselect'}`}/>
+                        <img ref={designImgRef2} src={'https://static.paraluni.org/images/infiweb/rgb_bg13.svg'} className={`rgb-design-img ${designStatus===1?'rgbd-img-select':'rgbd-img-unselect'}`}/>
                     </div>
                     </div>
                 </div>
