@@ -11,25 +11,28 @@ export default function NetworkPC() {
             <PCHeader/>
             <div style={{height:'100px'}}/>
             {/*>WHAT IS LIGHTING NETWORK*/}
-            <div className='common-width'>
-                <div style={{height:'73px'}}/>
-                <div className='flex-row fl-ai-center'>
-                    <img src={'https://static.paraluni.org/images/infiweb/lighting_bg1.png'} width={380} height={357} />
-                    <div className='flex-column fl-jc-between' style={{height:'357px',marginLeft:'154px'}}>
-                        <div>
-                            <div className='network-fontA'>WHAT IS</div>
-                            <div className='network-fontA'>LIGHTING NETWORK</div>
+            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+                <div className='common-width'>
+                    <div style={{height:'73px'}}/>
+                    <div className='flex-row fl-ai-center'>
+                        <img src={'https://static.paraluni.org/images/infiweb/lighting_bg1.png'} width={380} height={357} />
+                        <div className='flex-column fl-jc-between' style={{height:'357px',marginLeft:'154px'}}>
+                            <div>
+                                <div className='network-fontA'>WHAT IS</div>
+                                <div className='network-fontA'>LIGHTING NETWORK</div>
+                            </div>
+                            <div className='network-red-line'/>
+                            <div className='network-fontB'>Lightning is a decentralized network
+                                using smart contract functionality
+                                in the blockchain to enable instant
+                                payments across a network of
+                                participants.</div>
                         </div>
-                        <div className='network-red-line'/>
-                        <div className='network-fontB'>Lightning is a decentralized network
-                            using smart contract functionality
-                            in the blockchain to enable instant
-                            payments across a network of
-                            participants.</div>
                     </div>
+                    <div style={{height:'98px'}}/>
                 </div>
-                <div style={{height:'98px'}}/>
             </div>
+
 
             {/*>HOW IT WORKS*/}
             <div className='flex-center bg-color-black' style={{width: '100vw'}}>

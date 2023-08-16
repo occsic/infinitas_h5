@@ -11,29 +11,32 @@ export default function ZkSnarkPC() {
             <PCHeader/>
             <div style={{height:'100px'}} />
             {/*第一部分*/}
-            <div className='common-width'>
-                <div style={{height:'73px'}}/>
-                <div className='flex-row'>
-                    <img src={'https://static.paraluni.org/images/infiweb/snark_bg1.png'} width={380} height={357} />
-                    <div className='flex-column fl-jc-between' style={{marginLeft:'154px'}}>
-                        <div>
-                            <div className='network-fontA'>WHAT IS</div>
-                            <div className='network-fontA'>ZK-SNARK</div>
+            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+                <div className='common-width'>
+                    <div style={{height:'73px'}}/>
+                    <div className='flex-row'>
+                        <img src={'https://static.paraluni.org/images/infiweb/snark_bg1.png'} width={380} height={357} />
+                        <div className='flex-column fl-jc-between' style={{marginLeft:'154px'}}>
+                            <div>
+                                <div className='network-fontA'>WHAT IS</div>
+                                <div className='network-fontA'>ZK-SNARK</div>
+                            </div>
+                            <div className='network-red-line' style={{marginTop:'54px'}}/>
+                            <div className='network-fontB' style={{marginTop:'25px'}}>Zero-Knowledge Proofs (ZKPs) are
+                                a cryptographic concept that allows one entity to prove to another
+                                that an assertion is true without revealing any information about the
+                                content of the assertion. Recursive zero-knowledge proof is a further
+                                extension and optimization of zero-knowledge proof, which is used to
+                                realize the lightweight and decentralization of blockchain. The basic
+                                idea is to compress the state and transaction history of the entire
+                                blockchain into a fixed-size proof, called a "Snark", and then embed
+                                this proof into each new block.</div>
                         </div>
-                        <div className='network-red-line' style={{marginTop:'54px'}}/>
-                        <div className='network-fontB' style={{marginTop:'25px'}}>Zero-Knowledge Proofs (ZKPs) are
-                            a cryptographic concept that allows one entity to prove to another
-                            that an assertion is true without revealing any information about the
-                            content of the assertion. Recursive zero-knowledge proof is a further
-                            extension and optimization of zero-knowledge proof, which is used to
-                            realize the lightweight and decentralization of blockchain. The basic
-                            idea is to compress the state and transaction history of the entire
-                            blockchain into a fixed-size proof, called a "Snark", and then embed
-                            this proof into each new block.</div>
                     </div>
+                    <div style={{height:'98px'}}/>
                 </div>
-                <div style={{height:'98px'}}/>
             </div>
+
 
             {/*第二部分*/}
             <div className='flex-center bg-color-black' style={{width: '100vw'}}>
