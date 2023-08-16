@@ -103,7 +103,7 @@ export default function InfinitasHomePC() {
 
             {/*第一部分*/}
             <div className='flex-center' style={{backgroundImage: 'url(https://static.paraluni.org/images/infiweb/home_bg1.png)', width: '100vw',backgroundSize:"100% 100%"}}>
-                <div className='height-900 common-width'>
+                <div className='height-scale common-width flex-column fl-jc-center'>
                     <div className='hpo-fontA'>BASED ON BITCOIN PROVIDE INFINITELY SCALABLE POWER FOR WEB 3.0</div>
                     <div className='hpo-fontB'>TO MEET THE VALUE PURSUIT OF 100 MILLION PEOPLE WHO ARE FASTER, TRUER AND
                         SAFER.

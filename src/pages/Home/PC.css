@@ -9,7 +9,6 @@
     font-size: 40px;
     width: 950px;
     font-family: Arial_Black;
-    margin-top: 174px;
     line-height: 1.75;
     word-spacing: 10px;
     letter-spacing: 5px;
@@ -46,7 +45,9 @@
 .height-900 {
     height: 900px;
 }
-
+.height-scale{
+    height: calc(100vh - 100px);
+}
 .hp-fontC {
     font-size: 40px;
     font-weight: 800;
