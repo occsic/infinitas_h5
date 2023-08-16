@@ -13,22 +13,13 @@ export default function RGBPC() {
     const onDesignCarouselChange = (status) => {
         setDesignStatus(status)
         designRef.current.goTo(status)
-        // if(status===0){
-        //     designImgRef1.current.setAttribute('offsetleft',0)
-        //     designImgRef2.current.setAttribute('offsetleft',200)
-        // }
-        // if(status===1){
-        //     designImgRef1.current.setAttribute('offsetleft',200)
-        //     designImgRef2.current.setAttribute('offsetleft',0)
-        //
-        // }
     }
     return (
         <div className='home-pc'>
             <PCHeader/>
             <div style={{height: '100px'}}/>
             <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw'}}>
-                <div className='common-width'>
+                <div className='common-width height-scale flex-column fl-jc-center'>
                     <div className='rgb-fontA'>WHAT IS RGB?</div>
                     <div className='rgb-des' style={{marginTop: '60px'}}>
                         RGB IS AN EXTENSIBLE AND SECURE INTELLIGENT CONTRACT SYSTEM FOR BITCOIN AND LIGHTNING NETWORK
@@ -58,10 +49,8 @@ export default function RGBPC() {
                             SMART CONTRACTS ON UTXO BLOCKCHAIN (SUCH AS BITCOIN) TO REALIZE ALL
                             POSSIBILITIES. THROUGH RGB, DEVELOPERS CAN EXECUTE SMART CONTRACTS SUCH
                             AS TOKEN ISSUANCE, NFT, DEFI, DAO, AND MORE COMPLEX CATEGORIES.
-
                         </div>
                     </div>
-                    <div style={{height: '158px'}}/>
                 </div>
             </div>
 
