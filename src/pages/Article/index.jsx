@@ -33,6 +33,6 @@ export default function Article(){
         }
     },[])
     return (
-        isMobileView?<ArticlePc />:<ArticleMobile />
+        isMobileView?<ArticleMobile />:<ArticlePc />
     )
 }
