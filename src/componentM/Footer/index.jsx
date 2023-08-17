@@ -117,16 +117,16 @@ export default function MHeader({ activeIndex }) {
                 </div>
             ),
         },
-        // {
-        //     key: "4",
-        //     label: <div className="font-fff  itemsTitle">BUILD</div>,
-        //     children: (
-        //         <div className="itemsI">
-        //             <p>ARTICLE</p>
-        //             <p>ONLINE IDE</p>
-        //         </div>
-        //     ),
-        // },
+        {
+            key: "4",
+            label: <div className="font-fff  itemsTitle">BUILD</div>,
+            children: (
+                <div className="itemsI">
+                    <p onClick={() => navigate("/article")}>ARTICLE</p>
+                    {/* <p>ONLINE IDE</p> */}
+                </div>
+            ),
+        },
     ]
     const iconData = [
         { img: "https://static.paraluni.org/images/infiweb/telegram.png", href: "111" },
