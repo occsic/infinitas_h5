@@ -99,10 +99,10 @@ export default function InfinitasHomePC() {
             {/*头部*/}
 
             <PCHeader />
-            <div style={{height: '100px'}}/>
+            <div style={{height: '84px'}}/>
 
             {/*第一部分*/}
-            <div className='flex-center' style={{backgroundImage: 'url(https://static.paraluni.org/images/infiweb/home_bg1.png)', width: '100vw',backgroundSize:"100% 100%"}}>
+            <div className='flex-center' style={{backgroundImage: 'url(https://static.paraluni.org/images/infiweb/home_bg1.png)', width: '100vw',minWidth:'1200px',backgroundSize:"100% 100%"}}>
                 <div className='height-scale common-width flex-column fl-jc-center'>
                     <div className='hpo-fontA'>BASED ON BITCOIN PROVIDE INFINITELY SCALABLE POWER FOR WEB 3.0</div>
                     <div className='hpo-fontB'>TO MEET THE VALUE PURSUIT OF 100 MILLION PEOPLE WHO ARE FASTER, TRUER AND
@@ -144,7 +144,7 @@ export default function InfinitasHomePC() {
 
 
             {/*we stand for*/}
-            <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw'}} id={'stand'}>
+            <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw',minWidth:'1200px'}} id={'stand'}>
                 <div className='common-width flex-column fl-jc-center' style={{height: '1033px'}}>
                     <div className='stand-fontA'>WE STAND FOR</div>
                     <div className='flex-row fl-jc-between' style={{marginTop: '40px'}}>
@@ -190,7 +190,7 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*FOUCS*/}
-            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw'}} id={'focus'}>
+            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw',minWidth:'1200px'}} id={'focus'}>
                 <div className='height-900 common-width'>
                     <div className='font-color-white'
                          style={{fontSize: '40px', marginTop: '120px', fontWeight: 800}}>FOCUS
@@ -224,7 +224,7 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*OVERALL ARCHITECTURE*/}
-            <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw'}} id={'overall'}>
+            <div className='flex-center' style={{backgroundColor: '#ece8e1', width: '100vw',minWidth:'1200px'}} id={'overall'}>
                 <div className='common-width' style={{height: '1456px'}}>
                     <div className='stand-fontA' style={{marginTop: '150px'}}>OVERALL ARCHITECTURE</div>
 
@@ -324,7 +324,7 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*ROADMAP*/}
-            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw'}} id={'overall'}>
+            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw',minWidth:'1200px'}} id={'overall'}>
                 <div className='common-width' style={{height: '1080px'}} id={'roadmap'}>
                     <div className='font-color-white' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP
                     </div>

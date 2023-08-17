@@ -1,7 +1,5 @@
 .home-pc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
 }
 
 .hpo-fontA {
@@ -12,7 +10,7 @@
     line-height: 1.75;
     word-spacing: 10px;
     letter-spacing: 5px;
-    text-shadow:rgba(0,0,0,0.5) 3px 4px 5px
+    text-shadow:rgba(0,0,0,0.5) 3px 4px 5px;
 }
 
 .hpo-fontB {
@@ -46,7 +44,7 @@
     height: 900px;
 }
 .height-scale{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 84px);
 }
 .hp-fontC {
     font-size: 40px;
