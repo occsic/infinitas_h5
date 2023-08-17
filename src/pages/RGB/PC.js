@@ -4,6 +4,7 @@ import PCHeader from "../../component/PCHeader";
 import {Carousel} from "antd";
 import RGBPCMainFeatures from "./Component/RGBPCMainFeatures";
 import PCFooter from "../../component/PCFooter";
+import {openNewWindow} from "../../static/Utils";
 
 export default function RGBPC() {
     const designRef = useRef()
@@ -72,7 +73,7 @@ export default function RGBPC() {
                                     submits a transaction on the RGB network, the UTXO is spent/closed. In short, single-use-seal
                                     is an abstract mechanism to prevent double payment.
                                 </div>
-                                <div className='learn-more' onClick={()=>window.location.href='https://medium.com/@FedericoTenga/understanding-rgb-protocol-7dc7819d3059'}>LEARN MORE</div>
+                                <div className='learn-more' onClick={()=>openNewWindow('https://medium.com/@FedericoTenga/understanding-rgb-protocol-7dc7819d3059')}>LEARN MORE</div>
                             </div>
                             <div>
                                 <div className='font-color-42 font-size-16' style={{width: '485px'}}>
@@ -88,7 +89,7 @@ export default function RGBPC() {
                                     is the Open Time Stamps protocol, which was also proposed and developed by Peter
                                     Todd in 2014-2016.
                                 </div>
-                                <div className='learn-more' onClick={()=>window.location.href='https://medium.com/@FedericoTenga/understanding-rgb-protocol-7dc7819d3059'}>LEARN MORE</div>
+                                <div className='learn-more' onClick={()=>openNewWindow('https://medium.com/@FedericoTenga/understanding-rgb-protocol-7dc7819d3059')}>LEARN MORE</div>
                             </div>
 
                         </Carousel>
@@ -137,7 +138,7 @@ export default function RGBPC() {
                         <img src={'https://static.paraluni.org/images/infiweb/rgb_bg8.png'} width={612} height={400} />
                     </div>
 
-                    <div className='rgb-download-out' onClick={()=>window.location.href='https://rgb.tech'}>
+                    <div className='rgb-download-out' onClick={()=>openNewWindow('https://rgb.tech')}>
                         <div className='rgb-download-in flex-center flex-column'>
                             <div className='font-color-white' style={{fontSize:'12px'}}>download and installation</div>
                             <div className='font-color-white' style={{fontSize:'14px',fontWeight:'bold'}}>RGB V0.10</div>
@@ -176,7 +177,7 @@ export default function RGBPC() {
             <div className='flex-center bg-color-khaki' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width'>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '162px',textAlign:'center'}}>DETAILED REFERENCE</div>
-                    <div className='font-color-42 font-size-16' style={{marginTop:'12px',textAlign:'center',textDecoration:'underline',cursor:'pointer'}} onClick={()=>window.location.href='  https://rgb.tech/blog/release-v0-10/'}>https://rgb.tech/blog/release-v0-10/</div>
+                    <div className='font-color-42 font-size-16' style={{marginTop:'12px',textAlign:'center',textDecoration:'underline',cursor:'pointer'}} onClick={()=>openNewWindow('https://rgb.tech/blog/release-v0-10/')}>https://rgb.tech/blog/release-v0-10/</div>
                     <div style={{height:'75px'}}/>
                     <iframe width="1200" height="555" src="https://www.youtube.com/embed/VmB5SaaaABI"
                             title="YouTube video player" frameBorder="0"

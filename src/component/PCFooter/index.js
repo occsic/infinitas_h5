@@ -3,6 +3,7 @@ import './index.css'
 import logo from '../../static/Logo.png'
 import {Link} from "react-router-dom";
 import {useNavigate} from 'react-router-dom'
+import {openNewWindow} from "../../static/Utils";
 export default function PCFooter(props){
     const navigate=useNavigate()
     const list=[
@@ -38,7 +39,7 @@ export default function PCFooter(props){
                         </div>
                         {list[2].map((item,index)=>(
                             <div className='pcf-des' key={index} onClick={()=>{if(item.url){
-                                window.location.href=item.url
+                                openNewWindow(item.url)
                             }}}>{item.text}</div>
                         ))}
                     </div>
@@ -65,9 +66,9 @@ export default function PCFooter(props){
                     <div style={{fontSize:'12px',color:'#ffffff'}}>Copyright © 2024, Infinitas - Network. All rights reserved.</div>
                     <div className='flex-row fl-ai-center'>
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/telegram.png"} width={24} height={24}/>
-                        <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/twitter.png"} onClick={()=>window.location.href='https://twitter.com/iftas_eco'} width={24} height={24}/>
+                        <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/twitter.png"} onClick={()=>openNewWindow('https://twitter.com/iftas_eco')} width={24} height={24}/>
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/ins.png"} width={24} height={24}/>
-                        <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/discord.png"} onClick={()=>window.location.href='https://discord.gg/wukSjfSd6a'} width={24} height={24}/>
+                        <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/discord.png"} onClick={()=>openNewWindow('https://discord.gg/wukSjfSd6a')} width={24} height={24}/>
                         <img style={{marginRight:'20px',cursor:'pointer'}} src={"https://static.paraluni.org/images/infiweb/youtube.png"} width={24} height={24}/>
                         {/*<img src={"https://static.paraluni.org/images/infiweb/twitch.png"} width={24} height={24}/>*/}
                     </div>

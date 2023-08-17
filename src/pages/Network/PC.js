@@ -5,6 +5,7 @@ import {Carousel} from "antd";
 import RGBPCMainFeatures from "../RGB/Component/RGBPCMainFeatures";
 import PCFooter from "../../component/PCFooter";
 import pdf from '../../static/pdf.png'
+import {openNewWindow} from "../../static/Utils";
 export default function NetworkPC() {
     return (
         <div className='home-pc'>
@@ -101,14 +102,14 @@ export default function NetworkPC() {
                         <img src={pdf} width={46} height={46}/>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>The Bitcoin Lightning Network</div>
                         <div className='font-color-42' style={{fontSize:'14px',marginTop:'12px'}}>https://lightning.network/lightning-network-summary.pdf</div>
-                        <div className='network-circle font-color-42 flex-center' onClick={()=>window.location.href='https://lightning.network/lightning-network-summary.pdf'}>READ</div>
+                        <div className='network-circle font-color-42 flex-center' onClick={()=>openNewWindow('https://lightning.network/lightning-network-summary.pdf')}>READ</div>
                     </div>
                     <div className='flex-column fl-ai-center'>
                         <img src={pdf} width={46} height={46}/>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>The Bitcoin Lightning Network:</div>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold'}}>Scalable Off-Chain Instant Payments</div>
                         <div className='font-color-42' style={{fontSize:'14px',marginTop:'12px'}}>https://lightning.network/lightning-network-paper.pdf</div>
-                        <div className='network-circle font-color-42 flex-center' onClick={()=>window.location.href='https://lightning.network/lightning-network-paper.pdf'}>READ</div>
+                        <div className='network-circle font-color-42 flex-center' onClick={()=>openNewWindow('https://lightning.network/lightning-network-paper.pdf')}>READ</div>
                     </div>
                 </div>
                 <div style={{height:'225px'}}/>

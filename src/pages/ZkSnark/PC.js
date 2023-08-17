@@ -4,6 +4,7 @@ import PCHeader from "../../component/PCHeader";
 import {Carousel} from "antd";
 import PCFooter from "../../component/PCFooter";
 import HomePCSolutions from "../Home/Component/HomePCSolutions";
+import {openNewWindow} from "../../static/Utils";
 
 export default function ZkSnarkPC() {
     return (
@@ -154,13 +155,13 @@ export default function ZkSnarkPC() {
                         <img src={'https://static.paraluni.org/images/infiweb/snark_icon6.png'} width={46} height={46}/>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>Mina Protocol</div>
                         <div className='font-color-42' style={{fontSize:'14px',marginTop:'12px'}}>https://minaprotocol.com/blog/what-are-zk-snarks</div>
-                        <div className='network-circle font-color-42 flex-center' onClick={()=>window.location.href='https://minaprotocol.com/blog/what-are-zk-snarks'}>READ</div>
+                        <div className='network-circle font-color-42 flex-center' onClick={()=>openNewWindow('https://minaprotocol.com/blog/what-are-zk-snarks')}>READ</div>
                     </div>
                     <div className='flex-column fl-ai-center'>
                         <img src={'https://static.paraluni.org/images/infiweb/snark_icon7.png'} width={46} height={46}/>
                         <div className='font-color-42' style={{fontSize:'18px',fontWeight:'bold',marginTop:'20px'}}>Learn Zcash</div>
                         <div className='font-color-42' style={{fontSize:'14px',marginTop:'12px'}}>https://z.cash/learn/what-are-zk-snarks/</div>
-                        <div className='network-circle font-color-42 flex-center' onClick={()=>window.location.href='    https://z.cash/learn/what-are-zk-snarks/'}>READ</div>
+                        <div className='network-circle font-color-42 flex-center' onClick={()=>openNewWindow('https://z.cash/learn/what-are-zk-snarks/')}>READ</div>
                     </div>
                 </div>
                 <div style={{height:'225px'}}/>
