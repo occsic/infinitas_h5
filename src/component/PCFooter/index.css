@@ -2,6 +2,7 @@
     background-color: #0f1923;
     width: 100vw;
     height: 512px;
+    min-width: 1200px;
 }
 .pcf-title{
     font-size: 18px;

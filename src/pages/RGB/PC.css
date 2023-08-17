@@ -22,12 +22,10 @@
     width: 281px;
     height: 370px;
     opacity: 0;
-    left: 0;
 }
 .rgbd-img-select{
     width: 586px;
     height: 501px;
-    left: 100px;
     z-index: 1;
 }
 .rgb-download-out{

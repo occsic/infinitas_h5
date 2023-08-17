@@ -15,10 +15,10 @@ export default function RGBPC() {
         designRef.current.goTo(status)
     }
     return (
-        <div className='home-pc'>
+        <div>
             <PCHeader/>
-            <div style={{height: '100px'}}/>
-            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw'}}>
+            <div style={{height: '84px'}}/>
+            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width height-scale flex-column fl-jc-center'>
                     <div className='rgb-fontA'>WHAT IS RGB?</div>
                     <div className='rgb-des' style={{marginTop: '60px'}}>
@@ -55,7 +55,7 @@ export default function RGBPC() {
             </div>
 
             {/*design code*/}
-            <div className='common-width' style={{backgroundColor: "#ffffff"}}>
+            <div className='common-width'>
                 <div className='font-color-42'
                      style={{fontWeight: 800, fontSize: '40px', textAlign: 'center', marginTop: '112px'}}>DESIGN CORE
                 </div>
@@ -114,7 +114,7 @@ export default function RGBPC() {
             </div>
 
             {/*MAIN FEATURES*/}
-            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+            <div className='flex-center bg-color-khaki' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width'>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '122px'}}>MAIN FEATURES</div>
                     <div className='flex-row fl-jc-between' style={{marginTop:'50px'}}>
@@ -173,7 +173,7 @@ export default function RGBPC() {
             </div>
 
             {/*DETAILED REFERENCE*/}
-            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+            <div className='flex-center bg-color-khaki' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width'>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '162px',textAlign:'center'}}>DETAILED REFERENCE</div>
                     <div className='font-color-42 font-size-16' style={{marginTop:'12px',textAlign:'center',textDecoration:'underline',cursor:'pointer'}} onClick={()=>window.location.href='  https://rgb.tech/blog/release-v0-10/'}>https://rgb.tech/blog/release-v0-10/</div>
