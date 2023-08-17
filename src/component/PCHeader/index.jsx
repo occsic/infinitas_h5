@@ -44,6 +44,16 @@ export default function PCHeader() {
         </div>
     );
 
+    const content4 = (
+        <div className='pch-content'>
+            <Link to={'/article'}>
+                <div className='pchc-text'>ARTICLE</div>
+            </Link>
+
+            <div style={{height: '10px'}}/>
+        </div>
+    );
+
     return (
         <div className='flex-center pc-header-container'>
             <div className='pc-header'>
@@ -69,7 +79,10 @@ export default function PCHeader() {
                         <div className='pch-tag'>RESOURCES</div>
                     </Popover>
 
-
+                    <Popover overlayInnerStyle={{padding: '0'}} placement="bottomLeft" color={'rgba(0, 0, 0, 0.2)'}
+                             content={content4}>
+                        <div className='pch-tag'>BUILD</div>
+                    </Popover>
 
                 </div>
             </div>

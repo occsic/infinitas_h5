@@ -5,7 +5,7 @@ import {useSearchParams} from "react-router-dom";
 import ArticlePc from "./PC";
 import ArticleMobile from "./Mobile";
 
-export default function Contact(){
+export default function Article(){
     const [isMobileView,setIsMobileView]=useState(false);//是否是手机视图
     const [searchParams] = useSearchParams()
     const scrollId=searchParams.get('id')

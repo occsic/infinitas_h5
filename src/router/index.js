@@ -3,6 +3,7 @@ import RGB from "../pages/RGB";
 import Network from "../pages/Network";
 import ZkSnark from "../pages/ZkSnark";
 import Contact from "../pages/Contact";
+import Article from "../pages/Article";
 export default [
     {
         path: '/',
@@ -34,4 +35,9 @@ export default [
         exact: true,
         main: <Contact />
     },
+    {
+        path: 'article',
+        exact: true,
+        main: <Article /> 
+    }
 ]
