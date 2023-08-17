@@ -67,6 +67,8 @@
 .desingItem-img {
     margin-top: 24px;
     width: 100%;
+    height: 162px;
+    background-color: #0f1923;
     object-fit: cover;
 }
 
