@@ -9,9 +9,9 @@ export default function NetworkPC() {
     return (
         <div className='home-pc'>
             <PCHeader/>
-            <div style={{height:'100px'}}/>
+            <div style={{height:'84px'}}/>
             {/*>WHAT IS LIGHTING NETWORK*/}
-            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+            <div className='flex-center bg-color-khaki' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width'>
                     <div style={{height:'73px'}}/>
                     <div className='flex-row fl-ai-center'>
@@ -35,7 +35,7 @@ export default function NetworkPC() {
 
 
             {/*>HOW IT WORKS*/}
-            <div className='flex-center bg-color-black' style={{width: '100vw'}}>
+            <div className='flex-center bg-color-black' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width'>
                     <div className='font-color-white' style={{marginTop:'174px',fontWeight:800,fontSize:'40px'}}>HOW IT WORKS</div>
                     <div className='flex-row fl-jc-between'>
@@ -81,7 +81,7 @@ export default function NetworkPC() {
             </div>
 
             {/*LIGHTNING NETWORK IN INFINITAS*/}
-            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+            <div className='flex-center bg-color-khaki' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width'>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '137px'}}>LIGHTNING NETWORK IN INFINITAS</div>
                     <div className='flex-row fl-jc-between' style={{marginTop:'80px'}}>

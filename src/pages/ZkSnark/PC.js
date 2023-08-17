@@ -9,9 +9,9 @@ export default function ZkSnarkPC() {
     return (
         <div className='home-pc'>
             <PCHeader/>
-            <div style={{height:'100px'}} />
+            <div style={{height:'84px'}} />
             {/*第一部分*/}
-            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+            <div className='flex-center bg-color-khaki' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width'>
                     <div style={{height:'73px'}}/>
                     <div className='flex-row'>
@@ -39,7 +39,7 @@ export default function ZkSnarkPC() {
 
 
             {/*第二部分*/}
-            <div className='flex-center bg-color-black' style={{width: '100vw'}}>
+            <div className='flex-center bg-color-black' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width snark-follow'>
                     <div className='font-color-white' style={{fontWeight: 800, fontSize: '40px', marginTop: '230px'}}>A ZK-SNARK CONSISTS OF THREE</div>
                     <div className='font-color-white' style={{fontWeight: 800, fontSize: '40px'}}>ALGORITHMS G, P, V DEFINED AS FOLLOWS:</div>
@@ -125,7 +125,7 @@ export default function ZkSnarkPC() {
             </div>
 
             {/*第三部分*/}
-            <div className='flex-center bg-color-khaki' style={{width: '100vw'}}>
+            <div className='flex-center bg-color-khaki' style={{width: '100vw',minWidth:'1200px'}}>
                 <div className='common-width'>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '173px'}}>ZK-SNARKS IN INFINITAS</div>
                     <div className='flex-row fl-jc-between' style={{marginTop:'48px'}}>
