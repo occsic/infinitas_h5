@@ -121,9 +121,9 @@ export default function RGBPC() {
                     <div className='flex-row fl-jc-between' style={{marginTop:'50px'}}>
                         <RGBPCMainFeatures sort={1} text={'High confidentiality, security, scalability'} img={'https://static.paraluni.org/images/infiweb/rgb_bg3.png'} textWidth={136}/>
                         <RGBPCMainFeatures sort={2} text={'There is no congestion in the bitcoin time chain, because the transaction only keeps homomorphic commitments that need extra storage.'} img={'https://static.paraluni.org/images/infiweb/rgb_bg4.png'} textWidth={172}/>
-                        <RGBPCMainFeatures sort={3} text={'High confidentiality, security, scalability'} img={'https://static.paraluni.org/images/infiweb/rgb_bg5.png'} textWidth={171}/>
-                        <RGBPCMainFeatures sort={4} text={'High confidentiality, security, scalability'} img={'https://static.paraluni.org/images/infiweb/rgb_bg6.png'} textWidth={169}/>
-                        <RGBPCMainFeatures sort={5} text={'High confidentiality, security, scalability'} img={'https://static.paraluni.org/images/infiweb/rgb_bg7.png'} textWidth={150}/>
+                        <RGBPCMainFeatures sort={3} text={'It can be upgraded in the future without hard fork.'} img={'https://static.paraluni.org/images/infiweb/rgb_bg5.png'} textWidth={171}/>
+                        <RGBPCMainFeatures sort={4} text={'It is more resistant to censorship than Bitcoin: miners can not see the flow of assets in the transaction.'} img={'https://static.paraluni.org/images/infiweb/rgb_bg6.png'} textWidth={169}/>
+                        <RGBPCMainFeatures sort={5} text={'There is no concept of block and chain.'} img={'https://static.paraluni.org/images/infiweb/rgb_bg7.png'} textWidth={150}/>
                     </div>
                     <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '270px'}}>RGB V0.10</div>
                     <div className='flex-row fl-jc-between' style={{marginTop:'48px'}}>
