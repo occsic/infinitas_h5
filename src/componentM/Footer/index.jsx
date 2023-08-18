@@ -99,7 +99,7 @@ export default function MHeader({ activeIndex }) {
             label: <div className="font-fff  itemsTitle">LEARN</div>,
             children: (
                 <div className="itemsI">
-                    <p onClick={() => navigator("/rgb")}>RGB</p>
+                    <p onClick={() => navigate("/rgb")}>RGB</p>
                     <p onClick={() => navigate("/network")}>LIGHTING NETWORK</p>
                     <p onClick={() => navigate("/zksnark")}>ZK-SNARK</p>
                 </div>
@@ -145,10 +145,10 @@ export default function MHeader({ activeIndex }) {
         <div className="m-footer">
             <img className="m-logo" src={logo} />
             <Collapse forceRender defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={aaaa} />
-            {/* <div className="flex-row fl-ai-center endItem">
+            <div className="flex-row fl-ai-center endItem"  onClick={()=>navigate('/contact')}>
                 <div className="font-fff  itemsTitle">CONTACT</div>
                 <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />
-            </div> */}
+            </div>
             <div className="font-fff tac foottext">Copyright © 2024, Infinitas - Network. All rights reserved.</div>
             <div className="flex-row fl-jc-center">
                 {iconData.map((icon, ind) => (

@@ -1,7 +1,7 @@
 .m-header {
     display: flex;
     padding: 24px 36px;
-    background-color: #ece8e1;
+    background-color: #000;
     align-items: center;
     align-content: center;
     justify-content: space-between;
@@ -11,6 +11,7 @@
 }
 .m-header-logo {
     height: 27px;
+    display: block;
 }
 
 .showview {

@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./index.css"
-import logo from "./mlogo.png"
+import logo from "../../static/Logo.png"
 import { Tooltip, Popover, Drawer, Menu, Collapse } from "antd"
 import { MenuOutlined, RightOutlined, CloseOutlined } from "@ant-design/icons"
 import { Link } from "react-router-dom"
@@ -147,7 +147,6 @@ export default function MHeader({ activeIndex }) {
         <>
             <div className="m-header">
                 <Link to={"/"}>
-                    {" "}
                     <img className="m-header-logo" src={logo} width={180} height={35} />
                 </Link>
 
@@ -155,7 +154,7 @@ export default function MHeader({ activeIndex }) {
                     onClick={() => {
                         setOpen(true)
                     }}
-                    style={{ fontSize: "20px", color: "#000" }}
+                    style={{ fontSize: "20px", color: "#fff" }}
                 />
             </div>
             <Drawer width={330} className="showview" placement="right" onClose={closeDrawer} open={open}>
@@ -163,10 +162,10 @@ export default function MHeader({ activeIndex }) {
                     <CloseOutlined onClick={closeDrawer} style={{ color: "#fff", fontSize: "30px" }} />
                 </div>
                 <Collapse forceRender defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={changeCollapse} />
-                {/* <div className="flex-row fl-ai-center endItem">
+                <div className="flex-row fl-ai-center endItem"  onClick={()=>navigate('/contact')}>
                     <div className="font-fff  itemsTitle">CONTACT</div>
                     <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />
-                </div> */}
+                </div>
             </Drawer>
         </>
     )
