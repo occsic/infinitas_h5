@@ -84,7 +84,7 @@ export default function PCHeader() {
                              content={content4}>
                         <div className='pch-tag'>BUILD</div>
                     </Popover>
-
+                        <div className='pch-tag' onClick={()=>navigate('/contact')}>CONTACT</div>
                 </div>
             </div>
         </div>
