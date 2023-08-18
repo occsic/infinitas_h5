@@ -52,7 +52,7 @@ export default function PCFooter(props){
                         ))}
                     </div>
                     <div className='flex-column'>
-                        <div className='pcf-title'>
+                        <div className='pcf-title' onClick={()=>navigate('/contact')}>
                             CONTACT
                         </div>
                         {/*{list[4].map((item,index)=>(*/}
