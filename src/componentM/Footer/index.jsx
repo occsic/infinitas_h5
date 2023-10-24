@@ -111,7 +111,7 @@ export default function MHeader({ activeIndex }) {
             children: (
                 <div className="itemsI">
                     <p onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>PITCH DECK</p>
-                    <p onClick={() => (window.location.href = "https://infinitas-official.gitbook.io/infinitas-whitepaper/")}>DOC</p>
+                    <p>DOC</p>
                     {/* <p>TECH WHITEPAPER</p>
                     <p>ONE PAPER</p> */}
                 </div>

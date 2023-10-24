@@ -38,7 +38,7 @@ export default function PCHeader() {
     const content3 = (
         <div className='pch-content'>
             <div className='pchc-text' onClick={()=>openNewWindow('https://docsend.com/view/tpa2xg6c773gqdkn')}>PITCH DECK</div>
-            <div className='pchc-text' onClick={()=>openNewWindow('https://infinitas-official.gitbook.io/infinitas-whitepaper/')}>DOC</div>
+            <div className='pchc-text'>DOC</div>
             <div className='pchc-text'>Tech WHITE PAPER </div>
             <div className='pchc-text'>ONE PAPER</div>
             <div style={{height: '10px'}}/>
