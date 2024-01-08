@@ -4,6 +4,7 @@ import logo from "../../static/Logo.png"
 import { Tooltip, Popover, Collapse } from "antd"
 import { MenuOutlined, RightOutlined } from "@ant-design/icons"
 import { useNavigate } from "react-router-dom"
+import {openNewWindow} from "../../static/Utils";
 
 export default function MHeader({ activeIndex }) {
     const navigate = useNavigate()
@@ -129,11 +130,11 @@ export default function MHeader({ activeIndex }) {
         },
     ]
     const iconData = [
-        { img: "https://static.paraluni.org/images/infiweb/telegram.png", href: "111" },
-        { img: "https://static.paraluni.org/images/infiweb/twitter.png", href: "111" },
-        { img: "https://static.paraluni.org/images/infiweb/ins.png", href: "111" },
-        { img: "https://static.paraluni.org/images/infiweb/discord.png", href: "111" },
-        { img: "https://static.paraluni.org/images/infiweb/youtube.png", href: "111" },
+        { img: "https://static.paraluni.org/images/infiweb/telegram.png", href: 'https://t.me/bihelix' },
+        { img: "https://static.paraluni.org/images/infiweb/twitter.png", href: 'https://twitter.com/BiHelix_' },
+        // { img: "https://static.paraluni.org/images/infiweb/ins.png", href: "111" },
+        { img: "https://static.paraluni.org/images/infiweb/discord.png", href: 'https://discord.gg/wvdFgBn2N6' },
+        // { img: "https://static.paraluni.org/images/infiweb/youtube.png", href: "111" },
         // { img: "https://static.paraluni.org/images/infiweb/twitch.png", href: "111" },
     ]
 
@@ -152,7 +153,7 @@ export default function MHeader({ activeIndex }) {
             <div className="font-fff tac foottext">Copyright © 2024, BiHelix - Network. All rights reserved.</div>
             <div className="flex-row fl-jc-center">
                 {iconData.map((icon, ind) => (
-                    <img key={ind} src={icon.img} className="iconimg" />
+                    <img key={ind} src={icon.img} className="iconimg" onClick={()=>openNewWindow(icon.href)}/>
                 ))}
             </div>
         </div>
