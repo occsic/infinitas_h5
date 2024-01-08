@@ -126,7 +126,7 @@ export default function MHeader({ activeIndex }) {
             children: (
                 <div className="itemsI">
                     <p onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>PITCH DECK</p>
-                    <p>DOC</p>
+                    {/*<p>DOC</p>*/}
                     {/* <p>TECH WHITEPAPER</p>
                     <p>ONE PAPER</p> */}
                 </div>
@@ -162,10 +162,10 @@ export default function MHeader({ activeIndex }) {
                     <CloseOutlined onClick={closeDrawer} style={{ color: "#fff", fontSize: "30px" }} />
                 </div>
                 <Collapse forceRender defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={changeCollapse} />
-                <div className="flex-row fl-ai-center endItem"  onClick={()=>navigate('/contact')}>
-                    <div className="font-fff  itemsTitle">CONTACT</div>
-                    <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />
-                </div>
+                {/*<div className="flex-row fl-ai-center endItem"  onClick={()=>navigate('/contact')}>*/}
+                {/*    <div className="font-fff  itemsTitle">CONTACT</div>*/}
+                {/*    <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />*/}
+                {/*</div>*/}
             </Drawer>
         </>
     )

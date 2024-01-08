@@ -38,9 +38,9 @@ export default function PCHeader() {
     const content3 = (
         <div className='pch-content'>
             <div className='pchc-text' onClick={()=>openNewWindow('https://docsend.com/view/tpa2xg6c773gqdkn')}>PITCH DECK</div>
-            <div className='pchc-text'>DOC</div>
-            <div className='pchc-text'>Tech WHITE PAPER </div>
-            <div className='pchc-text'>ONE PAPER</div>
+            {/*<div className='pchc-text'>DOC</div>*/}
+            {/*<div className='pchc-text'>Tech WHITE PAPER </div>*/}
+            {/*<div className='pchc-text'>ONE PAPER</div>*/}
             <div style={{height: '10px'}}/>
         </div>
     );
@@ -84,7 +84,7 @@ export default function PCHeader() {
                              content={content4}>
                         <div className='pch-tag'>BUILD</div>
                     </Popover>
-                        <div className='pch-tag' onClick={()=>navigate('/contact')}>CONTACT</div>
+                        {/*<div className='pch-tag' onClick={()=>navigate('/contact')}>CONTACT</div>*/}
                 </div>
             </div>
         </div>

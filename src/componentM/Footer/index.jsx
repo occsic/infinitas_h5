@@ -111,7 +111,7 @@ export default function MHeader({ activeIndex }) {
             children: (
                 <div className="itemsI">
                     <p onClick={() => (window.location.href = "https://docsend.com/view/tpa2xg6c773gqdkn")}>PITCH DECK</p>
-                    <p>DOC</p>
+                    {/*<p>DOC</p>*/}
                     {/* <p>TECH WHITEPAPER</p>
                     <p>ONE PAPER</p> */}
                 </div>
@@ -145,10 +145,10 @@ export default function MHeader({ activeIndex }) {
         <div className="m-footer">
             <img className="m-logo" src={logo} />
             <Collapse forceRender defaultActiveKey={activeIndex} accordion ghost items={items} expandIconPosition="end" onChange={aaaa} />
-            <div className="flex-row fl-ai-center endItem"  onClick={()=>navigate('/contact')}>
-                <div className="font-fff  itemsTitle">CONTACT</div>
-                <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />
-            </div>
+            {/*<div className="flex-row fl-ai-center endItem"  onClick={()=>navigate('/contact')}>*/}
+            {/*    <div className="font-fff  itemsTitle">CONTACT</div>*/}
+            {/*    <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />*/}
+            {/*</div>*/}
             <div className="font-fff tac foottext">Copyright © 2024, Infinitas - Network. All rights reserved.</div>
             <div className="flex-row fl-jc-center">
                 {iconData.map((icon, ind) => (

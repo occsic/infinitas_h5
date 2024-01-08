@@ -6,11 +6,17 @@ import {useNavigate} from 'react-router-dom'
 import {openNewWindow} from "../../static/Utils";
 export default function PCFooter(props){
     const navigate=useNavigate()
+    // const list=[
+    //     [{text:'About us',click:()=>navigate('/home?id=about')},{text:'We stand for',click:()=>navigate('/home?id=stand')},{text:'Focus',click:()=>navigate('/home?id=focus')},{text:"Solutions",click:()=>navigate('/home?id=solutions')},{text:"Overall Architecture",click:()=>navigate('/home?id=overall')},{text:"Roadmap",click:()=>navigate('/home?id=roadmap')}],
+    //     [{text:'RGB',link:'/rgb'},{text:"Lighting Network",link:'/network'},{text:"zk-SNARK",link:'/zksnark'}],
+    //     [{text:"Pitch Deck",url:'https://docsend.com/view/tpa2xg6c773gqdkn'},{text:"Doc",url:"https://infinitas-official.gitbook.io/infinitas-whitepaper/"},{text:'Tech Whitepaper'},{text:"One paper"}],
+    //     ["Article","Online IDE"],
+    //     ["Developers","Users","Media, Business & Others"],
+    // ]
     const list=[
-        // [{text:'About us',click:()=>navigate('/home?id=about')},{text:'We stand for',click:()=>navigate('/home?id=stand')},{text:'Focus',click:()=>navigate('/home?id=focus')},{text:"Solutions",click:()=>navigate('/home?id=solutions')},{text:"Overall Architecture",click:()=>navigate('/home?id=overall')},{text:"Roadmap",click:()=>navigate('/home?id=roadmap')}],
         [{text:'About us',click:()=>navigate('/home?id=about')},{text:'We stand for',click:()=>navigate('/home?id=stand')},{text:"Solutions",click:()=>navigate('/home?id=solutions')},{text:"Overall Architecture",click:()=>navigate('/home?id=overall')}],
         [{text:'RGB',link:'/rgb'},{text:"Lighting Network",link:'/network'},{text:"zk-SNARK",link:'/zksnark'}],
-        [{text:"Pitch Deck",url:'https://docsend.com/view/tpa2xg6c773gqdkn'},{text:"Doc",url:"https://infinitas-official.gitbook.io/infinitas-whitepaper/"},{text:'Tech Whitepaper'},{text:"One paper"}],
+        [{text:"Pitch Deck",url:'https://docsend.com/view/tpa2xg6c773gqdkn'}],
         ["Article","Online IDE"],
         ["Developers","Users","Media, Business & Others"],
     ]
@@ -52,14 +58,14 @@ export default function PCFooter(props){
                             <div className='pcf-des' key={index}>{item}</div>
                         ))}
                     </div>
-                    <div className='flex-column'>
-                        <div className='pcf-title' onClick={()=>navigate('/contact')}>
-                            CONTACT
-                        </div>
-                        {/*{list[4].map((item,index)=>(*/}
-                        {/*    <div className='pcf-des' key={index}>{item}</div>*/}
-                        {/*))}*/}
-                    </div>
+                    {/*<div className='flex-column'>*/}
+                    {/*    <div className='pcf-title' onClick={()=>navigate('/contact')}>*/}
+                    {/*        CONTACT*/}
+                    {/*    </div>*/}
+                    {/*    /!*{list[4].map((item,index)=>(*!/*/}
+                    {/*    /!*    <div className='pcf-des' key={index}>{item}</div>*!/*/}
+                    {/*    /!*))}*!/*/}
+                    {/*</div>*/}
                 </div>
                 <div className='pcf-line' />
                 <div className='flex-row fl-ai-center fl-jc-between' style={{marginTop:'12px'}}>
