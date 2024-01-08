@@ -149,11 +149,11 @@ export default function RGBPC() {
 
             {/*RGB IN INFINITAS*/}
             <div className='common-width'>
-                <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '122px'}}>RGB IN INFINITAS</div>
+                <div className='font-color-42' style={{fontWeight: 800, fontSize: '40px', marginTop: '122px'}}>RGB IN BIHELIX</div>
                 <div className='flex-row fl-jc-between' style={{marginTop:'48px'}}>
                     <div className='flex-row' >
                         <img src={'https://static.paraluni.org/images/infiweb/rgb_bg9.png'} width={178} height={190}/>
-                        <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>Infinitas will complete the RGB protocol's compatibility and support for the Lightning Network to create a Turing-complete Bitcoin intelligent application network. At the same time, the concept of Global State is introduced to help more developers build complex applications (such as synthetic assets, algorithmic stable coins, etc.) on RGB.</div>
+                        <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>BiHelix will complete the RGB protocol's compatibility and support for the Lightning Network to create a Turing-complete Bitcoin intelligent application network. At the same time, the concept of Global State is introduced to help more developers build complex applications (such as synthetic assets, algorithmic stable coins, etc.) on RGB.</div>
                     </div>
                     <div className='flex-row'>
                         <img src={'https://static.paraluni.org/images/infiweb/rgb_bg10.png'} width={178} height={190}/>
@@ -167,7 +167,7 @@ export default function RGBPC() {
                     </div>
                     <div className='flex-row'>
                         <img src={'https://static.paraluni.org/images/infiweb/rgb_bg12.png'} width={178} height={190}/>
-                        <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>In other words, Infinitas will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.</div>
+                        <div className='font-size-16 font-color-42' style={{marginLeft:'26px',width:'281px'}}>In other words, BiHelix will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.</div>
                     </div>
                 </div>
                 <div style={{height:'125px'}}/>

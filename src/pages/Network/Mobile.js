@@ -30,7 +30,7 @@ export default function NetworkMobile() {
     const infinitasData = [
         {
             img: 'https://static.paraluni.org/images/infiweb/lighting_bg6.png',
-            sub: "Infinitas embeds the RGB protocol into the transactions of the Lightning Network channel, establishes a series of two-way payment channels outside the blockchain, and utilizes the efficient performance of the Lightning Network to allow users to conduct fast and low-cost transactions on these channels.",
+            sub: "BiHelix embeds the RGB protocol into the transactions of the Lightning Network channel, establishes a series of two-way payment channels outside the blockchain, and utilizes the efficient performance of the Lightning Network to allow users to conduct fast and low-cost transactions on these channels.",
         },
         {
             img: 'https://static.paraluni.org/images/infiweb/lighting_bg7.png',
@@ -38,11 +38,11 @@ export default function NetworkMobile() {
         },
         {
             img: 'https://static.paraluni.org/images/infiweb/lighting_bg8.png',
-            sub: "The more complex smart contracts supported by Infinitas allow users to perform more types of transaction operations within Lightning Network channels, including conditional payments, multi-party signatures, and more. It provides users with more flexible and diversified trading options.",
+            sub: "The more complex smart contracts supported by BiHelix allow users to perform more types of transaction operations within Lightning Network channels, including conditional payments, multi-party signatures, and more. It provides users with more flexible and diversified trading options.",
         },
         {
             img: 'https://static.paraluni.org/images/infiweb/lighting_bg9.png',
-            sub: "The combination of Infinitas brings more functionality and scalability to the Bitcoin ecosystem, providing users with a better transaction experience and more usage options. At the same time, the transactions in the Lightning Network are carried out in the channel and will not be immediately exposed to the entire Bitcoin network, thus providing higher transaction privacy to a certain extent.",
+            sub: "The combination of BiHelix brings more functionality and scalability to the Bitcoin ecosystem, providing users with a better transaction experience and more usage options. At the same time, the transactions in the Lightning Network are carried out in the channel and will not be immediately exposed to the entire Bitcoin network, thus providing higher transaction privacy to a certain extent.",
         },
     ]
 
@@ -83,7 +83,7 @@ export default function NetworkMobile() {
                 ))}
             </div>
             <div className="network-infinitas content">
-                <div className="network-text colorB">LIGHTNING NETWORK IN INFINITAS</div>
+                <div className="network-text colorB">LIGHTNING NETWORK IN BIHELIX</div>
                 <div className="network-main-c flex-row">
                     {infinitasData.map((item) => (
                         <div className="flex-shrink network-main-cI" key={item.title}>

@@ -32,7 +32,7 @@ export default function ArticlePc(){
                               </div>
                           </div>
                           <div className='article-des'>
-                              From technological innovation to future applications, the Infinitas team and Waterdrip Capital, as the early layout of the BTC ecosystem, jointly created the RGB-eco research report with their forward-looking analysis and comprehensive research capabilities.
+                              From technological innovation to future applications, the BiHelix team and Waterdrip Capital, as the early layout of the BTC ecosystem, jointly created the RGB-eco research report with their forward-looking analysis and comprehensive research capabilities.
                           </div>
                           <div className='learn-more' onClick={()=>window.open('https://www.odaily.news/post/5189052','_blank')} style={{marginTop:'15px',marginLeft:'22px'}}>LEARN MORE</div>
                       </div>

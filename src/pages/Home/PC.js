@@ -29,14 +29,14 @@ export default function InfinitasHomePC() {
             [{
                 text: 'Community established',
                 anchor: ''
-            }, {text: 'BTC ecosystem network project - Infinitas established', anchor: ''}],
+            }, {text: 'BTC ecosystem network project - BiHelix established', anchor: ''}],
         ],
         [
             [{text: 'Paraluni TVL reaches', anchor: '$50M+'}],
             [{text: 'RGB v0.10 released', anchor: ''}, {
                 text: 'Community followers reached ',
                 anchor: '50K+'
-            }, {text: 'Infinitas seed round launched', anchor: ''}],
+            }, {text: 'BiHelix seed round launched', anchor: ''}],
             [{text: 'BTB miners reached ', anchor: '5K+'}, {
                 text: 'Community followers reached',
                 anchor: '100K+'
@@ -46,7 +46,7 @@ export default function InfinitasHomePC() {
                 noSlice: true
             }],
             [{
-                text: 'Develop and release the Infinitas testnet',
+                text: 'Develop and release the BiHelix testnet',
                 anchor: '',
                 noSlice: true
             }, {
@@ -54,14 +54,14 @@ export default function InfinitasHomePC() {
                 anchor: '',
                 noSlice: true
             }, {
-                text: 'Develop Infinitas mainnet',
+                text: 'Develop BiHelix mainnet',
                 anchor: '',
                 noSlice: true
             }, {text: 'Launched the official version of data explorer', anchor: '', noSlice: true}]
         ],
         [
             [{
-                text: 'Launched Infinitas mainnet ',
+                text: 'Launched BiHelix mainnet ',
                 anchor: 'BTC Halve',
                 noSlice: true
             }, {text: 'Building DeFi (DEX) Schemas ', anchor: '', noSlice: true}, {
@@ -120,14 +120,14 @@ export default function InfinitasHomePC() {
             {/*about us*/}
             <div className='height-900 common-width flex-column fl-jc-center' style={{backgroundColor: "#ffffff"}} id={'about'}>
                 <div className='hp-fontC'>ABOUT US</div>
-                <div className='hp-fontD'>INFINITAS IS A TURING-COMPLETE BITCOIN APPLICATION ECOSYSTEM WITH INFINITE SCALABILITY. INFINITAS WILL CREATE THE NEXT GENERATION OF BITCOIN LARGE-SCALE APPLICATION SCENARIOS.
+                <div className='hp-fontD'>BIHELIX IS A TURING-COMPLETE BITCOIN APPLICATION ECOSYSTEM WITH INFINITE SCALABILITY. BIHELIX WILL CREATE THE NEXT GENERATION OF BITCOIN LARGE-SCALE APPLICATION SCENARIOS.
                 </div>
                 <div className='flex-column fl-ai-end' style={{marginTop: '120px'}}>
                     <div className='flex-row'>
                         <img width={30} height={30} src={about}/>
                         <div style={{fontSize: '16px', width: '587px', marginLeft: '14px'}}>
                             Combining the mutual support and complement of the Lightning Network and the RGB protocol,
-                            Infinitas can achieve a more efficient and scalable Bitcoin ecosystem. Make Bitcoin greater
+                            BiHelix can achieve a more efficient and scalable Bitcoin ecosystem. Make Bitcoin greater
                             again.
                         </div>
                     </div>
@@ -152,21 +152,21 @@ export default function InfinitasHomePC() {
                             title={'POW PROTECTION'}
                             width={351}
                             textWidth={255}
-                            describe={'It ensures that Infinitas assets are protected by the whole- network hash rate in the Bitcoin blockchain, enhancing the security of assets.'}
+                            describe={'It ensures that BiHelix assets are protected by the whole- network hash rate in the Bitcoin blockchain, enhancing the security of assets.'}
                             img={'https://static.paraluni.org/images/infiweb/home_icon1.png'}
                         />
                         <HomePCStandFor
                             title={'ADAPTER TECHNOLOGY'}
                             width={331}
                             textWidth={252}
-                            describe={'Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status.'}
+                            describe={'Through BiHelix adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status.'}
                             img={'https://static.paraluni.org/images/infiweb/home_icon2.png'}
                         />
                         <HomePCStandFor
                             title={'PRIVACY PRESERVING+++'}
                             width={455}
                             textWidth={353}
-                            describe={'A higher level of privacy protection for Infinitas assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.'}
+                            describe={'A higher level of privacy protection for BiHelix assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.'}
                             img={'https://static.paraluni.org/images/infiweb/home_icon3.png'}
                         />
                     </div>
@@ -294,8 +294,8 @@ export default function InfinitasHomePC() {
                         <HomeOverallComponent width={222} height={140} bgColor={'#000000'} fontSize={'20'}
                                               fontWeight={800} text={'NETWORK LAYER'} color={'#FFFFFF'} textWidth={90}/>
                         <div className='flex-row flex-1 fl-jc-between' style={{marginLeft:'25px'}}>
-                            <HomeOverallComponent width={447} height={140} left={25} text={'Infinitas Testnet'}/>
-                            <HomeOverallComponent width={447} height={140} left={25} text={'Infinitas Mainnet'}/>
+                            <HomeOverallComponent width={447} height={140} left={25} text={'BiHelix Testnet'}/>
+                            <HomeOverallComponent width={447} height={140} left={25} text={'BiHelix Mainnet'}/>
                         </div>
                     </div>
 

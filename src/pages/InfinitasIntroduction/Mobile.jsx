@@ -136,12 +136,12 @@ export default function InfinitasIntroductionMobile(){
                       <div className='mfontA' style={{fontSize:'14px',marginLeft:'10px'}}>BTC blockchain (Security Commitment Layer)</div>
                   </div>
               </div>
-                <div className='mfontA' style={{fontSize:'30px',marginTop:'50px'}}>What’s new at <span className='pfontF'>Infinitas</span></div>
+                <div className='mfontA' style={{fontSize:'30px',marginTop:'50px'}}>What’s new at <span className='pfontF'>BiHelix</span></div>
                 <img src={infinitas} width={140} style={{marginTop:'25px'}}/>
                     <div className='flex-column' style={{position:"relative",paddingLeft:'60px',marginTop:'40px'}}>
                         <div className='flex-row fl-ai-center'>
                             <div className='pcircle' />
-                            <div className='mfontB' style={{marginLeft:'10px'}}>2022.12 Infinitas Established</div>
+                            <div className='mfontB' style={{marginLeft:'10px'}}>2022.12 BiHelix Established</div>
                         </div>
                         <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
                             <div className='pcircle' />
@@ -153,22 +153,22 @@ export default function InfinitasIntroductionMobile(){
                         </div>
                         <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
                             <div className='pcircle' />
-                            <div className='mfontB' style={{marginLeft:'10px'}}>2023.06 Start the research and development of Infinitas chain</div>
+                            <div className='mfontB' style={{marginLeft:'10px'}}>2023.06 Start the research and development of BiHelix chain</div>
                         </div>
                         <div className='pline' style={{left:'67px'}}/>
                     </div>
                 <div className='flex-column' style={{position:"relative",marginTop:'60px',paddingLeft:'60px'}}>
                     <div className='flex-row fl-ai-center'>
                         <div className='pcircle' />
-                        <div className='mfontB' style={{marginLeft:'10px'}}>2023.12 Infinitas chain test</div>
+                        <div className='mfontB' style={{marginLeft:'10px'}}>2023.12 BiHelix chain test</div>
                     </div>
                     <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
                         <div className='pcircle' />
-                        <div className='mfontB' style={{marginLeft:'10px'}}>2024.03 Infinitas chain RGB wallet online</div>
+                        <div className='mfontB' style={{marginLeft:'10px'}}>2024.03 BiHelix chain RGB wallet online</div>
                     </div>
                     <div className='flex-row fl-ai-center' style={{marginTop:'30px'}}>
                         <div className='pcircle' />
-                        <div className='mfontB' style={{marginLeft:'10px'}}>2024.06 Infinitas chain running<span style={{visibility:'hidden'}}>RGB R4GB RGB RGB RGB RGB</span></div>
+                        <div className='mfontB' style={{marginLeft:'10px'}}>2024.06 BiHelix chain running<span style={{visibility:'hidden'}}>RGB R4GB RGB RGB RGB RGB</span></div>
                     </div>
                     <div className='pline' style={{left:'67px'}}/>
                 </div>
@@ -362,7 +362,7 @@ export default function InfinitasIntroductionMobile(){
                 </div>
             </div>
 
-            <div className='mfontA' style={{fontSize:'18px',textAlign:'center',marginTop:'50px'}}>Managed by Infinitas Foundation</div>
+            <div className='mfontA' style={{fontSize:'18px',textAlign:'center',marginTop:'50px'}}>Managed by BiHelix Foundation</div>
 
             <div style={{
                 fontSize: '12px',
@@ -370,7 +370,7 @@ export default function InfinitasIntroductionMobile(){
                 textAlign: 'center',
                 marginTop: '35px'
                 ,marginLeft:'20px',marginRight:'20px'
-            }}>INFINITAS is a blockchain ecosystem that integrates lightning network and has infinite scalability on the
+            }}>BIHELIX is a blockchain ecosystem that integrates lightning network and has infinite scalability on the
                 Bitcoin public chain
             </div>
             <div className='plink' style={{marginTop:'0',marginLeft:'20px',marginRight:'20px'}}>
@@ -380,9 +380,9 @@ export default function InfinitasIntroductionMobile(){
                 <img src={group4} width={55} height={11}/>
                 <img src={group5} width={55} height={11} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
             </div>
-            <div className='pfontBottom' style={{marginTop:'0',fontSize:'12px'}}>© 2023 Infinitas Foundation. All rights reserved.</div>
+            <div className='pfontBottom' style={{marginTop:'0',fontSize:'12px'}}>© 2023 BiHelix Foundation. All rights reserved.</div>
 
-            <Drawer title="Infinitas" placement="top" onClose={onClose} open={open} className='mdrawer'>
+            <Drawer title="BiHelix" placement="top" onClose={onClose} open={open} className='mdrawer'>
                 <Menu onClick={onClick} selectedKeys={[current]} mode="inline" items={items} />
             </Drawer>
         </div>

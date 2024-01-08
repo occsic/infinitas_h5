@@ -149,7 +149,7 @@ export default function MHeader({ activeIndex }) {
             {/*    <div className="font-fff  itemsTitle">CONTACT</div>*/}
             {/*    <RightOutlined style={{ color: "#fff", fontSize: "13px" }} />*/}
             {/*</div>*/}
-            <div className="font-fff tac foottext">Copyright © 2024, Infinitas - Network. All rights reserved.</div>
+            <div className="font-fff tac foottext">Copyright © 2024, BiHelix - Network. All rights reserved.</div>
             <div className="flex-row fl-jc-center">
                 {iconData.map((icon, ind) => (
                     <img key={ind} src={icon.img} className="iconimg" />

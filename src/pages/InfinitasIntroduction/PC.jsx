@@ -120,13 +120,13 @@ export default function InfinitasIntroductionPC() {
             {/*第三部分*/}
             <div className='pthree flex-column fl-ai-center'>
                 <div className='pfontD' style={{marginTop: '20px'}}>What’s new at <span className='pfontF'
-                                                                                        style={{fontSize: '120px'}}>Infinitas</span>
+                                                                                        style={{fontSize: '120px'}}>BiHelix</span>
                 </div>
                 <div className='flex-row' style={{marginTop: '100px'}}>
                     <div className='flex-column' style={{position: "relative"}}>
                         <div className='flex-row fl-ai-center'>
                             <div className='pcircle'/>
-                            <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2022.12 Infinitas
+                            <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2022.12 BiHelix
                                 Established
                             </div>
                         </div>
@@ -145,7 +145,7 @@ export default function InfinitasIntroductionPC() {
                         <div className='flex-row fl-ai-center' style={{marginTop: '80px'}}>
                             <div className='pcircle'/>
                             <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2023.06 Start the
-                                research and development of Infinitas chain
+                                research and development of BiHelix chain
                             </div>
                         </div>
                         <div className='pline'/>
@@ -157,19 +157,19 @@ export default function InfinitasIntroductionPC() {
                     <div className='flex-column' style={{position: "relative", height: 'fit-content'}}>
                         <div className='flex-row fl-ai-center'>
                             <div className='pcircle'/>
-                            <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2023.12 Infinitas
+                            <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2023.12 BiHelix
                                 chain test
                             </div>
                         </div>
                         <div className='flex-row fl-ai-center' style={{marginTop: '80px'}}>
                             <div className='pcircle'/>
-                            <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2024.03 Infinitas
+                            <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2024.03 BiHelix
                                 chain RGB wallet online
                             </div>
                         </div>
                         <div className='flex-row fl-ai-center' style={{marginTop: '80px'}}>
                             <div className='pcircle'/>
-                            <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2024.06 Infinitas
+                            <div className='pfontB' style={{fontSize: '24px', marginLeft: '15px'}}>2024.06 BiHelix
                                 chain running
                             </div>
                         </div>
@@ -429,14 +429,14 @@ export default function InfinitasIntroductionPC() {
             </div>
 
             <div className='pfontC' style={{fontSize: '44px', textAlign: 'center', marginTop: '177px'}}>Managed by
-                Infinitas Foundation
+                BiHelix Foundation
             </div>
             <div style={{
                 fontSize: '24px',
                 color: 'rgba(255,255,255,0.72)',
                 textAlign: 'center',
                 marginTop: '35px'
-            }}>INFINITAS is a blockchain ecosystem that integrates lightning network and has infinite scalability on the
+            }}>BIHELIX is a blockchain ecosystem that integrates lightning network and has infinite scalability on the
                 Bitcoin public chain
             </div>
             <div className='plink'>
@@ -446,7 +446,7 @@ export default function InfinitasIntroductionPC() {
                 <img src={group4}/>
                 <img src={group5} onClick={()=>window.open('https://www.youtube.com/@INFINITAS_eco/featured')}/>
             </div>
-            <div className='pfontBottom'>© 2023 Infinitas Foundation. All rights reserved.</div>
+            <div className='pfontBottom'>© 2023 BiHelix Foundation. All rights reserved.</div>
         </div>
     )
 }

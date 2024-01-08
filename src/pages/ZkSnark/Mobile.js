@@ -123,16 +123,16 @@ export default function ZkSnarkMobile() {
 
             <div className="zk-dec content">
                 <div className="zk-text colorB">ZK-SNARKS</div>
-                <div className="zk-text zk-mb-24 colorB">IN INFINITAS</div>
+                <div className="zk-text zk-mb-24 colorB">IN BIHELIX</div>
                 <div className="zk-dec-text">
-                    Infinitas integrates zk-SNARK into the BTC blockchain, which can add the building blocks of the verification algorithm to the entire ecosystem in the form of pre-compiled
+                    BiHelix integrates zk-SNARK into the BTC blockchain, which can add the building blocks of the verification algorithm to the entire ecosystem in the form of pre-compiled
                     contracts. Run generators off-chain to generate attestation and verification keys. Any prover can then use the proof key to create a proof, also off-chain. A common verification
                     algorithm can be run within a smart contract using proofs, verification keys, and public inputs as input parameters. Finally, the results of the verification algorithm are used to
                     trigger other on-chain activities.
                 </div>
                 <div className="zk-dec-text">
                     As a highly optimized zero-knowledge proof, zk-SNARKs can compress complex calculation and verification processes into a small, fixed-size proof. By using zk-SNARKs, the
-                    verification process of the Infinitas state can be turned into a small proof that can be attached to new blocks. Ensure that the state and transaction history of new blocks are
+                    verification process of the BiHelix state can be turned into a small proof that can be attached to new blocks. Ensure that the state and transaction history of new blocks are
                     valid and legal without requiring each node to fully verify the entire history in the blockchain network.
                 </div>
             </div>

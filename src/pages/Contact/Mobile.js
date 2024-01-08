@@ -11,7 +11,7 @@ export default function ContactMobile() {
             sub: "Discuss features, issues, and ideas in our Github Discussions forum, or chat live with the team and other developers on Discord.",
         },
         { img: "https://static.paraluni.org/images/infiweb/contact_bg2.png", title: "USERS", sub: "Reach out on Telegram（https://t.me/Cindy_yee）" },
-        { img: "https://static.paraluni.org/images/infiweb/contact_bg3.png", title: "MEDIA,BUSINESS ＆ OTHERS", sub: "infinitas.contact@gmail.com" },
+        { img: "https://static.paraluni.org/images/infiweb/contact_bg3.png", title: "MEDIA,BUSINESS ＆ OTHERS", sub: "BiHelix.contact@gmail.com" },
     ]
     return (
         <div>

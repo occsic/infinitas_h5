@@ -32,7 +32,7 @@ export default function RGBMobile() {
             title: "SINGLE-USE-SEALS",
             sub: "Similar to the Single-use-seals used to protect freight containers in the real world, the original meaning of single-use-seal sis a unique object that can be closed on messages only once. Once it is used, it will be permanently opened and cannot be closed again. Whenever the status of a smart contract changes on the RGB network, a bitcoin native UTXO will be created in the owner's wallet. When the owner submits a transaction on the RGB network, the UTXO is spent/closed. In short, single-use-seal is an abstract mechanism to prevent double payment.",
         },
-      
+
     ]
 
     const mainData = [
@@ -46,7 +46,7 @@ export default function RGBMobile() {
     const infinitasData = [
         {
             img: 'https://static.paraluni.org/images/infiweb/rgb_bg9.png',
-            title: "Infinitas will complete the RGB protocol's compatibility and support for the Lightning Network to create a Turing-complete Bitcoin intelligent application network. At the same time, the concept of Global State is introduced to help more developers build complex applications (such as synthetic assets, algorithmic stable coins, etc.) on RGB.",
+            title: "BiHelix will complete the RGB protocol's compatibility and support for the Lightning Network to create a Turing-complete Bitcoin intelligent application network. At the same time, the concept of Global State is introduced to help more developers build complex applications (such as synthetic assets, algorithmic stable coins, etc.) on RGB.",
         },
         {
             img: 'https://static.paraluni.org/images/infiweb/rgb_bg10.png',
@@ -57,7 +57,7 @@ export default function RGBMobile() {
             img: 'https://static.paraluni.org/images/infiweb/rgb_bg11.png',
             title: "The RGB standard library can run without I/O and file system access. Replacing the complex stack with a single API library and rgb command line tools will enhance the mass adoption of Bitcoin and decentralized finance.",
         },
-        { img: 'https://static.paraluni.org/images/infiweb/rgb_bg12.png', title: "In other words, Infinitas will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.", type: "end" },
+        { img: 'https://static.paraluni.org/images/infiweb/rgb_bg12.png', title: "In other words, BiHelix will make the use of RGB easier, and will cause a phenomenal explosion in Bitcoin applications.", type: "end" },
     ]
     return (
         <div>
@@ -132,7 +132,7 @@ export default function RGBMobile() {
                 </div>
             </div>
             <div className="content">
-                <div className="infinitas-title">RGB IN INFINITAS</div>
+                <div className="infinitas-title">RGB IN BIHELIX</div>
                 {infinitasData.map((item, index) => (
                     <div key={index} className={`infinitas-item flex-row ${item.type == "end" ? "endImg" : ""}`}>
                         <img className="infinitas-itemImg" src={item.img} />

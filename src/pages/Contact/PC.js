@@ -30,7 +30,7 @@ export default function ContactPc(){
                         <img width={120} height={120} src={'https://static.paraluni.org/images/infiweb/contact_bg3.png'}/>
                         <div style={{marginLeft:'50px'}}>
                             <div style={{fontSize:'24px',fontWeight:'bold'}} className='font-color-red'>MEDIA,BUSINESS ＆ OTHERS</div>
-                            <div className='font-size-16 font-color-42' style={{marginTop:'8px'}}>infinitas.contact@gmail.com</div>
+                            <div className='font-size-16 font-color-42' style={{marginTop:'8px'}}>BiHelix.contact@gmail.com</div>
                         </div>
                     </div>
                     <div style={{height:'100px'}}/>

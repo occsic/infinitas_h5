@@ -13,7 +13,7 @@ export default function ArticleMobile() {
             date: "Aug 14, 2023",
             title: "Leading the large-scale adoption of Crypto and lighting up the future of Bitcoin.",
             content:
-                "From technological innovation to future applications, the Infinitas team and Waterdrip Capital, as the early layout of the BTC ecosystem, jointly created the RGB-eco research report with their forward-looking analysis and comprehensive research capabilities.",
+                "From technological innovation to future applications, the BiHelix team and Waterdrip Capital, as the early layout of the BTC ecosystem, jointly created the RGB-eco research report with their forward-looking analysis and comprehensive research capabilities.",
             button: "LEARN MORE",
             fun: () => window.open("https://www.odaily.news/post/5189052", "_blank"),
         },

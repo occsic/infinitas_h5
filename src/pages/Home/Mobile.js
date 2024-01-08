@@ -23,17 +23,17 @@ export default function InfinitasHomeMobile() {
         {
             img: "https://static.paraluni.org/images/infiweb/home_icon1.png",
             title: "POW PROTECTION",
-            sub: "It ensures that Infinitas assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets.",
+            sub: "It ensures that BiHelix assets are protected by the whole-network hash rate in the Bitcoin blockchain, enhancing the security of assets.",
         },
         {
             img: "https://static.paraluni.org/images/infiweb/home_icon2.png",
             title: "ADAPTER TECHNOLOGY",
-            sub: "Through Infinitas adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status.",
+            sub: "Through BiHelix adapter technology, users can realize the complete status of Bitcoin and enhance their perception of asset status.",
         },
         {
             img: "https://static.paraluni.org/images/infiweb/home_icon3.png",
             title: "PRIVACY PRESERVING+++",
-            sub: "A higher level of privacy protection for Infinitas assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.",
+            sub: "A higher level of privacy protection for BiHelix assets has been achieved, and a trustless Bitcoin anchoring mechanism has been introduced to further enhance user privacy.",
         },
         {
             img: "https://static.paraluni.org/images/infiweb/home_icon4.png",
@@ -73,7 +73,7 @@ export default function InfinitasHomeMobile() {
         },
 
         { title: "SCHEMAS LAYER", subList1: ["Synthetic Assets Schemas", "GameFi Schemas", "Other Schemas"], subList2: ["DEX Schemas", "Staking Schemas", "Lending Schemas"] },
-        { title: "NETWORK LAYER", subList1: ["Infinitas Testnet", "Infinitas Mainnet"] },
+        { title: "NETWORK LAYER", subList1: ["BiHelix Testnet", "BiHelix Mainnet"] },
         { title: "PROTOCOL LAYER", subList1: ["Lightning Network Node", "RGB Node", "Communication/Storage Node"] },
         { title: "DATA LAYER", subList1: ["LNP/BP Association", "Open Source Toolchain", "Fundamental Document Repository"] },
     ]
@@ -87,7 +87,7 @@ export default function InfinitasHomeMobile() {
         {
             year: "2022",
             bgc: "https://static.paraluni.org/images/infiweb/roadmap_bg.png",
-            yearData: [{ yejiao: "--", textList: ["Community established", "BTC ecosystem network project - Infinitas established"] }],
+            yearData: [{ yejiao: "--", textList: ["Community established", "BTC ecosystem network project - BiHelix established"] }],
         },
         {
             year: "2023",
@@ -108,7 +108,7 @@ export default function InfinitasHomeMobile() {
                         <div>
                             Community followers reached <span style={{ fontWeight: 600, fontSize: "22px" }}>50K+</span>
                         </div>,
-                        "Infinitas seed round launched",
+                        "BiHelix seed round launched",
                     ],
                 },
                 {
@@ -124,7 +124,7 @@ export default function InfinitasHomeMobile() {
                 },
                 {
                     yejiao: "Q4",
-                    textList: ["Develop and release the Infinitas testnet", "Cooperation with mainstream wallets", "Develop Infinitas mainnet", "Launched the official version of data explorer"],
+                    textList: ["Develop and release the BiHelix testnet", "Cooperation with mainstream wallets", "Develop BiHelix mainnet", "Launched the official version of data explorer"],
                 },
             ],
         },
@@ -132,7 +132,7 @@ export default function InfinitasHomeMobile() {
             year: "2024",
             bgc: "https://static.paraluni.org/images/infiweb/roadmap_bg.png",
             yearData: [
-                { yejiao: "Q1", textList: ["Launched Infinitas mainnet (BTC Halve)", "Building DeFi (DEX) Schemas", "Provide SDKs"] },
+                { yejiao: "Q1", textList: ["Launched BiHelix mainnet (BTC Halve)", "Building DeFi (DEX) Schemas", "Provide SDKs"] },
                 { yejiao: "Q2", textList: ["Total number of ecosystem projects reaches 200+", "Listing on centralized exchange", "Development of DApp integration environment"] },
             ],
         },
@@ -154,12 +154,12 @@ export default function InfinitasHomeMobile() {
             <div id="about" className="homecontent homecontent-about">
                 <div className="homecontent-about-title">ABOUT US</div>
                 <div className="homecontent-about-subtitle">
-                    INFINITAS IS A TURING-COMPLETE BITCOIN APPLICATION ECOSYSTEM WITH INFINITE SCALABILITY. INFINITAS WILL CREATE THE NEXT GENERATION OF BITCOIN LARGE-SCALE APPLICATION SCENARIOS.
+                    BIHELIX IS A TURING-COMPLETE BITCOIN APPLICATION ECOSYSTEM WITH INFINITE SCALABILITY. BIHELIX WILL CREATE THE NEXT GENERATION OF BITCOIN LARGE-SCALE APPLICATION SCENARIOS.
                 </div>
                 <div className="flex-row">
                     <img className="homecontent-about-icon" src={about} />
                     <div className="homecontent-about-subcontent">
-                        Combining the mutual support and complement of the Lightning Network and the RGB protocol, Infinitas can achieve a more efficient and scalable Bitcoin ecosystem. Make Bitcoin
+                        Combining the mutual support and complement of the Lightning Network and the RGB protocol, BiHelix can achieve a more efficient and scalable Bitcoin ecosystem. Make Bitcoin
                         greater again.
                     </div>
                 </div>
