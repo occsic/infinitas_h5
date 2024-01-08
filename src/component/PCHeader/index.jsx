@@ -12,10 +12,10 @@ export default function PCHeader() {
         <div className='pch-content'>
                 <div className='pchc-text' onClick={()=>navigate('/home?id=about')}>ABOUT US</div>
                 <div className='pchc-text' onClick={()=>navigate('/home?id=stand')}>WE STAND FOR</div>
-                <div className='pchc-text' onClick={()=>navigate('/home?id=focus')}>FOCUS</div>
+                {/*<div className='pchc-text' onClick={()=>navigate('/home?id=focus')}>FOCUS</div>*/}
                 <div className='pchc-text' onClick={()=>navigate('/home?id=solutions')}>SOLUTIONS</div>
                 <div className='pchc-text' onClick={()=>navigate('/home?id=overall')}>OVERALL ARCHITECTURE</div>
-                <div className='pchc-text' onClick={()=>navigate('/home?id=roadmap')}>ROADMAP</div>
+                {/*<div className='pchc-text' onClick={()=>navigate('/home?id=roadmap')}>ROADMAP</div>*/}
             <div style={{height: '10px'}}/>
         </div>
     );

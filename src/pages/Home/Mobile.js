@@ -184,24 +184,24 @@ export default function InfinitasHomeMobile() {
                 </div>
             </div>
 
-            <div id="focus" className="homecontent homecontent-focus">
-                <div className="homecontent-focus-title">FOCUS</div>
-                <div className="flex-row mb-10">
-                    <div className="flex-column flex-1 fl-ai-center mr-10 homecontent-focus-view">
-                        <div className="focus-main">16K</div>
-                        <div className="tac focus-sub">DAILY ACTIVE WALLET ADDRESSES</div>
-                    </div>
-                    <div className="flex-column flex-1 fl-ai-center homecontent-focus-view">
-                        <div className="focus-main">100K+</div>
-                        <div className="tac focus-sub">COMMUNITY FOLLOWERS</div>
-                    </div>
-                </div>
-                <div className="flex-column fl-ai-center homecontent-focus-view">
-                    <div className="focus-main">4 YEARS+</div>
-                    <div className="focus-sub">RGB RESEARCH</div>
-                    <div className="focus-sub">EXPERIENCE</div>
-                </div>
-            </div>
+            {/*<div id="focus" className="homecontent homecontent-focus">*/}
+            {/*    <div className="homecontent-focus-title">FOCUS</div>*/}
+            {/*    <div className="flex-row mb-10">*/}
+            {/*        <div className="flex-column flex-1 fl-ai-center mr-10 homecontent-focus-view">*/}
+            {/*            <div className="focus-main">16K</div>*/}
+            {/*            <div className="tac focus-sub">DAILY ACTIVE WALLET ADDRESSES</div>*/}
+            {/*        </div>*/}
+            {/*        <div className="flex-column flex-1 fl-ai-center homecontent-focus-view">*/}
+            {/*            <div className="focus-main">100K+</div>*/}
+            {/*            <div className="tac focus-sub">COMMUNITY FOLLOWERS</div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*    <div className="flex-column fl-ai-center homecontent-focus-view">*/}
+            {/*        <div className="focus-main">4 YEARS+</div>*/}
+            {/*        <div className="focus-sub">RGB RESEARCH</div>*/}
+            {/*        <div className="focus-sub">EXPERIENCE</div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
             <div id="solutions" className="homecontent homecontent-solutions">
                 <div className="homecontent-solutions-title">SOLUTIONS</div>
@@ -256,38 +256,38 @@ export default function InfinitasHomeMobile() {
                     ))}
                 </div>
             </div>
-            <div id="roadmap" className="homecontent">
-                <div className="homecontent-roadmap-title">ROADMAP</div>
-                <div className="roadmap-main flex-row" id='roadmapscroll'>
-                    {roadmapData[yearIndex].yearData.map((i, ind) => (
-                        <div className="yearData-view " key={ind}>
-                            <img style={{ marginBottom: "20px" }} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>
-                            {i.textList.map((text, idx) => (
-                                <div key={idx} className="flex-row year-text">
-                                    <CheckOutlined className="year-icon" style={{ color: "#f44336", marginRight: "10px" }} />
-                                    <div>{text}</div>
-                                </div>
-                            ))}
+            {/*<div id="roadmap" className="homecontent">*/}
+            {/*    <div className="homecontent-roadmap-title">ROADMAP</div>*/}
+            {/*    <div className="roadmap-main flex-row" id='roadmapscroll'>*/}
+            {/*        {roadmapData[yearIndex].yearData.map((i, ind) => (*/}
+            {/*            <div className="yearData-view " key={ind}>*/}
+            {/*                <img style={{ marginBottom: "20px" }} src="https://static.paraluni.org/images/infiweb/roadmap_1.png" width="24" height="24"></img>*/}
+            {/*                {i.textList.map((text, idx) => (*/}
+            {/*                    <div key={idx} className="flex-row year-text">*/}
+            {/*                        <CheckOutlined className="year-icon" style={{ color: "#f44336", marginRight: "10px" }} />*/}
+            {/*                        <div>{text}</div>*/}
+            {/*                    </div>*/}
+            {/*                ))}*/}
 
-                            <div className="year_ji">{i.yejiao}</div>
-                        </div>
-                    ))}
-                </div>
-                <div className="yearView flex-row">
-                    {roadmapData.map((i, ind) => (
-                        <div
-                            onClick={() => {
-                                setYearIndex(ind)
-                                document.getElementById("roadmapscroll").scrollLeft = 0
-                            }}
-                            className={`yearClass ${ind == yearIndex ? "redyear" : ""}`}
-                            key={i.year}
-                        >
-                            {i.year}
-                        </div>
-                    ))}
-                </div>
-            </div>
+            {/*                <div className="year_ji">{i.yejiao}</div>*/}
+            {/*            </div>*/}
+            {/*        ))}*/}
+            {/*    </div>*/}
+            {/*    <div className="yearView flex-row">*/}
+            {/*        {roadmapData.map((i, ind) => (*/}
+            {/*            <div*/}
+            {/*                onClick={() => {*/}
+            {/*                    setYearIndex(ind)*/}
+            {/*                    document.getElementById("roadmapscroll").scrollLeft = 0*/}
+            {/*                }}*/}
+            {/*                className={`yearClass ${ind == yearIndex ? "redyear" : ""}`}*/}
+            {/*                key={i.year}*/}
+            {/*            >*/}
+            {/*                {i.year}*/}
+            {/*            </div>*/}
+            {/*        ))}*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
 
 

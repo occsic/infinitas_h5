@@ -190,19 +190,19 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*FOUCS*/}
-            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw',minWidth:'1200px'}} id={'focus'}>
-                <div className='height-900 common-width'>
-                    <div className='font-color-white'
-                         style={{fontSize: '40px', marginTop: '120px', fontWeight: 800}}>FOCUS
-                    </div>
-                    <div className='flex-row fl-ai-center fl-jc-between' style={{marginTop: '111px'}}>
-                        <HomePCFocus width={281} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'16K'} textWidth={244}/>
-                        <HomePCFocus width={281} text={'COMMUNITY FOLLOWERS'} title={'100K+'} textWidth={150}/>
-                        <HomePCFocus width={376} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'4 YEARS+'}
-                                     textWidth={244}/>
-                    </div>
-                </div>
-            </div>
+            {/*<div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw',minWidth:'1200px'}} id={'focus'}>*/}
+            {/*    <div className='height-900 common-width'>*/}
+            {/*        <div className='font-color-white'*/}
+            {/*             style={{fontSize: '40px', marginTop: '120px', fontWeight: 800}}>FOCUS*/}
+            {/*        </div>*/}
+            {/*        <div className='flex-row fl-ai-center fl-jc-between' style={{marginTop: '111px'}}>*/}
+            {/*            <HomePCFocus width={281} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'16K'} textWidth={244}/>*/}
+            {/*            <HomePCFocus width={281} text={'COMMUNITY FOLLOWERS'} title={'100K+'} textWidth={150}/>*/}
+            {/*            <HomePCFocus width={376} text={'DAILY ACTIVE WALLET ADDRESSES'} title={'4 YEARS+'}*/}
+            {/*                         textWidth={244}/>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
             {/*solutions*/}
             <div className='height-900 common-width flex-column fl-jc-center solutions'
@@ -324,48 +324,48 @@ export default function InfinitasHomePC() {
             </div>
 
             {/*ROADMAP*/}
-            <div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw',minWidth:'1200px'}} id={'overall'}>
-                <div className='common-width' style={{height: '1080px'}} id={'roadmap'}>
-                    <div className='font-color-white' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP
-                    </div>
-                    <div style={{height: '48px'}}/>
-                    <Carousel dotPosition={'bottom'} ref={roadmapRef} dots={false}>
-                        <HomePCRoadmap list={roadmapList[0]}/>
-                        <HomePCRoadmap list={roadmapList[1]}/>
-                        <HomePCRoadmap list={roadmapList[2]}/>
-                        <HomePCRoadmap list={roadmapList[3]}/>
-                    </Carousel>
+            {/*<div className='flex-center' style={{backgroundColor: '#0f1923', width: '100vw',minWidth:'1200px'}} id={'overall'}>*/}
+            {/*    <div className='common-width' style={{height: '1080px'}} id={'roadmap'}>*/}
+            {/*        <div className='font-color-white' style={{fontSize: '40px', marginTop: '139px', fontWeight: 800}}>ROADMAP*/}
+            {/*        </div>*/}
+            {/*        <div style={{height: '48px'}}/>*/}
+            {/*        <Carousel dotPosition={'bottom'} ref={roadmapRef} dots={false}>*/}
+            {/*            <HomePCRoadmap list={roadmapList[0]}/>*/}
+            {/*            <HomePCRoadmap list={roadmapList[1]}/>*/}
+            {/*            <HomePCRoadmap list={roadmapList[2]}/>*/}
+            {/*            <HomePCRoadmap list={roadmapList[3]}/>*/}
+            {/*        </Carousel>*/}
 
 
-                    <div className='flex-row fl-jc-between' style={{marginTop: '100px'}}>
-                        <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(0)}>
-                            <div className={roadMapStatus === 0 ? 'road-time-check' : 'road-time-common'}>2021</div>
-                            <div className={roadMapStatus === 0 ? 'road-line-check' : 'road-line-common'}/>
-                        </div>
-                        <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(1)}>
-                            <div className={roadMapStatus === 1 ? 'road-time-check' : 'road-time-common'}>2022</div>
-                            <div className={roadMapStatus === 1 ? 'road-line-check' : 'road-line-common'}/>
-                        </div>
-                        <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(2)}>
-                            <div className={roadMapStatus === 2 ? 'road-time-check' : 'road-time-common'}>2023</div>
-                            <div className={roadMapStatus === 2 ? 'road-line-check' : 'road-line-common'}/>
-                        </div>
-                        <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(3)}>
-                            <div className={roadMapStatus === 3 ? 'road-time-check' : 'road-time-common'}>2024</div>
-                            <div className={roadMapStatus === 3 ? 'road-line-check' : 'road-line-common'}/>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {/*        <div className='flex-row fl-jc-between' style={{marginTop: '100px'}}>*/}
+            {/*            <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(0)}>*/}
+            {/*                <div className={roadMapStatus === 0 ? 'road-time-check' : 'road-time-common'}>2021</div>*/}
+            {/*                <div className={roadMapStatus === 0 ? 'road-line-check' : 'road-line-common'}/>*/}
+            {/*            </div>*/}
+            {/*            <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(1)}>*/}
+            {/*                <div className={roadMapStatus === 1 ? 'road-time-check' : 'road-time-common'}>2022</div>*/}
+            {/*                <div className={roadMapStatus === 1 ? 'road-line-check' : 'road-line-common'}/>*/}
+            {/*            </div>*/}
+            {/*            <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(2)}>*/}
+            {/*                <div className={roadMapStatus === 2 ? 'road-time-check' : 'road-time-common'}>2023</div>*/}
+            {/*                <div className={roadMapStatus === 2 ? 'road-line-check' : 'road-line-common'}/>*/}
+            {/*            </div>*/}
+            {/*            <div className='flex-column road-time' onClick={() => onRoadMapCarouselChange(3)}>*/}
+            {/*                <div className={roadMapStatus === 3 ? 'road-time-check' : 'road-time-common'}>2024</div>*/}
+            {/*                <div className={roadMapStatus === 3 ? 'road-line-check' : 'road-line-common'}/>*/}
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
 
             <PCFooter
                 click1={()=> document.getElementById('about').scrollIntoView()}
                 click2={()=> document.getElementById('stand').scrollIntoView()}
-                click3={()=> document.getElementById('focus').scrollIntoView()}
+                // click3={()=> document.getElementById('focus').scrollIntoView()}
                 click4={()=> document.getElementById('solutions').scrollIntoView()}
                 click5={()=> document.getElementById('overall').scrollIntoView()}
-                click6={()=> document.getElementById('roadmap').scrollIntoView()}
+                // click6={()=> document.getElementById('roadmap').scrollIntoView()}
             />
 
         </div>

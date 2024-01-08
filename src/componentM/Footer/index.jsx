@@ -39,19 +39,19 @@ export default function MHeader({ activeIndex }) {
                     >
                         We stand for
                     </p>
-                    <p
-                        onClick={() => {
-                            if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
-                                window.sessionStorage.setItem("t", "focus")
-                                navigate("/")
-                            } else {
-                                document.getElementById("focus").scrollIntoView()
-                                window.scrollBy(0, -48)
-                            }
-                        }}
-                    >
-                        Focus
-                    </p>
+                    {/*<p*/}
+                    {/*    onClick={() => {*/}
+                    {/*        if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {*/}
+                    {/*            window.sessionStorage.setItem("t", "focus")*/}
+                    {/*            navigate("/")*/}
+                    {/*        } else {*/}
+                    {/*            document.getElementById("focus").scrollIntoView()*/}
+                    {/*            window.scrollBy(0, -48)*/}
+                    {/*        }*/}
+                    {/*    }}*/}
+                    {/*>*/}
+                    {/*    Focus*/}
+                    {/*</p>*/}
                     <p
                         onClick={() => {
                             if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
@@ -78,19 +78,19 @@ export default function MHeader({ activeIndex }) {
                     >
                         Overall Architecture
                     </p>
-                    <p
-                        onClick={() => {
-                            if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {
-                                window.sessionStorage.setItem("t", "roadmap")
-                                navigate("/")
-                            } else {
-                                document.getElementById("roadmap").scrollIntoView()
-                                window.scrollBy(0, -48)
-                            }
-                        }}
-                    >
-                        Roadmap
-                    </p>
+                    {/*<p*/}
+                    {/*    onClick={() => {*/}
+                    {/*        if (!(window.location.hash == "#/" || window.location.hash.indexOf("#/home") > -1)) {*/}
+                    {/*            window.sessionStorage.setItem("t", "roadmap")*/}
+                    {/*            navigate("/")*/}
+                    {/*        } else {*/}
+                    {/*            document.getElementById("roadmap").scrollIntoView()*/}
+                    {/*            window.scrollBy(0, -48)*/}
+                    {/*        }*/}
+                    {/*    }}*/}
+                    {/*>*/}
+                    {/*    Roadmap*/}
+                    {/*</p>*/}
                 </div>
             ),
         },
